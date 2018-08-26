@@ -1,0 +1,55 @@
+1. Getting coreutils: wget ftp://ftp.gnu.org/gnu/coreutils/coreutils-7.6.tar.gz
+    Downloads and puts into folder coreutils-7.6.tar.gz
+    Unzip: tar -xzvf coreutils-7.6.tar.gz
+2. Compile:
+    ./configure -prefix=/u/cs/ugrad/robathan/coreutils (create makefile and set
+install location to custom folder
+    make (build all .c and .o files into executables)
+    make install (move all executables and other necessary things into 
+~/coreutils folder)
+3. Reproduce the error:
+    CREATE TEST FOLDER
+    mkdir ~/test
+    cd ~/test
+    touch newfile
+    touch -m -t 1010101010 oldfile
+    REPRODUCE ERROR
+    cd ~/coreutils/bin
+    export LC_ALL=’C’
+    ./ls -l ~/test      
+total 0
+-rw-r--r-- 1 robathan csugrad 0 Jan 30 13:10 newfile
+-rw-r--r-- 1 robathan csugrad 0 Oct 10  2010 oldfile
+(GOOD FORMAT)
+    export LC_ALL=’en_US.UTF-8’
+    ./ls -l ~/test
+        total 0
+-rw-r--r-- 1 robathan csugrad 0 2018-01-30 13:10 newfile
+-rw-r--r-- 1 robathan csugrad 0 2010-10-10 10:10 oldfile
+    (BAD FORMAT)
+4. Apply patch:
+    wget lists.gnu.org/archive/html/bug-coreutils/2009-09/msg00410.html > 
+~/ls_patch
+    cd ~/coreutils-7.6/src
+    patch ls.c ~/ls_patch
+5. Build modified version:
+    cd ~/coreutils-7.6 (move to folder level which contains the makefile
+    make 
+        Commands Executed:
+            make all-recursive: Needed to update everything in the main 
+coreutils-7.6 folder
+            make all-recursive (in coreutils-7.6/lib): Unnecessary
+            make all-am (in coreutils-7.6/src): Necessary as ls.c had changed
+            Make all-recursive (in coreutils-7.6/gnulib-tests): Unnecessary
+6. Test both versions:
+    Newly built / modified version:
+        ~/coreutils-7.6/src/ls -l ~/test
+            total 0
+-rw-r--r-- 1 robathan csugrad 0 Jan 30 13:10 newfile
+-rw-r--r-- 1 robathan csugrad 0 Oct 10  2010 oldfile
+    Installed / buggy version:
+~/coreutils/bin/ls -l ~/test
+            total 0
+-rw-r--r-- 1 robathan csugrad 0 2018-01-30 13:10 newfile
+-rw-r--r-- 1 robathan csugrad 0 2010-10-10 10:10 oldfile
+

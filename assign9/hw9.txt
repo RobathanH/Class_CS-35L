@@ -1,0 +1,84 @@
+CS 35L - Lab 6 - Assignment 9
+Robathan Harries
+904836501
+
+2. Checkout new branch:
+$ git clone https://git.savannah.gnu.org/git/diffutils.git hw_diffutils
+$ cd hw_diffutils
+$ git checkout 'v3.0' -b 'quote'
+$ cd hw_diffutils
+
+3. Patch:
+$ patch -p1 <../quote-3.0-patch.txt
+
+patch was completely successful
+
+4. Learn stuff:
+Stuff learnt
+
+5. Create Changelog:
+$ emacs -nw
+C-x 4 a
+
+Adapted original changelog and wrote this, which was saved into ChangeLog:
+
+2018-03-14  rob  <r0b@ucla.edu>
+        maint: quote 'like this' or "like this", not `like this'
+
+        This is in response to a recent change in the GNU coding standards,
+        which now suggest quoting 'like this' or "like this", instead of
+        `like this' or ``like this''.
+        This doesn't change quotes in comments!
+        * src/cmp.c, src/diff.c, src/diff3.c, src/dir.c, src/sdiff.c, src/util.c
+        Quote 'like this' in output
+
+6. Commit!
+$ git config user.email "r0b@ucla.edu" <--sets email so that the commit has an author
+$ git commit -a -F ChangeLog
+
+[quote d830362] 2018-03-14  rob  <r0b@ucla.edu> 	maint: quote 'like this' or "like this", not `like this'
+ 6 files changed, 43 insertions(+), 43 deletions(-)
+
+7. Generate patch:
+$ git format-patch -1 --stdout >formatted-patch.txt
+
+8. Verification of Partner's Patch:
+
+Partners:
+Agustin Marinovic
+UID: 004636016
+
+
+Create new branch called 'partner':
+$ git checkout 'v3.0' -b 'partner'
+
+Apply patch:
+$ git am partner-formatted-patch.txt
+
+Patch was successful
+
+Repeated building steps part 13 of lab:
+$ ./bootstrap
+$ ./patch -p0 <../diffutils-gets.diff
+$ ./configure
+$ ./make
+
+Test:
+$ ./src/diff . -          <-- correct error message
+$ ./src/diff --help       <-- correct error message
+
+9. Verify ChangeLog:
+$ make distdir
+This created a new folder with a changelog
+When I went into the changelog, the first entry is my entry which I created, which means it worked!
+
+10. Finding the newest merge:
+$ cd ..
+$ git https://git.savannah.gnu.org/git/emacs.git
+$ cd emacs
+$ gitk
+
+I used gitk to find the newest mergepoint earlier than 1/25/2015
+Mergepoint: Merge branch 'master' into xwidget (2015-01-25)
+
+

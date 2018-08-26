@@ -1,0 +1,48 @@
+Assignment 6 - log.txt
+
+Name: Robathan Harries
+UID: 904836501
+
+Test version:
+	$ sort --version
+		version 8.22
+
+Create 10M floating point numbers:
+	(Need 40M bytes for 10M single-precision floats)
+	$ od -N 40000000 -f /dev/urandom | tr -s '[:blank:]' '\n' >testRand
+		Error: this leaves od's byte counters as lines in the output
+	$ od -N 40000000 -w4 -f /dev/urandom | 
+			sed 's/^[[:digit:]]*[[:space:]]*//g' >testRand
+	
+	$ wc -l testRand
+		10000001 lines in testRand: There is a final extra endline, 
+		but apart from that, the file worked correctly
+
+Testing sort times:
+	$ time -p sort -g testRand >/dev/null
+		real 25.43
+		user 133.84
+		sys 1.58
+	$ time -p sort -g --parallel=1 testRand >/dev/null
+		real 122.92
+		user 122.02
+		sys 0.89
+	$ time -p sort -g --parallel=2 testRand >/dev/null
+		real 66.27
+		user 124.75
+		sys 1.41
+	$ time -p sort -g --parallel=4 testRand >/dev/null
+		real 36.98
+		user 121.41
+		sys 1.08
+	$ time -p sort -g --parallel=8 testRand >/dev/null
+		real 22.27
+		user 118.08
+		sys 1.25
+
+The original sort and the 8-thread parallel sort have around the same times,
+whereas sorts with other amounts of parallelism are far slower. This leads me
+to believe that the default sort uses maximum efficient parallelism, which is
+8 threads. The user time is fairly consistent, which I would ascribe to the 
+same amount of user work being done in each sort, just in some sorts that 
+work is split between multiple simultaneous threads. 

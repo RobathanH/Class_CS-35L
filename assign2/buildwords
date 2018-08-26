@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat <&0 | tr "\n" " " | tr "\t" " " | sed 's/<u>a<\/u>/a/g' | tr "\`" "\'" | grep - -o -e \<tr\>[[:space:]]*\<td\>[[:alpha:]]*\</td\>[[:space:]]*\<td\>[[:alpha:][:space:],\']*\</td\>[[:space:]]*\</tr\> | sed 's/<\/td> *<\/tr>//g' | sed 's/<tr> *<td>[[:alpha:]]*<\/td> *<td>//g' | tr ", " "\n" | tr '[:upper:]' '[:lower:]' | grep - -o -e ^[pkmnwlhaeiou\']*$ | sort -u

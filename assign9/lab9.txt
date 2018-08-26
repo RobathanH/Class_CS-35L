@@ -1,0 +1,426 @@
+CS 35L - Lab 6 - Assignment 9
+Robathan Harries
+904836501
+
+1. Copy Diffutils repository:
+$ git clone https://git.savannah.gnu.org/git/diffutils.git
+
+2. Get log of changes:
+$ git log >../git-log.txt
+
+3. Get list of tags:
+$ git tag >../git-tags.txt
+
+4. Find specific commit:
+$ emacs -nw ../git-log.txt
+Used C-s to search for "maint: quote"
+Hash for commit = 62ca21c8c1a5aa3488589dcb191a4ef04ae9ed4f
+
+Investigated git format-patch with $ man git-format-patch
+$ git format-patch -1 62ca21c8c1a5aa3488589dcb191a4ef04ae9ed4f --stdout >../quote-patch.txt
+
+5. Check out version 3.0 into a new branch called 'test3.0':
+$ git checkout -b 'test3.0' 'v3.0'
+
+6. Patch:
+$ patch -p1 <../quote-patch.txt
+
+Problems:
+	1. File doesn't exist:
+		HACKING
+		doc/diffutils.texi
+		man/help2man
+	2. Failed hunks:
+		README at 9, 60
+		README-hacking at 19
+		cfg.mk at 29
+		src/diff.c at 876, 906, 942
+		src/diff3.c at 433
+	
+7. Overview
+$ git status
+On branch test3.0
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   NEWS
+	modified:   README
+	modified:   TODO
+	modified:   doc/diagmeet.note
+	modified:   ms/config.bat
+	modified:   ms/config.site
+	modified:   po/en.po
+	modified:   src/analyze.c
+	modified:   src/cmp.c
+	modified:   src/context.c
+	modified:   src/diff.c
+	modified:   src/diff.h
+	modified:   src/diff3.c
+	modified:   src/dir.c
+	modified:   src/ifdef.c
+	modified:   src/io.c
+	modified:   src/sdiff.c
+	modified:   src/side.c
+	modified:   src/system.h
+	modified:   src/util.c
+	modified:   tests/help-version
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	NEWS.orig
+	README-hacking.orig
+	README-hacking.rej
+	README.orig
+	README.rej
+	cfg.mk.orig
+	cfg.mk.rej
+	ms/config.site.orig
+	quote-patch.txt
+	src/cmp.c.orig
+	src/context.c.orig
+	src/diff.c.orig
+	src/diff.c.rej
+	src/diff.h.orig
+	src/diff3.c.orig
+	src/diff3.c.rej
+	src/dir.c.orig
+	src/sdiff.c.orig
+	src/system.h.orig
+	src/util.c.orig
+	tests/help-version.orig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+8. Learning Stuff
+Stuff learnt
+
+9. Reverting Changes
+For the files NEWS, README, TODO, doc/diagmeet.note, ms/config.bat, ms/config.site, po/en.po, src/diff.h, src/system.h, tests/help-version.orig
+
+$ emacs -nw <filename>
+C-x v u (vc-revert) to revert changes
+
+For the remaining .c files I opened emacs, and used C-x v = (vc-diff) to check changes
+Manually reverted changes that weren't to character string constants (M-g g <lineNum>)
+
+Line numbers for manual revisions in each file:
+src/analyze.c: 41, 254, 598
+src/cmp.c: 39, 367, 380
+src/context.c: 162, 292, 396, 434, 462 (all, so I used vc-revert)
+src/diff.c: 43, 60, 61, 62, 95, 101
+src/diff3.c: 38, 162, 1478
+src/dir.c: 87, 128, 237
+src/ifdef.c: 135 (all, so vc-revert)
+src/io.c: 60, 63 (all, so vc-revert)
+src/sdiff.c: 38, 95, 750
+src/side.c: 295, 305, 313 (all, so vc-revert)
+src/util.c: 30, 124, 149, 150, 193, 244, 273, 653
+
+10. Manually apply failed patches
+In diff.c and diff3.c the code has been changed, and line numbers which contain flawed quotes no longer lined up with the patch.
+For each file, I went to the lines which failed, searched for the nearby flawed quotes, and manually changed them.
+
+src/diff.c
+	876 -> 898
+	906 -> 873, 877
+	942 -> 921, 923
+src/diff3.c
+	433 -> 438
+
+11. Removing untracked files
+$ git clean -i
+What now> 1
+
+This removed all of the untracked files that git status warned about
+
+12. Patch for v3.0
+$ git status
+On branch test3.0
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/cmp.c
+	modified:   src/diff.c
+	modified:   src/diff3.c
+	modified:   src/dir.c
+	modified:   src/sdiff.c
+	modified:   src/util.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Patch:
+$ git diff >../quote-3.0-patch.txt
+
+13. Build modified version:
+$ ./bootstrap
+
+Program released errors because I didn't have all the required packages, so I had to run:
+$ sudo apt-get install autoconf
+$ sudo apt-get install automake
+$ sudo apt-get install autopoint
+$ sudo apt-get install help2man
+$ sudo apt-get install texinfo
+$ sudo apt-get install gperf
+
+$./bootstrap
+Success!
+
+Download extra patch and patch:
+$ cd ..
+$ wget https://web.cs.ucla.edu/classes/winter18/cs35L/assign/diffutils-gets.diff
+$ cd diffutils
+$ patch -p0 <../diffutils-gets.diff
+
+Finish Build:
+$ ./configure
+$ make
+
+Verify:
+$ src/diff . -
+diff: cannot compare '-' to a directory
+--Those are the correct quotes!
+
+14. Sanity Check:
+$ cd ..
+$ mkdir diffutils-3.0
+$ mkdir diffutils-3.0-patch
+$ cp diffutils/src/* diffutils-3.0-patch
+$ git clone https://git.savannah.gnu.org/git/diffutils.git diffutils-3.0-orig
+$ cd diffutils-3.0-orig
+$ git checkout 'v3.0'
+$ cp src/* ../diffutils-3.0
+$ cd ..
+
+$ diffutils/src/diff -pru diffutils-3.0 diffutils-3.0-patch >quote-3.0-test.txt
+
+15. Complete the Sanity Check:
+$ diff quote-3.0-test.txt quote-3.0-patch.txt
+1,4c1,5
+< diff -pru diffutils-3.0/cmp.c diffutils-3.0-patch/cmp.c
+< --- diffutils-3.0/cmp.c	2018-03-14 12:51:05.562846489 -0700
+< +++ diffutils-3.0-patch/cmp.c	2018-03-14 12:43:15.325641610 -0700
+< @@ -115,7 +115,7 @@ try_help (char const *reason_msgid, char
+---
+> diff --git a/src/cmp.c b/src/cmp.c
+> index 2455dc4..e19f013 100644
+> --- a/src/cmp.c
+> +++ b/src/cmp.c
+> @@ -115,7 +115,7 @@ try_help (char const *reason_msgid, char const *operand)
+13c14
+< @@ -134,7 +134,7 @@ specify_ignore_initial (int f, char **ar
+---
+> @@ -134,7 +134,7 @@ specify_ignore_initial (int f, char **argptr, char delimiter)
+58,128c59,62
+< diff -pru diffutils-3.0/diff3.c diffutils-3.0-patch/diff3.c
+< --- diffutils-3.0/diff3.c	2018-03-14 12:51:05.562846489 -0700
+< +++ diffutils-3.0-patch/diff3.c	2018-03-14 12:43:15.325641610 -0700
+< @@ -316,9 +316,9 @@ main (int argc, char **argv)
+<    if (argc - optind != 3)
+<      {
+<        if (argc - optind < 3)
+< -	try_help ("missing operand after `%s'", argv[argc - 1]);
+< +	try_help ("missing operand after '%s'", argv[argc - 1]);
+<        else
+< -	try_help ("extra operand `%s'", argv[optind + 3]);
+< +	try_help ("extra operand '%s'", argv[optind + 3]);
+<      }
+<  
+<    file = &argv[optind];
+< @@ -351,7 +351,7 @@ main (int argc, char **argv)
+<  	 file instead.  */
+<        common = 3 - common;
+<        if (STREQ (file[0], "-") || STREQ (file[common], "-"))
+< -	fatal ("`-' specified for more than one input file");
+< +	fatal ("'-' specified for more than one input file");
+<      }
+<  
+<    mapping[0] = 0;
+< @@ -412,7 +412,7 @@ try_help (char const *reason_msgid, char
+<    if (reason_msgid)
+<      error (0, 0, _(reason_msgid), operand);
+<    error (EXIT_TROUBLE, 0,
+< -	 _("Try `%s --help' for more information."), program_name);
+< +	 _("Try '%s --help' for more information."), program_name);
+<    abort ();
+<  }
+<  
+< @@ -435,7 +435,7 @@ static char const * const option_help_ms
+<    "",
+<    N_("-m  --merge  Output merged file instead of ed script (default -A)."),
+<    N_("-L LABEL  --label=LABEL  Use LABEL instead of file name."),
+< -  N_("-i  Append `w' and `q' commands to ed scripts."),
+< +  N_("-i  Append 'w' and 'q' commands to ed scripts."),
+<    N_("-a  --text  Treat all files as text."),
+<    N_("--strip-trailing-cr  Strip trailing carriage return on input."),
+<    N_("-T  --initial-tab  Make tabs line up by prepending a tab."),
+< @@ -460,7 +460,7 @@ usage (void)
+<      else
+<        putchar ('\n');
+<    printf ("\n%s\n%s\n",
+< -	  _("If a FILE is `-', read standard input."),
+< +	  _("If a FILE is '-', read standard input."),
+<  	  _("Exit status is 0 if successful, 1 if conflicts, 2 if trouble."));
+<    emit_bug_reporting_address ();
+<  }
+< @@ -1275,12 +1275,12 @@ read_diff (char const *filea,
+<    if (EXIT_TROUBLE <= status)
+<      error (EXIT_TROUBLE, werrno,
+<  	   _(status == 126
+< -	     ? "subsidiary program `%s' could not be invoked"
+< +	     ? "subsidiary program '%s' could not be invoked"
+<  	     : status == 127
+< -	     ? "subsidiary program `%s' not found"
+< +	     ? "subsidiary program '%s' not found"
+<  	     : status == INT_MAX
+< -	     ? "subsidiary program `%s' failed"
+< -	     : "subsidiary program `%s' failed (exit status %d)"),
+< +	     ? "subsidiary program '%s' failed"
+< +	     : "subsidiary program '%s' failed (exit status %d)"),
+<  	   diff_program, status);
+<  
+<    return diff_result + total;
+< diff -pru diffutils-3.0/diff.c diffutils-3.0-patch/diff.c
+< --- diffutils-3.0/diff.c	2018-03-14 12:51:05.562846489 -0700
+< +++ diffutils-3.0-patch/diff.c	2018-03-14 12:43:15.325641610 -0700
+---
+> diff --git a/src/diff.c b/src/diff.c
+> index cc1b611..256a984 100644
+> --- a/src/diff.c
+> +++ b/src/diff.c
+177c111
+< @@ -826,7 +826,7 @@ try_help (char const *reason_msgid, char
+---
+> @@ -826,7 +826,7 @@ try_help (char const *reason_msgid, char const *operand)
+186c120
+< @@ -870,11 +870,11 @@ static char const * const option_help_ms
+---
+> @@ -870,11 +870,11 @@ static char const * const option_help_msgid[] = {
+200c134
+< @@ -895,7 +895,7 @@ static char const * const option_help_ms
+---
+> @@ -895,7 +895,7 @@ static char const * const option_help_msgid[] = {
+209c143
+< @@ -918,9 +918,9 @@ static char const * const option_help_ms
+---
+> @@ -918,9 +918,9 @@ static char const * const option_help_msgid[] = {
+221c155
+< @@ -960,7 +960,7 @@ specify_value (char const **var, char co
+---
+> @@ -960,7 +960,7 @@ specify_value (char const **var, char const *value, char const *option)
+230c164
+< @@ -1159,7 +1159,7 @@ compare_files (struct comparison const *
+---
+> @@ -1159,7 +1159,7 @@ compare_files (struct comparison const *parent,
+239,242c173,246
+< diff -pru diffutils-3.0/dir.c diffutils-3.0-patch/dir.c
+< --- diffutils-3.0/dir.c	2018-03-14 12:51:05.562846489 -0700
+< +++ diffutils-3.0-patch/dir.c	2018-03-14 12:43:15.325641610 -0700
+< @@ -154,7 +154,7 @@ compare_names (char const *name1, char c
+---
+> diff --git a/src/diff3.c b/src/diff3.c
+> index 0f11fdc..fbfb28b 100644
+> --- a/src/diff3.c
+> +++ b/src/diff3.c
+> @@ -316,9 +316,9 @@ main (int argc, char **argv)
+>    if (argc - optind != 3)
+>      {
+>        if (argc - optind < 3)
+> -	try_help ("missing operand after `%s'", argv[argc - 1]);
+> +	try_help ("missing operand after '%s'", argv[argc - 1]);
+>        else
+> -	try_help ("extra operand `%s'", argv[optind + 3]);
+> +	try_help ("extra operand '%s'", argv[optind + 3]);
+>      }
+>  
+>    file = &argv[optind];
+> @@ -351,7 +351,7 @@ main (int argc, char **argv)
+>  	 file instead.  */
+>        common = 3 - common;
+>        if (STREQ (file[0], "-") || STREQ (file[common], "-"))
+> -	fatal ("`-' specified for more than one input file");
+> +	fatal ("'-' specified for more than one input file");
+>      }
+>  
+>    mapping[0] = 0;
+> @@ -412,7 +412,7 @@ try_help (char const *reason_msgid, char const *operand)
+>    if (reason_msgid)
+>      error (0, 0, _(reason_msgid), operand);
+>    error (EXIT_TROUBLE, 0,
+> -	 _("Try `%s --help' for more information."), program_name);
+> +	 _("Try '%s --help' for more information."), program_name);
+>    abort ();
+>  }
+>  
+> @@ -435,7 +435,7 @@ static char const * const option_help_msgid[] = {
+>    "",
+>    N_("-m  --merge  Output merged file instead of ed script (default -A)."),
+>    N_("-L LABEL  --label=LABEL  Use LABEL instead of file name."),
+> -  N_("-i  Append `w' and `q' commands to ed scripts."),
+> +  N_("-i  Append 'w' and 'q' commands to ed scripts."),
+>    N_("-a  --text  Treat all files as text."),
+>    N_("--strip-trailing-cr  Strip trailing carriage return on input."),
+>    N_("-T  --initial-tab  Make tabs line up by prepending a tab."),
+> @@ -460,7 +460,7 @@ usage (void)
+>      else
+>        putchar ('\n');
+>    printf ("\n%s\n%s\n",
+> -	  _("If a FILE is `-', read standard input."),
+> +	  _("If a FILE is '-', read standard input."),
+>  	  _("Exit status is 0 if successful, 1 if conflicts, 2 if trouble."));
+>    emit_bug_reporting_address ();
+>  }
+> @@ -1275,12 +1275,12 @@ read_diff (char const *filea,
+>    if (EXIT_TROUBLE <= status)
+>      error (EXIT_TROUBLE, werrno,
+>  	   _(status == 126
+> -	     ? "subsidiary program `%s' could not be invoked"
+> +	     ? "subsidiary program '%s' could not be invoked"
+>  	     : status == 127
+> -	     ? "subsidiary program `%s' not found"
+> +	     ? "subsidiary program '%s' not found"
+>  	     : status == INT_MAX
+> -	     ? "subsidiary program `%s' failed"
+> -	     : "subsidiary program `%s' failed (exit status %d)"),
+> +	     ? "subsidiary program '%s' failed"
+> +	     : "subsidiary program '%s' failed (exit status %d)"),
+>  	   diff_program, status);
+>  
+>    return diff_result + total;
+> diff --git a/src/dir.c b/src/dir.c
+> index 5b4eaec..5e08318 100644
+> --- a/src/dir.c
+> +++ b/src/dir.c
+> @@ -154,7 +154,7 @@ compare_names (char const *name1, char const *name2)
+251,254c255,259
+< diff -pru diffutils-3.0/sdiff.c diffutils-3.0-patch/sdiff.c
+< --- diffutils-3.0/sdiff.c	2018-03-14 12:51:05.562846489 -0700
+< +++ diffutils-3.0-patch/sdiff.c	2018-03-14 12:43:15.325641610 -0700
+< @@ -175,7 +175,7 @@ try_help (char const *reason_msgid, char
+---
+> diff --git a/src/sdiff.c b/src/sdiff.c
+> index 4344e8d..5bbecd8 100644
+> --- a/src/sdiff.c
+> +++ b/src/sdiff.c
+> @@ -175,7 +175,7 @@ try_help (char const *reason_msgid, char const *operand)
+272c277
+< @@ -286,12 +286,12 @@ check_child_status (int werrno, int wsta
+---
+> @@ -286,12 +286,12 @@ check_child_status (int werrno, int wstatus, int max_ok_status,
+301,303c306,309
+< diff -pru diffutils-3.0/util.c diffutils-3.0-patch/util.c
+< --- diffutils-3.0/util.c	2018-03-14 12:51:05.566846365 -0700
+< +++ diffutils-3.0-patch/util.c	2018-03-14 12:43:15.325641610 -0700
+---
+> diff --git a/src/util.c b/src/util.c
+> index 3be03e9..d18bf38 100644
+> --- a/src/util.c
+> +++ b/src/util.c
+
+
+There are a lot of differences, but most of them are just due to line number, file-path and command differences. A large chunk of the  output is also just due to the same chunk (diff3.c) being placed in difference parts of each diff file
+Thus they're all innocuous differences.
+
+

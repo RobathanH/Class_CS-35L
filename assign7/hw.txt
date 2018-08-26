@@ -1,0 +1,14 @@
+1.
+The network is still secure for our public/private key system, since the private key is stored on the computer and is never transmitted over the network. Since it is infeasible to determine a private key only from a public key, it is impossible for them to decrypt any messages sent.
+
+(1) Still secure!
+If keyboards were tapped, the network would still be secure, since the private key is generated through random values, not through any reproducable keyboard input.
+
+(2) Not secure!
+When booting off a usb, the private key will most likely be stored on the usb. If the usb is compromised, then attackers could directly read the private key data and use it to decrypt our communications.
+
+2.
+Since the message itself (the tarball) isn't encrypted, anybody who intercepts the communication can read and alter the message. Anybody can copy my tarball, replace my public key with their own, and create their own detached digital signature for the message. You would receive my message with someone else's public key and detached digital signature, and the gpg --verify command would have no idea, since it only checks that the decrypted (through the received public key) digital signature matches the message digest of the received message.
+How to fix:
+One possibility: I could encrypt the entire message. If both sender and receiver publish their public keys online, the sender could encrypt the entire message with first their private key, and then the receiver's public key. Then, only the receiver could decrypt the original message, by first using their private key, and then the sender's public key, to decrypt the message. That, along with a standard digital signature, would ensure that only the sender could have written the message.
+Simpler (but less cool) possibility: Trust a 3rd party to verify the origin of all messages.

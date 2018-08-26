@@ -1,0 +1,89 @@
+CS 35L - Assignment 7
+Robathan Harries
+904836501
+
+
+Connecting to BeagleBone:
+-Since I'm running linux, I don't need to install any drivers, and I can just
+ssh directly into my BeagleBone (IP over USB is found on support page as 
+192.168.7.2)
+$ ssh 192.168.7.2
+This ssh'd me in using my default username, which I can't use to log on to
+the BeagleBone, but the login prompt said what the default BeagleBone username
+and password were (username: debian, password: temppwd)
+$ ssh debian@192.168.7.2
+
+Connecting to Wifi on BeagleBone:
+$ sudo connmanctl
+connmanctl> enable wifi
+connmanctl> scan wifi
+connmanctl> services
+connmanctl> agent on
+connmanctl> connect wifi_2cf7f10603a6_53616d73756e672047616c6178792053372035333337_managed_psk
+connmanctl> quit
+
+Installing Software on BeagleBone:
+$ sudo apt-get install xauth
+$ sudo apt-get install firefox-esr-l10n-en-gb
+$ apt-get install openssh-server
+$ apt-get install openssh-client
+
+Server Setup:
+$ ssh-keygen
+	OUTPUT FOR ME:
+	Generating public/private rsa key pair.
+	Enter file in which to save the key (/home/debian/.ssh/id_rsa): 
+	Created directory '/home/debian/.ssh'.
+	Enter passphrase (empty for no passphrase): ****
+	Enter same passphrase again: *******
+	Your identification has been saved in /home/debian/.ssh/id_rsa.
+	Your public key has been saved in /home/debian/.ssh/id_rsa.pub.
+	The key fingerprint is:
+	87:e0:06:30:6e:69:23:bd:08:40:d6:e3:a7:26:36:35 debian@beaglebone
+	The key's randomart image is:
+	+---[RSA 2048]----+
+	|oo+              |
+	|oo *             |
+	|o O o .          |
+	|.= E + . .       |
+	|. o + o S .      |
+	| + o .   .       |
+	|. +              |
+	|                 |
+	|                 |
+	+-----------------+
+$ sudo useradd -d /home/friend -m friend
+$ sudo passwd friend
+	Enter new UNIX password: 
+	Retype new UNIX password: 
+	passwd: password updated successfully
+$ cd /home/friend
+$ sudo mkdir .ssh
+$ sudo chown -R friend .ssh
+$ sudo chmod 700 .ssh
+
+(All of this is directly from piazza and class powerpoints)
+This setup process was done on both mine and my partner's beaglebone setup
+
+Client steps:
+Server: $ ifconfig
+	The internet address for my BeagleBone, under wlan0, is 149.142.229.207
+	The internet address for my partner's BeagleBone is 149.142.226.119
+Client: $ ssh-keygen
+	(Both of us had already done this, but since the step is necessary
+	for connection, I include it in the log anyway)
+Client: $ ssh-copy-id -i <username>@<server_ip>
+	When I was client: $ ssh-copy-id -i friend@149.142.226.119
+	When my partner was client: $ ssh-copy-id -i friend@149.142.229.207
+Client: $ eval `ssh-agent -s`
+	This step was added after some internet searching, because ssh-add 
+	couldn't open a connection to the agent if the command was run on its own.
+Client: $ ssh-add
+	Enter passphrase for /home/debian/.ssh/id_rsa: *******
+	Identity added: /home/debian/.ssh/id_rsa (/home/debian/.ssh/id_rsa)
+Client: $ ssh -X friend@<server_ip>
+
+Once connected, the client could run programs on the server, like opening a 
+firefox window or adding and removing files. All that was required was running
+ssh-add and entering in the passphrase associated with the client's key before
+sshing into the server.

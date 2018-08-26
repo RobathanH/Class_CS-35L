@@ -1,0 +1,101 @@
+1: man -k <keyword> will search through the description part of each man page
+and print all commands with that keyword in their description
+Commands: 'man man'
+
+2: cp and wc are located in /usr/local/cs/bin/wc
+Commands: 'which cp', 'which wc'
+
+3: 'w' and 'X' are both in /usr/bin
+w: shows who is logged on and what they are doing.
+X: attempts to start an X server, which is a network-transparent window system
+Commands: 'echo $PATH', 'find <starting dir> -name ?' (for each address in 
+path)
+
+4. /usr/bin/emacs-23.1
+Commands: 'readlink /usr/bin/emacs', 'readlink /etc/alternatives/emacs'
+
+5. g+s: sets the file to set group ID on execution
+   o-x: removes execution permission for users that aren't the owner or in the
+owner's group
+
+6. 'find -mtime -21'
+Commands: 'man find'
+
+7. 
+~
+~/nsdefault
+~/Desktop
+~/Desktop/$RECYCLE.BIN
+~/Documents
+~/Documents/$RECYCLE.BIN
+~/Downloads
+~/Downloads/$RECYCLE.BIN
+~/.cache
+~/.cache/abrt
+~/.config
+~/.config/abrt
+~/perl5
+Commands: 'find -mtime -21 -type d'
+
+8. 20
+Commands: 'man find', 'which find', 'find /bin -type l'
+
+9. /usr/lib/libgamin-1.so.0.1.10 (last modified: Mar 3, 2010)
+Commands: 'man ls', 'ls /usr/lib -t -l'
+
+10. 'locale' gets its data from the files /usr/lib/locale/locale-archive and
+/usr/share/i18n/locales
+
+11.
+Buffer-menu-sort
+sort-columns
+sort-fields
+sort-lines
+sort-numeric-fields
+sort-pages
+sort-paragraphs
+sort-regexp-fields
+tabulated-list-col-sort
+tabulated-list-sort
+Emacs Commands: 'C-h a sort'
+
+12.
+C-M-a: beginning-of-defun: Moves pointer to the beginning of the 
+current function definition
+C-M-b: backward-sexp: Moves backwards over a balanced expression
+C-M-c: exit-recursive-edit: Exits editing that is happening while a command
+is running
+C-M-d: down-list: Moves down in a paranthetical grouping
+C-M-e: end-of-defun: Moves pointer to the end of the current function 
+definition
+C-M-f: forward-sexp: Moves forwards over a balanced expression
+C-M-g: C-g: keyboard-quit: Get's rid of a partially typed command, or safely 
+stops a running command
+C-M-h: mark-defun: Selects the current defun, for killing, etc
+Emacs Commands: 'C-h c <cmd-keystroke>', 'C-h F <cmd-name>'
+
+13. If emacs is waiting for input, 'C-g' executes keyboard-quit. If not, the 
+keystroke sets the variable 'quit-flag' to 't' as soon as 'C-g' is typed. This
+is checked frequently and will cause the running program to quit relatively 
+safely. If 'C-g' is typed a second time before the first is processed, emacs 
+does an emergency escape and returns you to the shell.
+Emacs Commands: 'C-h c <cmd-keystrokes>', 'C-h F <cmd-name>'
+
+14. The emacs 'yank' function pastes the most recently 'killed' ('C-k') text
+Emacs Commands: 'C-h F yank'
+
+15. Unlike 'ls -l', dired shows the total amount of space available, and shows
+the directories '.' and '..' in the listing.
+Emacs Commands: 'C-x d'
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2474 @@
+execve("./tr2b", ["./tr2b", "a", "0"], [/* 63 vars */]) = 0
+brk(NULL)                               = 0xbef000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=122850, ...}) = 0
+mmap(NULL, 122850, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2c9c8d1000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2c9c8d0000
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2c9c300000
+mprotect(0x7f2c9c4c0000, 2097152, PROT_NONE) = 0
+mmap(0x7f2c9c6c0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f2c9c6c0000
+mmap(0x7f2c9c6c6000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2c9c6c6000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2c9c8cf000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2c9c8ce000
+arch_prctl(ARCH_SET_FS, 0x7f2c9c8cf700) = 0
+mprotect(0x7f2c9c6c0000, 16384, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7f2c9c8ef000, 4096, PROT_READ) = 0
+munmap(0x7f2c9c8d1000, 122850)          = 0
+fstat(0, {st_mode=S_IFREG|0664, st_size=5000000, ...}) = 0
+brk(NULL)                               = 0xbef000
+brk(0xc11000)                           = 0xc11000
+read(0, "_e\\8V}=fBg[vTmCc{Xm%MD&zA?&hHJKg"..., 4096) = 4096
+fstat(1, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+read(0, "`LbEd=,bjUW|&^Vs~1~?=V#p;I9HRA.2"..., 4096) = 4096
+write(1, "_e\\8V}=fBg[vTmCc{Xm%MD&zA?&hHJKg"..., 4096) = 4096
+read(0, "(,0jhyC,mi9$zo]vrec& ('JI)q Ec>M"..., 4096) = 4096
+write(1, "`LbEd=,bjUW|&^Vs~1~?=V#p;I9HRA.2"..., 4096) = 4096
+read(0, "Y?ZlaS{<{<C7I(|*>O^&ro@\"SgJ\\X}(1"..., 4096) = 4096
+write(1, "(,0jhyC,mi9$zo]vrec& ('JI)q Ec>M"..., 4096) = 4096
+read(0, ")V:|11\177jQFg@x2>?U/XEU7vV.5iE\"HPk"..., 4096) = 4096
+write(1, "Y?Zl0S{<{<C7I(|*>O^&ro@\"SgJ\\X}(1"..., 4096) = 4096
+read(0, "a> }MVd8ff:Ct%%_`x1YYhcC\"Z!n5;Pw"..., 4096) = 4096
+write(1, ")V:|11\177jQFg@x2>?U/XEU7vV.5iE\"HPk"..., 4096) = 4096
+read(0, "I(m\\[BpSLFi}*r9qohNt;bbRjy6fz_K#"..., 4096) = 4096
+write(1, "0> }MVd8ff:Ct%%_`x1YYhcC\"Z!n5;Pw"..., 4096) = 4096
+read(0, "p/ZkEf4SjtpRi;=J\"OZW~eShLE{}7v[("..., 4096) = 4096
+write(1, "I(m\\[BpSLFi}*r9qohNt;bbRjy6fz_K#"..., 4096) = 4096
+read(0, "` ;\"{==bs;L%m\"s230IF@6`L&lt x#/X"..., 4096) = 4096
+write(1, "p/ZkEf4SjtpRi;=J\"OZW~eShLE{}7v[("..., 4096) = 4096
+read(0, "e]\177e}XUPz#rOVXJIanZ>v Z\"|,S37^|\\"..., 4096) = 4096
+write(1, "` ;\"{==bs;L%m\"s230IF@6`L&lt x#/X"..., 4096) = 4096
+read(0, "9>X!jzv^{Zmy$^lZAU~U+J#vJl-3(us!"..., 4096) = 4096
+write(1, "e]\177e}XUPz#rOVXJI0nZ>v Z\"|,S37^|\\"..., 4096) = 4096
+read(0, ":VZZZ8cuitX#qt(DQ!%nHVh/KmbH25Q,"..., 4096) = 4096
+write(1, "9>X!jzv^{Zmy$^lZAU~U+J#vJl-3(us!"..., 4096) = 4096
+read(0, "?5M'_)=+B@9l<*&gM*zm&18DH[wq~*9~"..., 4096) = 4096
+write(1, ":VZZZ8cuitX#qt(DQ!%nHVh/KmbH25Q,"..., 4096) = 4096
+read(0, "cGEPHXrFh~rtMlaRPT3*k$2:(4eeG7|j"..., 4096) = 4096
+write(1, "?5M'_)=+B@9l<*&gM*zm&18DH[wq~*9~"..., 4096) = 4096
+read(0, "*/|%&h?i+)d'N-!y)TS>vLh ndTE#'hm"..., 4096) = 4096
+write(1, "cGEPHXrFh~rtMl0RPT3*k$2:(4eeG7|j"..., 4096) = 4096
+read(0, "vv9Oxx}%m\177fE;|i3lL JuUxP,N7;[ILQ"..., 4096) = 4096
+write(1, "*/|%&h?i+)d'N-!y)TS>vLh ndTE#'hm"..., 4096) = 4096
+read(0, "bky LTa|$hh,v);{L=s|-XE0Rf2:U.jw"..., 4096) = 4096
+write(1, "vv9Oxx}%m\177fE;|i3lL JuUxP,N7;[ILQ"..., 4096) = 4096
+read(0, "Iz9Q'0PFL{`Zww<j\\S$o}(oyLwj;SRs]"..., 4096) = 4096
+write(1, "bky LT0|$hh,v);{L=s|-XE0Rf2:U.jw"..., 4096) = 4096
+read(0, "<0\1778=rq<8W.S0|wx]y|3`Y\177JTi$a:t26"..., 4096) = 4096
+write(1, "Iz9Q'0PFL{`Zww<j\\S$o}(oyLwj;SRs]"..., 4096) = 4096
+read(0, " >'% typ$cVv\1774CGLuIN%l8e!!og>\177P>"..., 4096) = 4096
+write(1, "<0\1778=rq<8W.S0|wx]y|3`Y\177JTi$0:t26"..., 4096) = 4096
+read(0, "bIe1xF=78yvEv3E OFSphqL/\"B4zPXL2"..., 4096) = 4096
+write(1, " >'% typ$cVv\1774CGLuIN%l8e!!og>\177P>"..., 4096) = 4096
+read(0, "1d%bBb{rgc&\177Dq(h?OW080i)0:8te[4W"..., 4096) = 4096
+write(1, "bIe1xF=78yvEv3E OFSphqL/\"B4zPXL2"..., 4096) = 4096
+read(0, "q,s,Ppd?G\"rEC9j#SQIt=?4.LAm1%H@V"..., 4096) = 4096
+write(1, "1d%bBb{rgc&\177Dq(h?OW080i)0:8te[4W"..., 4096) = 4096
+read(0, "PrU2h Dki\177f;o$@e(ZrIgtEONP~'*[\":"..., 4096) = 4096
+write(1, "q,s,Ppd?G\"rEC9j#SQIt=?4.LAm1%H@V"..., 4096) = 4096
+read(0, "4#4TD|OZQC~d[mF/ctFw]#xPFsKBa)>U"..., 4096) = 4096
+write(1, "PrU2h Dki\177f;o$@e(ZrIgtEONP~'*[\":"..., 4096) = 4096
+read(0, "QoYB(/(vIC:LK<f\\|Nu,iQ.>h$|}Kk,}"..., 4096) = 4096
+write(1, "4#4TD|OZQC~d[mF/ctFw]#xPFsKB0)>U"..., 4096) = 4096
+read(0, "1,qdF0|g`@5E?imQ~tPPDLg:A\"iVI<(Z"..., 4096) = 4096
+write(1, "QoYB(/(vIC:LK<f\\|Nu,iQ.>h$|}Kk,}"..., 4096) = 4096
+read(0, "y*NeHfixoB<^zs%>,/(EaG4*Xz7dS(%,"..., 4096) = 4096
+write(1, "1,qdF0|g`@5E?imQ~tPPDLg:A\"iVI<(Z"..., 4096) = 4096
+read(0, "sc`:WR#7j_m7[pE8Fwi6[6\"sZj1sV]|J"..., 4096) = 4096
+write(1, "y*NeHfixoB<^zs%>,/(E0G4*Xz7dS(%,"..., 4096) = 4096
+read(0, "9W'!(Epn%He]MlLfWdM9g~(1{u'u5>;/"..., 4096) = 4096
+write(1, "sc`:WR#7j_m7[pE8Fwi6[6\"sZj1sV]|J"..., 4096) = 4096
+read(0, "|<$y/O=.uVxY\\noggO54D51K(wpAF39B"..., 4096) = 4096
+write(1, "9W'!(Epn%He]MlLfWdM9g~(1{u'u5>;/"..., 4096) = 4096
+read(0, "gNBeGw0GK+Ge'[y.:dC![o>3dptZ#VkJ"..., 4096) = 4096
+write(1, "|<$y/O=.uVxY\\noggO54D51K(wpAF39B"..., 4096) = 4096
+read(0, "x0X5JTTN9G-xER?$}:cI#)$\"*+?M9]'q"..., 4096) = 4096
+write(1, "gNBeGw0GK+Ge'[y.:dC![o>3dptZ#VkJ"..., 4096) = 4096
+read(0, "}l>@a(F94Qv{z,tY&j.qq/;j\"%<&%Y\\c"..., 4096) = 4096
+write(1, "x0X5JTTN9G-xER?$}:cI#)$\"*+?M9]'q"..., 4096) = 4096
+read(0, "?Hna!(+n1QNlD&9n(9bmC)hUQWLzhtvh"..., 4096) = 4096
+write(1, "}l>@0(F94Qv{z,tY&j.qq/;j\"%<&%Y\\c"..., 4096) = 4096
+read(0, "[mLY1o>_K';*\\qbVn)^dH_wXRD.?u[AP"..., 4096) = 4096
+write(1, "?Hn0!(+n1QNlD&9n(9bmC)hUQWLzhtvh"..., 4096) = 4096
+read(0, "Q1Xrf`\177PQFMMA\\&z\177Fvom$!ALu[EP$`a"..., 4096) = 4096
+write(1, "[mLY1o>_K';*\\qbVn)^dH_wXRD.?u[AP"..., 4096) = 4096
+read(0, "pBZ.R!s~{TNb2?qC,(ltCO;0r#fJ)[zy"..., 4096) = 4096
+write(1, "Q1Xrf`\177PQFMMA\\&z\177Fvom$!ALu[EP$`0"..., 4096) = 4096
+read(0, "\"(Po/@4rvf1ikzaq(_'((\177?^_sFRBoN$"..., 4096) = 4096
+write(1, "pBZ.R!s~{TNb2?qC,(ltCO;0r#fJ)[zy"..., 4096) = 4096
+read(0, "Uj7Z&.HP*.WJ,(c-:M<VIj`zVI^W\\'b1"..., 4096) = 4096
+write(1, "\"(Po/@4rvf1ikz0q(_'((\177?^_sFRBoN$"..., 4096) = 4096
+read(0, " 2T\177H8cm[t9:Vl<=X8xvA<,G\177 Nyv</V"..., 4096) = 4096
+write(1, "Uj7Z&.HP*.WJ,(c-:M<VIj`zVI^W\\'b1"..., 4096) = 4096
+read(0, "Hgp_/#(u}bf^_pTd!f\177.yf.?60S>@mcH"..., 4096) = 4096
+write(1, " 2T\177H8cm[t9:Vl<=X8xvA<,G\177 Nyv</V"..., 4096) = 4096
+read(0, "D/sZ`S4G\\@?'%W1>#\177a0\177<caHvh39.A]"..., 4096) = 4096
+write(1, "Hgp_/#(u}bf^_pTd!f\177.yf.?60S>@mcH"..., 4096) = 4096
+read(0, "KRga8|j$/;Cr]&8&YOdv|~d;f>[dFoVR"..., 4096) = 4096
+write(1, "D/sZ`S4G\\@?'%W1>#\17700\177<c0Hvh39.A]"..., 4096) = 4096
+read(0, "'H\"V+NsY+69!B55)b;1Pi'3lO-~r> wE"..., 4096) = 4096
+write(1, "KRg08|j$/;Cr]&8&YOdv|~d;f>[dFoVR"..., 4096) = 4096
+read(0, "E,[nFu96UU((L7e!15c0Q1Sk/I5&cc\\i"..., 4096) = 4096
+write(1, "'H\"V+NsY+69!B55)b;1Pi'3lO-~r> wE"..., 4096) = 4096
+read(0, "\"43*jhG+LG#vn*\177\"2ggg #KleQkur`Uu"..., 4096) = 4096
+write(1, "E,[nFu96UU((L7e!15c0Q1Sk/I5&cc\\i"..., 4096) = 4096
+read(0, ",OpC^VCpAZBmNgCBMUM+Z\":KFgjQj24V"..., 4096) = 4096
+write(1, "\"43*jhG+LG#vn*\177\"2ggg #KleQkur`Uu"..., 4096) = 4096
+read(0, "Y\177Er#&qd<X<F4Y=%X'V\177NE~NQuz[4d0M"..., 4096) = 4096
+write(1, ",OpC^VCpAZBmNgCBMUM+Z\":KFgjQj24V"..., 4096) = 4096
+read(0, "rQ:_W$|:`/ABSCw_I.LfVE/*UX4xgM|:"..., 4096) = 4096
+write(1, "Y\177Er#&qd<X<F4Y=%X'V\177NE~NQuz[4d0M"..., 4096) = 4096
+read(0, "yVe]MRU5*i\177h>O>'Q/!eBC[`94cx!IKz"..., 4096) = 4096
+write(1, "rQ:_W$|:`/ABSCw_I.LfVE/*UX4xgM|:"..., 4096) = 4096
+read(0, "b1OZUu9rI/=h[+=3`QZ!+-C8@F}Ku )7"..., 4096) = 4096
+write(1, "yVe]MRU5*i\177h>O>'Q/!eBC[`94cx!IKz"..., 4096) = 4096
+read(0, "&sK)JykZd]Jd+<%t*KSyuR^gVo;6P\"-6"..., 4096) = 4096
+write(1, "b1OZUu9rI/=h[+=3`QZ!+-C8@F}Ku )7"..., 4096) = 4096
+read(0, "8=Fyl;#e*&{q-pk9]X<b\177^.^^C}O6Y4."..., 4096) = 4096
+write(1, "&sK)JykZd]Jd+<%t*KSyuR^gVo;6P\"-6"..., 4096) = 4096
+read(0, "_-DvnSvX&&+k\177[30n^AtHp^1\"`8dgy\\&"..., 4096) = 4096
+write(1, "8=Fyl;#e*&{q-pk9]X<b\177^.^^C}O6Y4."..., 4096) = 4096
+read(0, "#Q(6<ZZx\177geiTW9Wk )hkSKJgELAiG_l"..., 4096) = 4096
+write(1, "_-DvnSvX&&+k\177[30n^AtHp^1\"`8dgy\\&"..., 4096) = 4096
+read(0, ",tLwx,n,^:\"J(:XW%}RqF728DcO~*`.6"..., 4096) = 4096
+write(1, "#Q(6<ZZx\177geiTW9Wk )hkSKJgELAiG_l"..., 4096) = 4096
+read(0, "Vt<S4?-r&!/n\\o0p\\w[S~2jER{VTRf0h"..., 4096) = 4096
+write(1, ",tLwx,n,^:\"J(:XW%}RqF728DcO~*`.6"..., 4096) = 4096
+read(0, "Y<c58_Q#~4JL#g#,Sl\\}S+j'Yz&@Bll\\"..., 4096) = 4096
+write(1, "Vt<S4?-r&!/n\\o0p\\w[S~2jER{VTRf0h"..., 4096) = 4096
+read(0, "]+&aq6G4X'rx6IJqLFqT=?\"yCx}9R*Ao"..., 4096) = 4096
+write(1, "Y<c58_Q#~4JL#g#,Sl\\}S+j'Yz&@Bll\\"..., 4096) = 4096
+read(0, "hm0 <1!=#]^zv'6E;%QcFdOc6\177p;`:qI"..., 4096) = 4096
+write(1, "]+&0q6G4X'rx6IJqLFqT=?\"yCx}9R*Ao"..., 4096) = 4096
+read(0, "`k_%BB\177!jN0kJrt8Sfz#eUa/c_(#Q_,1"..., 4096) = 4096
+write(1, "hm0 <1!=#]^zv'6E;%QcFdOc6\177p;`:qI"..., 4096) = 4096
+read(0, "#pilx.)c*27)?)u$)%+)C0L\\>jw>O#RR"..., 4096) = 4096
+write(1, "`k_%BB\177!jN0kJrt8Sfz#eU0/c_(#Q_,1"..., 4096) = 4096
+read(0, "uH0M\\(!^j=cUv~\\L=f)`Uw!OySu.3tS("..., 4096) = 4096
+write(1, "#pilx.)c*27)?)u$)%+)C0L\\>jw>O#RR"..., 4096) = 4096
+read(0, "*f@VWR@I#M9WSb_f\\8<^9oAx(C1e\"gI,"..., 4096) = 4096
+write(1, "uH0M\\(!^j=cUv~\\L=f)`Uw!OySu.3tS("..., 4096) = 4096
+read(0, ",cr(VR6Pya[n>S@%-j!<#kb.p^:O;L%H"..., 4096) = 4096
+write(1, "*f@VWR@I#M9WSb_f\\8<^9oAx(C1e\"gI,"..., 4096) = 4096
+read(0, "w(>3At^7X+Z-9z>I!~3Zv+v9^i$lA~fy"..., 4096) = 4096
+write(1, ",cr(VR6Py0[n>S@%-j!<#kb.p^:O;L%H"..., 4096) = 4096
+read(0, "?^Vo>=G#QtV@NF\\32cF !/N%'JWG1??P"..., 4096) = 4096
+write(1, "w(>3At^7X+Z-9z>I!~3Zv+v9^i$lA~fy"..., 4096) = 4096
+read(0, "5U.''/`{mL\177z2@_HC\"0E|_O`&uCr8e=-"..., 4096) = 4096
+write(1, "?^Vo>=G#QtV@NF\\32cF !/N%'JWG1??P"..., 4096) = 4096
+read(0, "$;K)2HDowOt$)Jqjw*5VjNUH))(x/Nu3"..., 4096) = 4096
+write(1, "5U.''/`{mL\177z2@_HC\"0E|_O`&uCr8e=-"..., 4096) = 4096
+read(0, "`Lxg;/Ofsq/J.0)D\177W</F%6|gQ#:H:c)"..., 4096) = 4096
+write(1, "$;K)2HDowOt$)Jqjw*5VjNUH))(x/Nu3"..., 4096) = 4096
+read(0, "Q+?L_\177jU4ghWqt&+0%Me7qa.Kn!xdw>u"..., 4096) = 4096
+write(1, "`Lxg;/Ofsq/J.0)D\177W</F%6|gQ#:H:c)"..., 4096) = 4096
+read(0, "M7yZ%{L a,@YbY{;6Ser@yT$}T*1yLKG"..., 4096) = 4096
+write(1, "Q+?L_\177jU4ghWqt&+0%Me7q0.Kn!xdw>u"..., 4096) = 4096
+read(0, ",.l]R{G;yf/N@T!oMJ(MSQ-b1\"byW\"uc"..., 4096) = 4096
+write(1, "M7yZ%{L 0,@YbY{;6Ser@yT$}T*1yLKG"..., 4096) = 4096
+read(0, "luD\"aoa9u @`5k7n;L8X^v&4\"xu_3uh\177"..., 4096) = 4096
+write(1, ",.l]R{G;yf/N@T!oMJ(MSQ-b1\"byW\"uc"..., 4096) = 4096
+read(0, "tK)}=88HTcK9Y'w}kJC W[+m4])MhuJ\\"..., 4096) = 4096
+write(1, "luD\"0o09u @`5k7n;L8X^v&4\"xu_3uh\177"..., 4096) = 4096
+read(0, "9g(&__2j7<Q9W'D?cq\\^R[8x~M\177=TFjm"..., 4096) = 4096
+write(1, "tK)}=88HTcK9Y'w}kJC W[+m4])MhuJ\\"..., 4096) = 4096
+read(0, "6N\\oOJU7w.fm5^nw9$I#)0iAs]vMh`l^"..., 4096) = 4096
+write(1, "9g(&__2j7<Q9W'D?cq\\^R[8x~M\177=TFjm"..., 4096) = 4096
+read(0, "\177eEZ\\Q'QlZEaeM[{3'\"XW`85T9Vur,eQ"..., 4096) = 4096
+write(1, "6N\\oOJU7w.fm5^nw9$I#)0iAs]vMh`l^"..., 4096) = 4096
+read(0, "b%cYPaapC*S.\"do</ 6&-Zn7p5h+<wo^"..., 4096) = 4096
+write(1, "\177eEZ\\Q'QlZE0eM[{3'\"XW`85T9Vur,eQ"..., 4096) = 4096
+read(0, "=Z_y:|n$!I?o20J3a6EMhTI`gT9<PA@M"..., 4096) = 4096
+write(1, "b%cYP00pC*S.\"do</ 6&-Zn7p5h+<wo^"..., 4096) = 4096
+read(0, "D|=}D^&d/$<E2L^_;PDj%S_~4Jah}e^!"..., 4096) = 4096
+write(1, "=Z_y:|n$!I?o20J306EMhTI`gT9<PA@M"..., 4096) = 4096
+read(0, "wkj\\R[_3aFQ*.wajdQUW:Tzs[9#Dn(rE"..., 4096) = 4096
+write(1, "D|=}D^&d/$<E2L^_;PDj%S_~4J0h}e^!"..., 4096) = 4096
+read(0, "L=w9uoEG'rXo(OFnh$)%u&+8i*C~y`r%"..., 4096) = 4096
+write(1, "wkj\\R[_30FQ*.w0jdQUW:Tzs[9#Dn(rE"..., 4096) = 4096
+read(0, "R&@Q'M9TcC]F\"XaH,?HGQ1$=WHO{br=t"..., 4096) = 4096
+write(1, "L=w9uoEG'rXo(OFnh$)%u&+8i*C~y`r%"..., 4096) = 4096
+read(0, "^DcP#%8O?}1)BbKb>&@BVlTkUiCw^pu<"..., 4096) = 4096
+write(1, "R&@Q'M9TcC]F\"X0H,?HGQ1$=WHO{br=t"..., 4096) = 4096
+read(0, "\"uISh}WesXA.Lw@9f-(XU?pkW>(U[x)="..., 4096) = 4096
+write(1, "^DcP#%8O?}1)BbKb>&@BVlTkUiCw^pu<"..., 4096) = 4096
+read(0, "/4wt%#G@FhVQ!t\\}`b,^WXs-/V1CENd5"..., 4096) = 4096
+write(1, "\"uISh}WesXA.Lw@9f-(XU?pkW>(U[x)="..., 4096) = 4096
+read(0, "Fs,+{\\t[u*;@E(1JOjfvbUGn\177&nM/MA5"..., 4096) = 4096
+write(1, "/4wt%#G@FhVQ!t\\}`b,^WXs-/V1CENd5"..., 4096) = 4096
+read(0, "0u#&#xFR5SU,=h`tm\177TY(8s7ugC#(v\"y"..., 4096) = 4096
+write(1, "Fs,+{\\t[u*;@E(1JOjfvbUGn\177&nM/MA5"..., 4096) = 4096
+read(0, ",V+V'v,5+IJJ1_Nmq<6Bp-y}LP*6;a-G"..., 4096) = 4096
+write(1, "0u#&#xFR5SU,=h`tm\177TY(8s7ugC#(v\"y"..., 4096) = 4096
+read(0, "J%Q^S^mxP+kc7iH&`R?-Z=tcgC>o/-%9"..., 4096) = 4096
+write(1, ",V+V'v,5+IJJ1_Nmq<6Bp-y}LP*6;0-G"..., 4096) = 4096
+read(0, "OO>ec1i*C%]x7X\177 I~WGgLsM\\cc?Fbuu"..., 4096) = 4096
+write(1, "J%Q^S^mxP+kc7iH&`R?-Z=tcgC>o/-%9"..., 4096) = 4096
+read(0, "rid=g:!4Y:aa}3]J3I-@VjM78&\177uxiJj"..., 4096) = 4096
+write(1, "OO>ec1i*C%]x7X\177 I~WGgLsM\\cc?Fbuu"..., 4096) = 4096
+read(0, "Q:G>1.I ,29U<J7p5N1I>{v3[\"\"'5mBg"..., 4096) = 4096
+write(1, "rid=g:!4Y:00}3]J3I-@VjM78&\177uxiJj"..., 4096) = 4096
+read(0, "5OjS%;tErWy>ZM@w-P(w*)lp?'T>fZ&{"..., 4096) = 4096
+write(1, "Q:G>1.I ,29U<J7p5N1I>{v3[\"\"'5mBg"..., 4096) = 4096
+read(0, "hs][K&Yl} /s0*-N:SsvMUV@bfSLYdo!"..., 4096) = 4096
+write(1, "5OjS%;tErWy>ZM@w-P(w*)lp?'T>fZ&{"..., 4096) = 4096
+read(0, "p[8E(Wn<!B'2.baQ)2MUin7v;f[Ow>8g"..., 4096) = 4096
+write(1, "hs][K&Yl} /s0*-N:SsvMUV@bfSLYdo!"..., 4096) = 4096
+read(0, "\\y3BL$.IP~&uig\"v_sJWmvze=!ccU3gq"..., 4096) = 4096
+write(1, "p[8E(Wn<!B'2.b0Q)2MUin7v;f[Ow>8g"..., 4096) = 4096
+read(0, "x3tlz~=EkUtsa@eY~M?k_}VMOqkSJ\177OB"..., 4096) = 4096
+write(1, "\\y3BL$.IP~&uig\"v_sJWmvze=!ccU3gq"..., 4096) = 4096
+read(0, "+mSnyi4m)ax`J;;(PoJ<5|gU[\\A}Xy9c"..., 4096) = 4096
+write(1, "x3tlz~=EkUts0@eY~M?k_}VMOqkSJ\177OB"..., 4096) = 4096
+read(0, "<NBThom't2v\177E%<>A}$'Ny#Mik{{]OUY"..., 4096) = 4096
+write(1, "+mSnyi4m)0x`J;;(PoJ<5|gU[\\A}Xy9c"..., 4096) = 4096
+read(0, "4QB4^Z*\"i$7s\"2,5+XM\177fYj'@r^=vw&j"..., 4096) = 4096
+write(1, "<NBThom't2v\177E%<>A}$'Ny#Mik{{]OUY"..., 4096) = 4096
+read(0, "X46Vz~b'M$sZVB1x1 dMlc.}:]8_<#@t"..., 4096) = 4096
+write(1, "4QB4^Z*\"i$7s\"2,5+XM\177fYj'@r^=vw&j"..., 4096) = 4096
+read(0, "A#.4!s\\0ODtryta.)\"eWJD?am-}>;6r="..., 4096) = 4096
+write(1, "X46Vz~b'M$sZVB1x1 dMlc.}:]8_<#@t"..., 4096) = 4096
+read(0, "w0gO3F[Wz~Ox[g@hu_qoTU1je2*A;Xks"..., 4096) = 4096
+write(1, "A#.4!s\\0ODtryt0.)\"eWJD?0m-}>;6r="..., 4096) = 4096
+read(0, "i?l6M+Ux)'tJGl.we0xjPlI>%N'C5/S\177"..., 4096) = 4096
+write(1, "w0gO3F[Wz~Ox[g@hu_qoTU1je2*A;Xks"..., 4096) = 4096
+read(0, "T/'EWNth-f2[@s#yY0,h@.RiqlLWU+a)"..., 4096) = 4096
+write(1, "i?l6M+Ux)'tJGl.we0xjPlI>%N'C5/S\177"..., 4096) = 4096
+read(0, "mYYJ6%AaOu!RsU'smx@.92kVp#!(%{KR"..., 4096) = 4096
+write(1, "T/'EWNth-f2[@s#yY0,h@.RiqlLWU+0)"..., 4096) = 4096
+read(0, "L4_jML,4-:,:njuLX>zTN2)hs<:bk38w"..., 4096) = 4096
+write(1, "mYYJ6%A0Ou!RsU'smx@.92kVp#!(%{KR"..., 4096) = 4096
+read(0, "UEZ2!31psElDM@V>PB)CN8k:ajW&Cg{Y"..., 4096) = 4096
+write(1, "L4_jML,4-:,:njuLX>zTN2)hs<:bk38w"..., 4096) = 4096
+read(0, "xAgoDE1J5{U}&}_k;hb/m+sCj.zQ`<\177X"..., 4096) = 4096
+write(1, "UEZ2!31psElDM@V>PB)CN8k:0jW&Cg{Y"..., 4096) = 4096
+read(0, "$~:oHiIm.P`1%KX?vtjm#s|H di{VqpZ"..., 4096) = 4096
+write(1, "xAgoDE1J5{U}&}_k;hb/m+sCj.zQ`<\177X"..., 4096) = 4096
+read(0, "q;9g[3}T(vAM_I,enuR@?Rib@6kqPq.!"..., 4096) = 4096
+write(1, "$~:oHiIm.P`1%KX?vtjm#s|H di{VqpZ"..., 4096) = 4096
+read(0, "hevOf#5@?ExH2WJlr:mc'n~t&?KY-MrU"..., 4096) = 4096
+write(1, "q;9g[3}T(vAM_I,enuR@?Rib@6kqPq.!"..., 4096) = 4096
+read(0, "pP,W-i,a\\)N>7,.\177%!F)N.wH}5KdALJ2"..., 4096) = 4096
+write(1, "hevOf#5@?ExH2WJlr:mc'n~t&?KY-MrU"..., 4096) = 4096
+read(0, "q+\177w\"I,,`'8aSyoEcI=|8GPu>~~F~slP"..., 4096) = 4096
+write(1, "pP,W-i,0\\)N>7,.\177%!F)N.wH}5KdALJ2"..., 4096) = 4096
+read(0, "bluQ6poGV}qdk&HD}/iBm!eQ+\\G/1'-S"..., 4096) = 4096
+write(1, "q+\177w\"I,,`'80SyoEcI=|8GPu>~~F~slP"..., 4096) = 4096
+read(0, "+s(E[=Ia'~Y2WK^#P^`Ot47}%O&Ks'X^"..., 4096) = 4096
+write(1, "bluQ6poGV}qdk&HD}/iBm!eQ+\\G/1'-S"..., 4096) = 4096
+read(0, "f`x{J#vOr]8bQ/c.G_A}{L<={|~\177lyWR"..., 4096) = 4096
+write(1, "+s(E[=I0'~Y2WK^#P^`Ot47}%O&Ks'X^"..., 4096) = 4096
+read(0, " #!)|Y[zpxM9T=DrSp2WSW`[wZ|6y)#Y"..., 4096) = 4096
+write(1, "f`x{J#vOr]8bQ/c.G_A}{L<={|~\177lyWR"..., 4096) = 4096
+read(0, "x82~!F-H7fMDe\"XZz2 ZV~fVP}\"k#w({"..., 4096) = 4096
+write(1, " #!)|Y[zpxM9T=DrSp2WSW`[wZ|6y)#Y"..., 4096) = 4096
+read(0, ";y#Ab3Qd;iF`Qh\\RGCN)aAj}_}Yfo)nj"..., 4096) = 4096
+write(1, "x82~!F-H7fMDe\"XZz2 ZV~fVP}\"k#w({"..., 4096) = 4096
+read(0, "|gk{U*\1775!.%T#ZZ8j>7J}pFy5(6w\177=;["..., 4096) = 4096
+write(1, ";y#Ab3Qd;iF`Qh\\RGCN)0Aj}_}Yfo)nj"..., 4096) = 4096
+read(0, "y<Likij^>e!C+m[{|\\D)r' cEej;RiM+"..., 4096) = 4096
+write(1, "|gk{U*\1775!.%T#ZZ8j>7J}pFy5(6w\177=;["..., 4096) = 4096
+read(0, "9a^:fdX32cDr2Y_GMbjQ;:[[Y}WLx\\xr"..., 4096) = 4096
+write(1, "y<Likij^>e!C+m[{|\\D)r' cEej;RiM+"..., 4096) = 4096
+read(0, "V2M80YXPQ? ma_ &iIo|`T)YJ7%n++`a"..., 4096) = 4096
+write(1, "90^:fdX32cDr2Y_GMbjQ;:[[Y}WLx\\xr"..., 4096) = 4096
+read(0, "*>w${S]D1h['%H[Xtlx(|T6X/r%.8\":B"..., 4096) = 4096
+write(1, "V2M80YXPQ? m0_ &iIo|`T)YJ7%n++`0"..., 4096) = 4096
+read(0, "C|2~L^xsL- ~&p4U'L7;~CXz:\177cza !%"..., 4096) = 4096
+write(1, "*>w${S]D1h['%H[Xtlx(|T6X/r%.8\":B"..., 4096) = 4096
+read(0, "c_SiH$'|Dncg y\177ky@5Jx?cVQ<K@tUPW"..., 4096) = 4096
+write(1, "C|2~L^xsL- ~&p4U'L7;~CXz:\177cz0 !%"..., 4096) = 4096
+read(0, "F'1\177GFUL8\"mvWW +j3 dK.-W>Yt%MmnS"..., 4096) = 4096
+write(1, "c_SiH$'|Dncg y\177ky@5Jx?cVQ<K@tUPW"..., 4096) = 4096
+read(0, "7,1R2pA?;NFJI0q[<n=bLUlWwd``B]79"..., 4096) = 4096
+write(1, "F'1\177GFUL8\"mvWW +j3 dK.-W>Yt%MmnS"..., 4096) = 4096
+read(0, " >NHN'&2dW _V|R\\{h;MSsiLUi;lb4.c"..., 4096) = 4096
+write(1, "7,1R2pA?;NFJI0q[<n=bLUlWwd``B]79"..., 4096) = 4096
+read(0, "Y^ fMJQ%\\'Vm&7qh*ocrHkkxi[|TW~V0"..., 4096) = 4096
+write(1, " >NHN'&2dW _V|R\\{h;MSsiLUi;lb4.c"..., 4096) = 4096
+read(0, "U\177*]YUU[%=Zb}!c'=;rqDLW4Bo%5:&|o"..., 4096) = 4096
+write(1, "Y^ fMJQ%\\'Vm&7qh*ocrHkkxi[|TW~V0"..., 4096) = 4096
+read(0, "NZV%dN`{r?sKq V^UT[?DxnM}l!Abc]p"..., 4096) = 4096
+write(1, "U\177*]YUU[%=Zb}!c'=;rqDLW4Bo%5:&|o"..., 4096) = 4096
+read(0, "~R=aUOn_|X^B]flQWuzM{&|\177W}o IK8H"..., 4096) = 4096
+write(1, "NZV%dN`{r?sKq V^UT[?DxnM}l!Abc]p"..., 4096) = 4096
+read(0, "j}?~<ThV2g4)20-L@\177MN}f>[@t\177!D. /"..., 4096) = 4096
+write(1, "~R=0UOn_|X^B]flQWuzM{&|\177W}o IK8H"..., 4096) = 4096
+read(0, "e$[~;yx#)HL(`k.7iLTZ@v52\\$R#O6qt"..., 4096) = 4096
+write(1, "j}?~<ThV2g4)20-L@\177MN}f>[@t\177!D. /"..., 4096) = 4096
+read(0, "@Rn8[;v*x! VS7Gi?8+ZG0M6t4rQ<G\"<"..., 4096) = 4096
+write(1, "e$[~;yx#)HL(`k.7iLTZ@v52\\$R#O6qt"..., 4096) = 4096
+read(0, "Mg&5'xWIoaq?Df;MjyKwdgB9{\\vZEG^R"..., 4096) = 4096
+write(1, "@Rn8[;v*x! VS7Gi?8+ZG0M6t4rQ<G\"<"..., 4096) = 4096
+read(0, "d2o<]Hi#E.G}7Xq5`)*>;ohvHCAgKQ//"..., 4096) = 4096
+write(1, "Mg&5'xWIo0q?Df;MjyKwdgB9{\\vZEG^R"..., 4096) = 4096
+read(0, "'$0)$/}p\\rWza',2_EKUpYZ8vAJ!Y!0`"..., 4096) = 4096
+write(1, "d2o<]Hi#E.G}7Xq5`)*>;ohvHCAgKQ//"..., 4096) = 4096
+read(0, "u)[q@P;ec#j\177\"Bh&e -qq`DI JCU+l1!"..., 4096) = 4096
+write(1, "'$0)$/}p\\rWz0',2_EKUpYZ8vAJ!Y!0`"..., 4096) = 4096
+read(0, "i6/(}q@x\17756zyc/G?&\\RVqQX,AR-X- \""..., 4096) = 4096
+write(1, "u)[q@P;ec#j\177\"Bh&e -qq`DI JCU+l1!"..., 4096) = 4096
+read(0, "r`5pw4|\\yi1Q/y]\\Jz zeaOp/1J g]FZ"..., 4096) = 4096
+write(1, "i6/(}q@x\17756zyc/G?&\\RVqQX,AR-X- \""..., 4096) = 4096
+read(0, "^qthT\177X2iUcP>Da.kk7H0mYEYz,^FL|d"..., 4096) = 4096
+write(1, "r`5pw4|\\yi1Q/y]\\Jz ze0Op/1J g]FZ"..., 4096) = 4096
+read(0, "}+/#L^QW{\\6ZNa9suy\\=IyyUXOjJN:H+"..., 4096) = 4096
+write(1, "^qthT\177X2iUcP>D0.kk7H0mYEYz,^FL|d"..., 4096) = 4096
+read(0, "\"R\177U3%GJ.d%K.)SME_QQUP[w3YgkNI|P"..., 4096) = 4096
+write(1, "}+/#L^QW{\\6ZN09suy\\=IyyUXOjJN:H+"..., 4096) = 4096
+read(0, ".N~dV78~(=MH=PQU$bYi-w@?gD/{<eZ*"..., 4096) = 4096
+write(1, "\"R\177U3%GJ.d%K.)SME_QQUP[w3YgkNI|P"..., 4096) = 4096
+read(0, "!3A7[xb\"!z{{Ax?V@*j,ib[ypKTTzZm{"..., 4096) = 4096
+write(1, ".N~dV78~(=MH=PQU$bYi-w@?gD/{<eZ*"..., 4096) = 4096
+read(0, "n \"A#@P1KQ9\\N\177r^CL\177!M?y\177n&0^JXX8"..., 4096) = 4096
+write(1, "!3A7[xb\"!z{{Ax?V@*j,ib[ypKTTzZm{"..., 4096) = 4096
+read(0, "pS189j`/h=IZ[`(AQMnMVQ9kSn{)[jK+"..., 4096) = 4096
+write(1, "n \"A#@P1KQ9\\N\177r^CL\177!M?y\177n&0^JXX8"..., 4096) = 4096
+read(0, "]xPu``dd**qu:\\|l?.\177Z@x5gn&'<fJ\"C"..., 4096) = 4096
+write(1, "pS189j`/h=IZ[`(AQMnMVQ9kSn{)[jK+"..., 4096) = 4096
+read(0, "[4hazX\\UxE7@M{q#*xAowhY[N-C%8jcs"..., 4096) = 4096
+write(1, "]xPu``dd**qu:\\|l?.\177Z@x5gn&'<fJ\"C"..., 4096) = 4096
+read(0, "#o%]=2%0qa Q}\\[u0~/_AD92AG`?lw$O"..., 4096) = 4096
+write(1, "[4h0zX\\UxE7@M{q#*xAowhY[N-C%8jcs"..., 4096) = 4096
+read(0, "HRBSGH2T\\ak>6 @MDO3sRbsKq;h!D?2l"..., 4096) = 4096
+write(1, "#o%]=2%0q0 Q}\\[u0~/_AD92AG`?lw$O"..., 4096) = 4096
+read(0, "OL$U&Ks.?<'qr\\$MZ[pb)(Vc~cX!<CvK"..., 4096) = 4096
+write(1, "HRBSGH2T\\0k>6 @MDO3sRbsKq;h!D?2l"..., 4096) = 4096
+read(0, "lOKjZu'Q>7s:'A5<6u&uLqOwH`8^8o}%"..., 4096) = 4096
+write(1, "OL$U&Ks.?<'qr\\$MZ[pb)(Vc~cX!<CvK"..., 4096) = 4096
+read(0, "&#?<*n*UA&vPtu\"m #d0n)(3Ws[{~n]d"..., 4096) = 4096
+write(1, "lOKjZu'Q>7s:'A5<6u&uLqOwH`8^8o}%"..., 4096) = 4096
+read(0, "1]nBq-c.x'Zec'cSh.5joHQUhgk~IJJ:"..., 4096) = 4096
+write(1, "&#?<*n*UA&vPtu\"m #d0n)(3Ws[{~n]d"..., 4096) = 4096
+read(0, "U7M\"dTc.2?R3(/xi+~Qp\1778]U2&xYw?\177L"..., 4096) = 4096
+write(1, "1]nBq-c.x'Zec'cSh.5joHQUhgk~IJJ:"..., 4096) = 4096
+read(0, "n\177p(pw &K`e;_8Ln:7[,2t6(WMll/y/^"..., 4096) = 4096
+write(1, "U7M\"dTc.2?R3(/xi+~Qp\1778]U2&xYw?\177L"..., 4096) = 4096
+read(0, "E{h>H/A{^kmF#X;q&\177.1=3Io0# h`|he"..., 4096) = 4096
+write(1, "n\177p(pw &K`e;_8Ln:7[,2t6(WMll/y/^"..., 4096) = 4096
+read(0, "`iw[PaR3-&8WJO9HuC&QbQajjk2$ 'C@"..., 4096) = 4096
+write(1, "E{h>H/A{^kmF#X;q&\177.1=3Io0# h`|he"..., 4096) = 4096
+read(0, "GMRU\"\\9wXlz-hF`$m&|LM>wW?1jP\\`pd"..., 4096) = 4096
+write(1, "`iw[P0R3-&8WJO9HuC&QbQ0jjk2$ 'C@"..., 4096) = 4096
+read(0, "]OD(:8B:b0byXM;UD\177G!GX0;/o[>$V#a"..., 4096) = 4096
+write(1, "GMRU\"\\9wXlz-hF`$m&|LM>wW?1jP\\`pd"..., 4096) = 4096
+read(0, "SK|lE3o9\1778 Q/2wA,:7Rw*C|F&Po~A(Q"..., 4096) = 4096
+write(1, "]OD(:8B:b0byXM;UD\177G!GX0;/o[>$V#0"..., 4096) = 4096
+read(0, ">T+bj8xZ#1?#0J&\\P2v){P9'.nr%9;NW"..., 4096) = 4096
+write(1, "SK|lE3o9\1778 Q/2wA,:7Rw*C|F&Po~A(Q"..., 4096) = 4096
+read(0, "Wy|;{!p`zN<G:u;#F@J.LS#tg@Q&%o:]"..., 4096) = 4096
+write(1, ">T+bj8xZ#1?#0J&\\P2v){P9'.nr%9;NW"..., 4096) = 4096
+read(0, "m$&vU$DI{PkaAbuKcKR[/}=;8 GolT~Y"..., 4096) = 4096
+write(1, "Wy|;{!p`zN<G:u;#F@J.LS#tg@Q&%o:]"..., 4096) = 4096
+read(0, "OxP[#hz/kLRpFX?:X)f/VsrJ[j3^~M M"..., 4096) = 4096
+write(1, "m$&vU$DI{Pk0AbuKcKR[/}=;8 GolT~Y"..., 4096) = 4096
+read(0, "7CN(|:R{|DA#v3DCZ: @JCmL9XY, @g7"..., 4096) = 4096
+write(1, "OxP[#hz/kLRpFX?:X)f/VsrJ[j3^~M M"..., 4096) = 4096
+read(0, "}YMtXdGdKlp/]Rui$FG;;?k4|OM\"M.q*"..., 4096) = 4096
+write(1, "7CN(|:R{|DA#v3DCZ: @JCmL9XY, @g7"..., 4096) = 4096
+read(0, "pvvQ\"oX$27+Q;{_\177#?l`I*\\ZogvJ@\\!p"..., 4096) = 4096
+write(1, "}YMtXdGdKlp/]Rui$FG;;?k4|OM\"M.q*"..., 4096) = 4096
+read(0, "i[$V.kA#g;w8\\_,6\177]I:>Y0O3+lQr5$["..., 4096) = 4096
+write(1, "pvvQ\"oX$27+Q;{_\177#?l`I*\\ZogvJ@\\!p"..., 4096) = 4096
+read(0, "7iPe+W@P1).L'tF06u%'R FI\\K1f<X/S"..., 4096) = 4096
+write(1, "i[$V.kA#g;w8\\_,6\177]I:>Y0O3+lQr5$["..., 4096) = 4096
+read(0, "Pa~2e+(onTcSy~<&1#$zA%Zwyz$a[HCk"..., 4096) = 4096
+write(1, "7iPe+W@P1).L'tF06u%'R FI\\K1f<X/S"..., 4096) = 4096
+read(0, "wK'da*~]\177=5lV[mPy5mQy4Zr'IaVZFM1"..., 4096) = 4096
+write(1, "P0~2e+(onTcSy~<&1#$zA%Zwyz$0[HCk"..., 4096) = 4096
+read(0, "h!&o4=@bW,PFqdHP!0Dw0Byk-WAle:\\."..., 4096) = 4096
+write(1, "wK'd0*~]\177=5lV[mPy5mQy4Zr'I0VZFM1"..., 4096) = 4096
+read(0, "5_r99gGiv0jKNN/Pm{To@\\\\8Nsb@g8y\\"..., 4096) = 4096
+write(1, "h!&o4=@bW,PFqdHP!0Dw0Byk-WAle:\\."..., 4096) = 4096
+read(0, "3'\"{8+SZ]6Ui={k?FL|nF18|[7TPN!iB"..., 4096) = 4096
+write(1, "5_r99gGiv0jKNN/Pm{To@\\\\8Nsb@g8y\\"..., 4096) = 4096
+read(0, "q{mGVT#9War6_/Yu!RRUOsDoJ\177,6N->@"..., 4096) = 4096
+write(1, "3'\"{8+SZ]6Ui={k?FL|nF18|[7TPN!iB"..., 4096) = 4096
+read(0, "?Gs#B7I}g{hS^WdD|x%\177Gx#xw&CTVH!u"..., 4096) = 4096
+write(1, "q{mGVT#9W0r6_/Yu!RRUOsDoJ\177,6N->@"..., 4096) = 4096
+read(0, "h!4yCq+JNYO^QFV)r{wAE)4Y\\boMV{~~"..., 4096) = 4096
+write(1, "?Gs#B7I}g{hS^WdD|x%\177Gx#xw&CTVH!u"..., 4096) = 4096
+read(0, "07X@}YGHWDo+8L~Gqo\"YdB%w#8(_|g#-"..., 4096) = 4096
+write(1, "h!4yCq+JNYO^QFV)r{wAE)4Y\\boMV{~~"..., 4096) = 4096
+read(0, "w?=i$>;1uE\177WV#-:iW\\NK/~bt~`%yjrp"..., 4096) = 4096
+write(1, "07X@}YGHWDo+8L~Gqo\"YdB%w#8(_|g#-"..., 4096) = 4096
+read(0, "o6\\Ewl`0jg pVQS/pZt^^~]zbS:PB3lq"..., 4096) = 4096
+write(1, "w?=i$>;1uE\177WV#-:iW\\NK/~bt~`%yjrp"..., 4096) = 4096
+read(0, "uRWe5T,m%:(~?`E4a\"fCjE\\EcshaOc:E"..., 4096) = 4096
+write(1, "o6\\Ewl`0jg pVQS/pZt^^~]zbS:PB3lq"..., 4096) = 4096
+read(0, "..aiisA;8x:sz!kr& EU~L3otJAkt'&\""..., 4096) = 4096
+write(1, "uRWe5T,m%:(~?`E40\"fCjE\\Ecsh0Oc:E"..., 4096) = 4096
+read(0, "wyUj1Ne.|nDPZWaoOAx7JF4F&BIaI-P@"..., 4096) = 4096
+write(1, "..0iisA;8x:sz!kr& EU~L3otJAkt'&\""..., 4096) = 4096
+read(0, "7s b+|6&x@!~@LS)Epz+I1~]ww#b!DI8"..., 4096) = 4096
+write(1, "wyUj1Ne.|nDPZW0oOAx7JF4F&BI0I-P@"..., 4096) = 4096
+read(0, "R{4\"D=>B{%*4`q[9&Om#e^[0\"Y';Y,el"..., 4096) = 4096
+write(1, "7s b+|6&x@!~@LS)Epz+I1~]ww#b!DI8"..., 4096) = 4096
+read(0, "8,,n}5~$#+{T$ #znWuWS3S<88?@[9@S"..., 4096) = 4096
+write(1, "R{4\"D=>B{%*4`q[9&Om#e^[0\"Y';Y,el"..., 4096) = 4096
+read(0, "~fo'UNR\177K~x}/bDsk0*$m8s!vo9&357q"..., 4096) = 4096
+write(1, "8,,n}5~$#+{T$ #znWuWS3S<88?@[9@S"..., 4096) = 4096
+read(0, "rsgxRJl7Pu9D4vM=]2qj>p-Xw:H9Up%'"..., 4096) = 4096
+write(1, "~fo'UNR\177K~x}/bDsk0*$m8s!vo9&357q"..., 4096) = 4096
+read(0, ") ~PefMid+^9/dbJo-G.~xV$<sLzZ*2C"..., 4096) = 4096
+write(1, "rsgxRJl7Pu9D4vM=]2qj>p-Xw:H9Up%'"..., 4096) = 4096
+read(0, "L+1+whePDC+7K*|Vy \"Bn-doFg-&{??G"..., 4096) = 4096
+write(1, ") ~PefMid+^9/dbJo-G.~xV$<sLzZ*2C"..., 4096) = 4096
+read(0, "B,C<&8?HtBS:E7Cs\"3ucVjT6(Q7meqD'"..., 4096) = 4096
+write(1, "L+1+whePDC+7K*|Vy \"Bn-doFg-&{??G"..., 4096) = 4096
+read(0, "JA<2\"6O\"J>O>PhxG\"MX!$s[U+`:MhcXr"..., 4096) = 4096
+write(1, "B,C<&8?HtBS:E7Cs\"3ucVjT6(Q7meqD'"..., 4096) = 4096
+read(0, "`\177)'XtEzM\\ga<3J\"[-X%M{FbN10L6]1V"..., 4096) = 4096
+write(1, "JA<2\"6O\"J>O>PhxG\"MX!$s[U+`:MhcXr"..., 4096) = 4096
+read(0, "\"\"-=4!S[D/6_{BzK6&p<T*7-bC%e5>(w"..., 4096) = 4096
+write(1, "`\177)'XtEzM\\g0<3J\"[-X%M{FbN10L6]1V"..., 4096) = 4096
+read(0, "`fKIEoW48*qsQ2}{;{.>;xEXibolHEt("..., 4096) = 4096
+write(1, "\"\"-=4!S[D/6_{BzK6&p<T*7-bC%e5>(w"..., 4096) = 4096
+read(0, "TaI%}W@WNnor\177<mM(mI~Enh@'aN/;KWO"..., 4096) = 4096
+write(1, "`fKIEoW48*qsQ2}{;{.>;xEXibolHEt("..., 4096) = 4096
+read(0, "\177_M*QCy0T{hrLgRQA^Bufya;Y*1F>V{}"..., 4096) = 4096
+write(1, "T0I%}W@WNnor\177<mM(mI~Enh@'0N/;KWO"..., 4096) = 4096
+read(0, "gGtGCIQj=1Sl\"hAt^zc ?'X3Se{'!U|h"..., 4096) = 4096
+write(1, "\177_M*QCy0T{hrLgRQA^Bufy0;Y*1F>V{}"..., 4096) = 4096
+read(0, "\1779>o\"tI1_YQ7.QR{ }yj0h,]dG,W$nc#"..., 4096) = 4096
+write(1, "gGtGCIQj=1Sl\"hAt^zc ?'X3Se{'!U|h"..., 4096) = 4096
+read(0, "r(z9u_B4,cu2V $mQ+<q%PG6Bt/H;U)."..., 4096) = 4096
+write(1, "\1779>o\"tI1_YQ7.QR{ }yj0h,]dG,W$nc#"..., 4096) = 4096
+read(0, "#v<4dyvL!*oNmd*:N{IFw_\177\\_x/#zdH]"..., 4096) = 4096
+write(1, "r(z9u_B4,cu2V $mQ+<q%PG6Bt/H;U)."..., 4096) = 4096
+read(0, "P5*%2fO|R8M;\\QH2+ LWi;S_6\177Zs'UaW"..., 4096) = 4096
+write(1, "#v<4dyvL!*oNmd*:N{IFw_\177\\_x/#zdH]"..., 4096) = 4096
+read(0, "$||Lu9dr&!tNE hE+T_C{dq#%QM+5xy9"..., 4096) = 4096
+write(1, "P5*%2fO|R8M;\\QH2+ LWi;S_6\177Zs'U0W"..., 4096) = 4096
+read(0, "4Oosk7ZHPg _a hZ'y&fwRKmkq`OkF:\177"..., 4096) = 4096
+write(1, "$||Lu9dr&!tNE hE+T_C{dq#%QM+5xy9"..., 4096) = 4096
+read(0, "}Cw{Ak]<lK2oW]8T<[x^xVC$lO^@XQ7V"..., 4096) = 4096
+write(1, "4Oosk7ZHPg _0 hZ'y&fwRKmkq`OkF:\177"..., 4096) = 4096
+read(0, "c!;\"\177^\\]Z(vF'O}baF*DJvl&0D=t<a] "..., 4096) = 4096
+write(1, "}Cw{Ak]<lK2oW]8T<[x^xVC$lO^@XQ7V"..., 4096) = 4096
+read(0, "vIDJwoyaJvLk+'|*a8HnH]=<y_c:c~-9"..., 4096) = 4096
+write(1, "c!;\"\177^\\]Z(vF'O}b0F*DJvl&0D=t<0] "..., 4096) = 4096
+read(0, "6zH/O#SP{3W'5Pf\"no&2N%.lbD:lD+Z:"..., 4096) = 4096
+write(1, "vIDJwoy0JvLk+'|*08HnH]=<y_c:c~-9"..., 4096) = 4096
+read(0, "4_,u@(E0rD[P5yg\\zs|zi[I3g)JrBYp6"..., 4096) = 4096
+write(1, "6zH/O#SP{3W'5Pf\"no&2N%.lbD:lD+Z:"..., 4096) = 4096
+read(0, "zQEM2`$Vlg?+x.jZ}wm|Ezk5DNMAm^rg"..., 4096) = 4096
+write(1, "4_,u@(E0rD[P5yg\\zs|zi[I3g)JrBYp6"..., 4096) = 4096
+read(0, "%%\177mS]h<7RW-;BVK+.Xz9)hhCaA<,jX1"..., 4096) = 4096
+write(1, "zQEM2`$Vlg?+x.jZ}wm|Ezk5DNMAm^rg"..., 4096) = 4096
+read(0, "A<o%g)a8C ?F'8CwFP^nlq[]wJh8[\"g}"..., 4096) = 4096
+write(1, "%%\177mS]h<7RW-;BVK+.Xz9)hhC0A<,jX1"..., 4096) = 4096
+read(0, "L=8z>~azR[r^nU$&q/?,1%MioUj[1ys]"..., 4096) = 4096
+write(1, "A<o%g)08C ?F'8CwFP^nlq[]wJh8[\"g}"..., 4096) = 4096
+read(0, "R#dfH56ra5!SmpoD_qqEwt,R5~T<5|bG"..., 4096) = 4096
+write(1, "L=8z>~0zR[r^nU$&q/?,1%MioUj[1ys]"..., 4096) = 4096
+read(0, "h>5z]e.Koqv`,xE2WTD\\w\\;>c!IO\\\177s$"..., 4096) = 4096
+write(1, "R#dfH56r05!SmpoD_qqEwt,R5~T<5|bG"..., 4096) = 4096
+read(0, ")U;\\A0!K\\:vuy\"} {H5meeI't5pI;kt$"..., 4096) = 4096
+write(1, "h>5z]e.Koqv`,xE2WTD\\w\\;>c!IO\\\177s$"..., 4096) = 4096
+read(0, "/LC(2-C&g2=>gmL1FvrIF5 @oR$=\177rU."..., 4096) = 4096
+write(1, ")U;\\A0!K\\:vuy\"} {H5meeI't5pI;kt$"..., 4096) = 4096
+read(0, "<O*KKijNc$[%\\$K5#9=7D!%DI\"{Fe:(a"..., 4096) = 4096
+write(1, "/LC(2-C&g2=>gmL1FvrIF5 @oR$=\177rU."..., 4096) = 4096
+read(0, "Wyf0K(D<PWP8J!U^/Qb`(14\\)@Rcb!.:"..., 4096) = 4096
+write(1, "<O*KKijNc$[%\\$K5#9=7D!%DI\"{Fe:(0"..., 4096) = 4096
+read(0, "@X|rW8^-d_a_xD3K:&@{*6jG+chS\177'd "..., 4096) = 4096
+write(1, "Wyf0K(D<PWP8J!U^/Qb`(14\\)@Rcb!.:"..., 4096) = 4096
+read(0, "/stxojun|Y-Jp{7=<(x}(a(XhH\177OVWgF"..., 4096) = 4096
+write(1, "@X|rW8^-d_0_xD3K:&@{*6jG+chS\177'd "..., 4096) = 4096
+read(0, "zP4)(qoB}%BO>)~+}Sdl-?&J/{jCPAJK"..., 4096) = 4096
+write(1, "/stxojun|Y-Jp{7=<(x}(0(XhH\177OVWgF"..., 4096) = 4096
+read(0, "1cYaasBxk]p\\*! <(y^cp&vq l'5}S)n"..., 4096) = 4096
+write(1, "zP4)(qoB}%BO>)~+}Sdl-?&J/{jCPAJK"..., 4096) = 4096
+read(0, "\\#/NnSTbv?hsC\177\\:HQ@Vf?UK0_UQUm]q"..., 4096) = 4096
+write(1, "1cY00sBxk]p\\*! <(y^cp&vq l'5}S)n"..., 4096) = 4096
+read(0, "hOm'<@K]/M|PIz4ZPW~~h(t|jOLyn|q7"..., 4096) = 4096
+write(1, "\\#/NnSTbv?hsC\177\\:HQ@Vf?UK0_UQUm]q"..., 4096) = 4096
+read(0, "wtL|6 i(3OMD1z`Rpd\"{fII>22%,U:.L"..., 4096) = 4096
+write(1, "hOm'<@K]/M|PIz4ZPW~~h(t|jOLyn|q7"..., 4096) = 4096
+read(0, "*h8L$1k^SUwH6n<R(\\z.fdTw\\;~&.4m8"..., 4096) = 4096
+write(1, "wtL|6 i(3OMD1z`Rpd\"{fII>22%,U:.L"..., 4096) = 4096
+read(0, ";j0HeCqjV-B$]|PP]^%/\\)Wc\177&E^.9.)"..., 4096) = 4096
+write(1, "*h8L$1k^SUwH6n<R(\\z.fdTw\\;~&.4m8"..., 4096) = 4096
+read(0, "41WiY/!){)h\"~dNGJ{DZ/PS\177&W9pOZ3C"..., 4096) = 4096
+write(1, ";j0HeCqjV-B$]|PP]^%/\\)Wc\177&E^.9.)"..., 4096) = 4096
+read(0, "f?cM{S{p$nzjGqO\\Yn'e%$cOD5WYs@ Y"..., 4096) = 4096
+write(1, "41WiY/!){)h\"~dNGJ{DZ/PS\177&W9pOZ3C"..., 4096) = 4096
+read(0, "J3Je8L&0')5]gi2+1[#eL$|[NVfQ%UE/"..., 4096) = 4096
+write(1, "f?cM{S{p$nzjGqO\\Yn'e%$cOD5WYs@ Y"..., 4096) = 4096
+read(0, "]R=:PHwwq.5:ixfR<\":<{&:?el%P$d%A"..., 4096) = 4096
+write(1, "J3Je8L&0')5]gi2+1[#eL$|[NVfQ%UE/"..., 4096) = 4096
+read(0, "y__Z\"P%Ri<U41-4X/]:]5&F%Jsc;$}G}"..., 4096) = 4096
+write(1, "]R=:PHwwq.5:ixfR<\":<{&:?el%P$d%A"..., 4096) = 4096
+read(0, "-t=%4xR`n)2H^u\\[U?,E<ec\"7IFn0:_="..., 4096) = 4096
+write(1, "y__Z\"P%Ri<U41-4X/]:]5&F%Jsc;$}G}"..., 4096) = 4096
+read(0, "ooxPUk6\\\\f!a5?3Vl>k(ljzlB EuLR2;"..., 4096) = 4096
+write(1, "-t=%4xR`n)2H^u\\[U?,E<ec\"7IFn0:_="..., 4096) = 4096
+read(0, "[p#\\:eD\"PR,9u3.JMNr:ii-=IvtlmVVI"..., 4096) = 4096
+write(1, "ooxPUk6\\\\f!05?3Vl>k(ljzlB EuLR2;"..., 4096) = 4096
+read(0, "5m):SFD^oB1-&IrM@>%N@h)w0Xn#(Oh="..., 4096) = 4096
+write(1, "[p#\\:eD\"PR,9u3.JMNr:ii-=IvtlmVVI"..., 4096) = 4096
+read(0, "q0OE?.;>evVas6=w@D$Veo8[Q1Ak2hTc"..., 4096) = 4096
+write(1, "5m):SFD^oB1-&IrM@>%N@h)w0Xn#(Oh="..., 4096) = 4096
+read(0, "t5QBG}X(_v>UQvv/M{_'\1772zEHuWQ{_:o"..., 4096) = 4096
+write(1, "q0OE?.;>evV0s6=w@D$Veo8[Q1Ak2hTc"..., 4096) = 4096
+read(0, "<pcMk0b>!g{k/,s$8IH2/luwu*tE8y;T"..., 4096) = 4096
+write(1, "t5QBG}X(_v>UQvv/M{_'\1772zEHuWQ{_:o"..., 4096) = 4096
+read(0, "\\NdzHYPUfSS1Ag^g_Q.J&Tx:^_fz7-[S"..., 4096) = 4096
+write(1, "<pcMk0b>!g{k/,s$8IH2/luwu*tE8y;T"..., 4096) = 4096
+read(0, "<sytQA;&HNlQ'5+hHId'=Zn,_>7fH8_e"..., 4096) = 4096
+write(1, "\\NdzHYPUfSS1Ag^g_Q.J&Tx:^_fz7-[S"..., 4096) = 4096
+read(0, "9P\\g\\XPyyRah)Qff2iIc'Kf*;XYeS.#l"..., 4096) = 4096
+write(1, "<sytQA;&HNlQ'5+hHId'=Zn,_>7fH8_e"..., 4096) = 4096
+read(0, "uJkmYe_2FTY`q%XhMz;9&DE&Mdi^da'9"..., 4096) = 4096
+write(1, "9P\\g\\XPyyR0h)Qff2iIc'Kf*;XYeS.#l"..., 4096) = 4096
+read(0, "{3Cc9KV#F9>5tJ2i9E$\1779a>bIKiRG9!#"..., 4096) = 4096
+write(1, "uJkmYe_2FTY`q%XhMz;9&DE&Mdi^d0'9"..., 4096) = 4096
+read(0, "QQ~0*y6M&pyDi*.\"!\"oU%K5Fff&anio?"..., 4096) = 4096
+write(1, "{3Cc9KV#F9>5tJ2i9E$\17790>bIKiRG9!#"..., 4096) = 4096
+read(0, "v\"|c5`_HPbM)J(*LNuS:~+|%@$*z1zEh"..., 4096) = 4096
+write(1, "QQ~0*y6M&pyDi*.\"!\"oU%K5Fff&0nio?"..., 4096) = 4096
+read(0, "E>W1Iwn\\Jpd(}Z\\u6!~U\1778cxKheqsvAx"..., 4096) = 4096
+write(1, "v\"|c5`_HPbM)J(*LNuS:~+|%@$*z1zEh"..., 4096) = 4096
+read(0, "kNxU#@[-7k,EJa:j9x=a4n!]KL3YIqs4"..., 4096) = 4096
+write(1, "E>W1Iwn\\Jpd(}Z\\u6!~U\1778cxKheqsvAx"..., 4096) = 4096
+read(0, "@{8:_L5FKU$!fT[/O@KSzOX2\177$Wfdsb$"..., 4096) = 4096
+write(1, "kNxU#@[-7k,EJ0:j9x=04n!]KL3YIqs4"..., 4096) = 4096
+read(0, "=$Ld?/d2IiY5UcbODI^`(H?Pu| Gz<)w"..., 4096) = 4096
+write(1, "@{8:_L5FKU$!fT[/O@KSzOX2\177$Wfdsb$"..., 4096) = 4096
+read(0, "Om>0QE9vb@m5ad9xaXSl-aL@D*heBLoQ"..., 4096) = 4096
+write(1, "=$Ld?/d2IiY5UcbODI^`(H?Pu| Gz<)w"..., 4096) = 4096
+read(0, "SB.PY{JH$?<N`F?QV(k)r$U]g9.ZW\177dk"..., 4096) = 4096
+write(1, "Om>0QE9vb@m50d9x0XSl-0L@D*heBLoQ"..., 4096) = 4096
+read(0, "0O7k|OL(UEDS\"O^0<3u>*}AD5n/pI>kY"..., 4096) = 4096
+write(1, "SB.PY{JH$?<N`F?QV(k)r$U]g9.ZW\177dk"..., 4096) = 4096
+read(0, "tbjYq3$x|yjOb8UbNebp%b,'\177M..{b[o"..., 4096) = 4096
+write(1, "0O7k|OL(UEDS\"O^0<3u>*}AD5n/pI>kY"..., 4096) = 4096
+read(0, "3M2J?~+ei6=cVMVeI?2@KV?:8rM:<:=O"..., 4096) = 4096
+write(1, "tbjYq3$x|yjOb8UbNebp%b,'\177M..{b[o"..., 4096) = 4096
+read(0, "dBQ3*.d+%ZI_MRN+y-/b}Hu.I['\177TF(8"..., 4096) = 4096
+write(1, "3M2J?~+ei6=cVMVeI?2@KV?:8rM:<:=O"..., 4096) = 4096
+read(0, "j?K$Sz-c},7VvZ5'colNx>vRL#gW'\"}Q"..., 4096) = 4096
+write(1, "dBQ3*.d+%ZI_MRN+y-/b}Hu.I['\177TF(8"..., 4096) = 4096
+read(0, "3d+QoU[yMo3I/*;U~C^L_:N\"Z4x2K2R^"..., 4096) = 4096
+write(1, "j?K$Sz-c},7VvZ5'colNx>vRL#gW'\"}Q"..., 4096) = 4096
+read(0, "00=?<m(o<N64TrzL]\\-!SNJ7[]8rVBLF"..., 4096) = 4096
+write(1, "3d+QoU[yMo3I/*;U~C^L_:N\"Z4x2K2R^"..., 4096) = 4096
+read(0, "J9\\\"9ea!=,]\"VdJuzPhC*;:/.}\1777Y%~c"..., 4096) = 4096
+write(1, "00=?<m(o<N64TrzL]\\-!SNJ7[]8rVBLF"..., 4096) = 4096
+read(0, "T~>Iut\177f_\"soR\"h/?G!@aH40]]z8ejMz"..., 4096) = 4096
+write(1, "J9\\\"9e0!=,]\"VdJuzPhC*;:/.}\1777Y%~c"..., 4096) = 4096
+read(0, "KO0]lIfrcN?T4!GN #GWGi#04efzT&S\177"..., 4096) = 4096
+write(1, "T~>Iut\177f_\"soR\"h/?G!@0H40]]z8ejMz"..., 4096) = 4096
+read(0, "p:wQwS& 5h<'Sru*>?KNW<uN?P|\\*V<z"..., 4096) = 4096
+write(1, "KO0]lIfrcN?T4!GN #GWGi#04efzT&S\177"..., 4096) = 4096
+read(0, "7{d!W:P|McE9J&IAzlK^)%hM6toyOy7F"..., 4096) = 4096
+write(1, "p:wQwS& 5h<'Sru*>?KNW<uN?P|\\*V<z"..., 4096) = 4096
+read(0, "{BV<s|5$E:L{x>o/MQ>p+bBciM0Eg(gb"..., 4096) = 4096
+write(1, "7{d!W:P|McE9J&IAzlK^)%hM6toyOy7F"..., 4096) = 4096
+read(0, "Rnwi-0`;T=DO~T4(v97jQ~+@5N9:%e07"..., 4096) = 4096
+write(1, "{BV<s|5$E:L{x>o/MQ>p+bBciM0Eg(gb"..., 4096) = 4096
+read(0, "LBS-ao*q63_gKob:F^UY(Wagp:7@MQ\"y"..., 4096) = 4096
+write(1, "Rnwi-0`;T=DO~T4(v97jQ~+@5N9:%e07"..., 4096) = 4096
+read(0, "]2F4tcFD h;tQ&4qt{t@r)Q@t`&O+a-H"..., 4096) = 4096
+write(1, "LBS-0o*q63_gKob:F^UY(W0gp:7@MQ\"y"..., 4096) = 4096
+read(0, "5S_An&O2N@YoI!e!,7w7}r1rT>b&-KZ#"..., 4096) = 4096
+write(1, "]2F4tcFD h;tQ&4qt{t@r)Q@t`&O+0-H"..., 4096) = 4096
+read(0, "`Mn:'Qt.f|F],Jg$IlE;]g&J},Y}QPT1"..., 4096) = 4096
+write(1, "5S_An&O2N@YoI!e!,7w7}r1rT>b&-KZ#"..., 4096) = 4096
+read(0, "7mR=J0r%VY`Vj35F%8il+e-Z|=U2$Gw{"..., 4096) = 4096
+write(1, "`Mn:'Qt.f|F],Jg$IlE;]g&J},Y}QPT1"..., 4096) = 4096
+read(0, "&D]@eKWBHj[G4sJMDpno`&'6id9D@%F&"..., 4096) = 4096
+write(1, "7mR=J0r%VY`Vj35F%8il+e-Z|=U2$Gw{"..., 4096) = 4096
+read(0, "n}y*DE|Y@(gNg'C[:\177Ql;lG*{qN7x#,g"..., 4096) = 4096
+write(1, "&D]@eKWBHj[G4sJMDpno`&'6id9D@%F&"..., 4096) = 4096
+read(0, "?+42];Tk:Mk<Z#wc>Mi+l-?t\\<PCB;ZA"..., 4096) = 4096
+write(1, "n}y*DE|Y@(gNg'C[:\177Ql;lG*{qN7x#,g"..., 4096) = 4096
+read(0, "tvp?I3c+6}Y{pL}O?%MgH$Y/Yfl^e0c:"..., 4096) = 4096
+write(1, "?+42];Tk:Mk<Z#wc>Mi+l-?t\\<PCB;ZA"..., 4096) = 4096
+read(0, "HD$_p&;Hzho/M2B@z%Jz{2s$hz1^^5~'"..., 4096) = 4096
+write(1, "tvp?I3c+6}Y{pL}O?%MgH$Y/Yfl^e0c:"..., 4096) = 4096
+read(0, "l=A>dQak~KDw\177$)838H+q\177;%%V,[bzD."..., 4096) = 4096
+write(1, "HD$_p&;Hzho/M2B@z%Jz{2s$hz1^^5~'"..., 4096) = 4096
+read(0, "dN\177)03Dg.(vK7yA-by/OKw]]:,\177<jw ."..., 4096) = 4096
+write(1, "l=A>dQ0k~KDw\177$)838H+q\177;%%V,[bzD."..., 4096) = 4096
+read(0, "vSJ<;hKeS[\177-~W.;kV>`QjW1V~tKVa=,"..., 4096) = 4096
+write(1, "dN\177)03Dg.(vK7yA-by/OKw]]:,\177<jw ."..., 4096) = 4096
+read(0, "/884(Oz|cpG1r=35l|:%F5&@; !@j:oy"..., 4096) = 4096
+write(1, "vSJ<;hKeS[\177-~W.;kV>`QjW1V~tKV0=,"..., 4096) = 4096
+read(0, "Q3 #i_F{q7d>z,Q8\177Dr>cE&_xG=o:+HK"..., 4096) = 4096
+write(1, "/884(Oz|cpG1r=35l|:%F5&@; !@j:oy"..., 4096) = 4096
+read(0, "BFqKw2Fbj[EMn+Z6]7+[9xVPj6g^VprX"..., 4096) = 4096
+write(1, "Q3 #i_F{q7d>z,Q8\177Dr>cE&_xG=o:+HK"..., 4096) = 4096
+read(0, "G]jmdJB*z;`*ljTGM%mSgzMOVjG-xUu?"..., 4096) = 4096
+write(1, "BFqKw2Fbj[EMn+Z6]7+[9xVPj6g^VprX"..., 4096) = 4096
+read(0, "\177{.\"8TnNV~ehdb:&l7E&x'q ;{ZS[I@Z"..., 4096) = 4096
+write(1, "G]jmdJB*z;`*ljTGM%mSgzMOVjG-xUu?"..., 4096) = 4096
+read(0, "(-*6\"BO\"'N:=9X'Ve!#8w~i2T%bw3^/{"..., 4096) = 4096
+write(1, "\177{.\"8TnNV~ehdb:&l7E&x'q ;{ZS[I@Z"..., 4096) = 4096
+read(0, "cZW.mXr>7<(-Zl4lmpTHb+`1x+Hi'\177mJ"..., 4096) = 4096
+write(1, "(-*6\"BO\"'N:=9X'Ve!#8w~i2T%bw3^/{"..., 4096) = 4096
+read(0, "FaPI(<5\177_$,B#QTa{\177&{@j?\177Q`&!yna?"..., 4096) = 4096
+write(1, "cZW.mXr>7<(-Zl4lmpTHb+`1x+Hi'\177mJ"..., 4096) = 4096
+read(0, "8vHXQ['\"DFCOv<-o'g`#j@4_{QAefa(^"..., 4096) = 4096
+write(1, "F0PI(<5\177_$,B#QT0{\177&{@j?\177Q`&!yn0?"..., 4096) = 4096
+read(0, "H0~}.:eU:;geuYVNwI^7e>. 8jvo.i^W"..., 4096) = 4096
+write(1, "8vHXQ['\"DFCOv<-o'g`#j@4_{QAef0(^"..., 4096) = 4096
+read(0, "t#g6{[6s(arH.}96GGLWJi{)bIW*t2hH"..., 4096) = 4096
+write(1, "H0~}.:eU:;geuYVNwI^7e>. 8jvo.i^W"..., 4096) = 4096
+read(0, "}@z!500+10*\177}cCGJMVT5hL@J)=fnkgK"..., 4096) = 4096
+write(1, "t#g6{[6s(0rH.}96GGLWJi{)bIW*t2hH"..., 4096) = 4096
+read(0, "T8=;P[Gs.$v@S.dV#[|Jm*t`Y~z09_9m"..., 4096) = 4096
+write(1, "}@z!500+10*\177}cCGJMVT5hL@J)=fnkgK"..., 4096) = 4096
+read(0, "<z$jnVmS/ v\177`'B%ilY?~8\177BW;\177[w] 3"..., 4096) = 4096
+write(1, "T8=;P[Gs.$v@S.dV#[|Jm*t`Y~z09_9m"..., 4096) = 4096
+read(0, "6A^&/U2mjF7MVI+u6|PKx9$?)0-3X/Tn"..., 4096) = 4096
+write(1, "<z$jnVmS/ v\177`'B%ilY?~8\177BW;\177[w] 3"..., 4096) = 4096
+read(0, "boFP\177s6U$Vf;#vq|=G&]NTbYJ4:5,:-N"..., 4096) = 4096
+write(1, "6A^&/U2mjF7MVI+u6|PKx9$?)0-3X/Tn"..., 4096) = 4096
+read(0, "b}%{B 5d{*_\\ pl8q~ve#lChTjgNLcJn"..., 4096) = 4096
+write(1, "boFP\177s6U$Vf;#vq|=G&]NTbYJ4:5,:-N"..., 4096) = 4096
+read(0, "!ZllrK|>&<iFu{GEme/YbN\177E`-3(3,35"..., 4096) = 4096
+write(1, "b}%{B 5d{*_\\ pl8q~ve#lChTjgNLcJn"..., 4096) = 4096
+read(0, "z,}7|g~c2:v17Ps\\r!c`:GqdG'`A\177J\\y"..., 4096) = 4096
+write(1, "!ZllrK|>&<iFu{GEme/YbN\177E`-3(3,35"..., 4096) = 4096
+read(0, "?8pWx-Q/MbqgH3\"WD%Lh.( BRB\"?#$Y\""..., 4096) = 4096
+write(1, "z,}7|g~c2:v17Ps\\r!c`:GqdG'`A\177J\\y"..., 4096) = 4096
+read(0, "W{p,U8=2\"1J\177B)?i4>dS9Z(zR^)d:J\\Q"..., 4096) = 4096
+write(1, "?8pWx-Q/MbqgH3\"WD%Lh.( BRB\"?#$Y\""..., 4096) = 4096
+read(0, "'X>'1Caa06@5SA}lUn<IzSY-I%jB^s=E"..., 4096) = 4096
+write(1, "W{p,U8=2\"1J\177B)?i4>dS9Z(zR^)d:J\\Q"..., 4096) = 4096
+read(0, "8s_{z ^_6!&%0D]}[D.BNUrIK>MKqy]i"..., 4096) = 4096
+write(1, "'X>'1C0006@5SA}lUn<IzSY-I%jB^s=E"..., 4096) = 4096
+read(0, "'_[:f>G!rD8TZRC!kT0kEU[;76~f31~z"..., 4096) = 4096
+write(1, "8s_{z ^_6!&%0D]}[D.BNUrIK>MKqy]i"..., 4096) = 4096
+read(0, "0Iyp1$\\|R9;o5Vulds1.T}X-8&4y|\\,m"..., 4096) = 4096
+write(1, "'_[:f>G!rD8TZRC!kT0kEU[;76~f31~z"..., 4096) = 4096
+read(0, "@%Wx!\177Q(Q`hW'}!M<#1R7+`~0QakWI=x"..., 4096) = 4096
+write(1, "0Iyp1$\\|R9;o5Vulds1.T}X-8&4y|\\,m"..., 4096) = 4096
+read(0, "`$E{3M/x@t9XFB[1w'Wa0s8e\177R4zGQ*h"..., 4096) = 4096
+write(1, "@%Wx!\177Q(Q`hW'}!M<#1R7+`~0Q0kWI=x"..., 4096) = 4096
+read(0, "/k8vbB/%s=Yo>d9hbF&3FHGV\1770VJ#49r"..., 4096) = 4096
+write(1, "`$E{3M/x@t9XFB[1w'W00s8e\177R4zGQ*h"..., 4096) = 4096
+read(0, "9f-{P>wmUM#\177&E,7B'D,M7?@oO$uE1t>"..., 4096) = 4096
+write(1, "/k8vbB/%s=Yo>d9hbF&3FHGV\1770VJ#49r"..., 4096) = 4096
+read(0, "g#g<2\\'og>D@cz[-7xaO=(7@b#3:7Qd~"..., 4096) = 4096
+write(1, "9f-{P>wmUM#\177&E,7B'D,M7?@oO$uE1t>"..., 4096) = 4096
+read(0, "P5Nm'DN;/=b2{>LYi/9CW}Z,G/7\177i\177By"..., 4096) = 4096
+write(1, "g#g<2\\'og>D@cz[-7x0O=(7@b#3:7Qd~"..., 4096) = 4096
+read(0, "I!%pa1n2pl ny$tlp39KbehB?nSG7^/A"..., 4096) = 4096
+write(1, "P5Nm'DN;/=b2{>LYi/9CW}Z,G/7\177i\177By"..., 4096) = 4096
+read(0, "CSsY5!Xx3 S]MqVO]B`_&F]{\\9-)UAEX"..., 4096) = 4096
+write(1, "I!%p01n2pl ny$tlp39KbehB?nSG7^/A"..., 4096) = 4096
+read(0, "{?4\"*F'2C9.LB1\1775r*C}P 4tK<yQ=8+x"..., 4096) = 4096
+write(1, "CSsY5!Xx3 S]MqVO]B`_&F]{\\9-)UAEX"..., 4096) = 4096
+read(0, "+]<(|;dDqB7}+<Kx*1r2g-j}RA}jgB)r"..., 4096) = 4096
+write(1, "{?4\"*F'2C9.LB1\1775r*C}P 4tK<yQ=8+x"..., 4096) = 4096
+read(0, "_1Leo`ELxO1<rmz%-o A{zxPb=?T<n[{"..., 4096) = 4096
+write(1, "+]<(|;dDqB7}+<Kx*1r2g-j}RA}jgB)r"..., 4096) = 4096
+read(0, ".=nxn61:^^~|N](o2@oM_EA9\\jo?x4|&"..., 4096) = 4096
+write(1, "_1Leo`ELxO1<rmz%-o A{zxPb=?T<n[{"..., 4096) = 4096
+read(0, "f+cdz>prdX$7#<'x?KC?#:'YBT!?R'\"y"..., 4096) = 4096
+write(1, ".=nxn61:^^~|N](o2@oM_EA9\\jo?x4|&"..., 4096) = 4096
+read(0, ")8x]Wy]/S@1HPh%~:&X4<q&M74=)'k.q"..., 4096) = 4096
+write(1, "f+cdz>prdX$7#<'x?KC?#:'YBT!?R'\"y"..., 4096) = 4096
+read(0, "8zjIU1;\"3/,^%?M,jW^50P]~`BlaNUgf"..., 4096) = 4096
+write(1, ")8x]Wy]/S@1HPh%~:&X4<q&M74=)'k.q"..., 4096) = 4096
+read(0, "UJ)}/@B>4h4Oj-e_9|Kn^gZ6y^yR/ZoD"..., 4096) = 4096
+write(1, "8zjIU1;\"3/,^%?M,jW^50P]~`Bl0NUgf"..., 4096) = 4096
+read(0, "`/>t1k{0)uXElMq:?-xrGK'k?A~k~Fw?"..., 4096) = 4096
+write(1, "UJ)}/@B>4h4Oj-e_9|Kn^gZ6y^yR/ZoD"..., 4096) = 4096
+read(0, "BrOc7e5{(0@\"4[AaK6a#E hu(\"F3+zMM"..., 4096) = 4096
+write(1, "`/>t1k{0)uXElMq:?-xrGK'k?A~k~Fw?"..., 4096) = 4096
+read(0, "8|h%^0]=M,+sWsB?(G?b/\\%nFT_c];PU"..., 4096) = 4096
+write(1, "BrOc7e5{(0@\"4[A0K60#E hu(\"F3+zMM"..., 4096) = 4096
+read(0, "%Q+Fyf!DC~yd1I4&\\Gt5To)7fR((gBUL"..., 4096) = 4096
+write(1, "8|h%^0]=M,+sWsB?(G?b/\\%nFT_c];PU"..., 4096) = 4096
+read(0, "Z*uU:x.tNE;oN-_Ty@NIvyAd0/[<b^e<"..., 4096) = 4096
+write(1, "%Q+Fyf!DC~yd1I4&\\Gt5To)7fR((gBUL"..., 4096) = 4096
+read(0, "xrir|{2H>av\177FnX-=RWnm#=STk&}~(wV"..., 4096) = 4096
+write(1, "Z*uU:x.tNE;oN-_Ty@NIvyAd0/[<b^e<"..., 4096) = 4096
+read(0, "$jgWN!a;%DcN6U%v!eIhY\"NM*Yvbg?8l"..., 4096) = 4096
+write(1, "xrir|{2H>0v\177FnX-=RWnm#=STk&}~(wV"..., 4096) = 4096
+read(0, "1* 2+3&!pZcT#d^L`C*%rjf;F1(9bl#S"..., 4096) = 4096
+write(1, "$jgWN!0;%DcN6U%v!eIhY\"NM*Yvbg?8l"..., 4096) = 4096
+read(0, "7eU0gs0ZfkS=^VLys?MCK)ZCdWzS0]oG"..., 4096) = 4096
+write(1, "1* 2+3&!pZcT#d^L`C*%rjf;F1(9bl#S"..., 4096) = 4096
+read(0, "+4'xd4gd0{:}:ynkE/o~_M@8O3 W2r?="..., 4096) = 4096
+write(1, "7eU0gs0ZfkS=^VLys?MCK)ZCdWzS0]oG"..., 4096) = 4096
+read(0, "cJuvun15=Yh=MZ7h>>umo);>]T<XHfm+"..., 4096) = 4096
+write(1, "+4'xd4gd0{:}:ynkE/o~_M@8O3 W2r?="..., 4096) = 4096
+read(0, " <Z(NO ~e4VKiF<!>V_7G46Tw`BsK_FK"..., 4096) = 4096
+write(1, "cJuvun15=Yh=MZ7h>>umo);>]T<XHfm+"..., 4096) = 4096
+read(0, "jR;P,:9=tZ'O}!0J;s3mS~1/S #/)A,t"..., 4096) = 4096
+write(1, " <Z(NO ~e4VKiF<!>V_7G46Tw`BsK_FK"..., 4096) = 4096
+read(0, ";j[na\"%^rP6NC$B6.-]BH+H-54e/pY5k"..., 4096) = 4096
+write(1, "jR;P,:9=tZ'O}!0J;s3mS~1/S #/)A,t"..., 4096) = 4096
+read(0, "YA|D~unD1KpK].~&Ya2(T<M Io8BBU4\\"..., 4096) = 4096
+write(1, ";j[n0\"%^rP6NC$B6.-]BH+H-54e/pY5k"..., 4096) = 4096
+read(0, "U]GuVs0io/-pdA\"B*(EJVkJ(zGZXg)t|"..., 4096) = 4096
+write(1, "YA|D~unD1KpK].~&Y02(T<M Io8BBU4\\"..., 4096) = 4096
+read(0, "M*rA\177izovjH$qj,9svnxl\"5(@nFQHp5U"..., 4096) = 4096
+write(1, "U]GuVs0io/-pdA\"B*(EJVkJ(zGZXg)t|"..., 4096) = 4096
+read(0, "ab}&ltgm6~[ R9}c&qyQj$o~Aiq)rYwT"..., 4096) = 4096
+write(1, "M*rA\177izovjH$qj,9svnxl\"5(@nFQHp5U"..., 4096) = 4096
+read(0, "n9JsN=w, 6%^&\"mb[92SQNn JYz64#j\""..., 4096) = 4096
+write(1, "0b}&ltgm6~[ R9}c&qyQj$o~Aiq)rYwT"..., 4096) = 4096
+read(0, "*k3|hx\177Ob`ggrwISJ<@2_Y{(3>_ S|a^"..., 4096) = 4096
+write(1, "n9JsN=w, 6%^&\"mb[92SQNn JYz64#j\""..., 4096) = 4096
+read(0, "*qp*i0h,_e>R+I0rG%I.\"uoO\177lx`|KDf"..., 4096) = 4096
+write(1, "*k3|hx\177Ob`ggrwISJ<@2_Y{(3>_ S|0^"..., 4096) = 4096
+read(0, "T<!~8.a!`/L5}A-+Erp&<M\"|k.wUjiX>"..., 4096) = 4096
+write(1, "*qp*i0h,_e>R+I0rG%I.\"uoO\177lx`|KDf"..., 4096) = 4096
+read(0, "B5SGg[o;i<a71.JN*be3=P+_S0SyO1GQ"..., 4096) = 4096
+write(1, "T<!~8.0!`/L5}A-+Erp&<M\"|k.wUjiX>"..., 4096) = 4096
+read(0, "xJ^YRWFS#&tTa\\\177_Yt6(((=pGz!q<Nj5"..., 4096) = 4096
+write(1, "B5SGg[o;i<071.JN*be3=P+_S0SyO1GQ"..., 4096) = 4096
+read(0, "Ng3DiU-#@IYP8/\177m6V8QBA}\177qH5r\\+)*"..., 4096) = 4096
+write(1, "xJ^YRWFS#&tT0\\\177_Yt6(((=pGz!q<Nj5"..., 4096) = 4096
+read(0, "g,dgG4LjHp\177jeW!#R#n1=@$\\T+u2{|mc"..., 4096) = 4096
+write(1, "Ng3DiU-#@IYP8/\177m6V8QBA}\177qH5r\\+)*"..., 4096) = 4096
+read(0, "K6Vw)uE@S\"!:g< n6&=&e/dyz 0D3Sp^"..., 4096) = 4096
+write(1, "g,dgG4LjHp\177jeW!#R#n1=@$\\T+u2{|mc"..., 4096) = 4096
+read(0, "p1m4yOg;6#-nm22<=-aFJP*nx,zC90sj"..., 4096) = 4096
+write(1, "K6Vw)uE@S\"!:g< n6&=&e/dyz 0D3Sp^"..., 4096) = 4096
+read(0, "7uxR#Sq+9~~v[Z*66XZ>~t2Lv9Z=/SeF"..., 4096) = 4096
+write(1, "p1m4yOg;6#-nm22<=-0FJP*nx,zC90sj"..., 4096) = 4096
+read(0, "JJ!O5>U|bk?HuX.$}O?=^p$!{>tZpi=z"..., 4096) = 4096
+write(1, "7uxR#Sq+9~~v[Z*66XZ>~t2Lv9Z=/SeF"..., 4096) = 4096
+read(0, "y>4Q^c9V[S:loo0[U:@?osS<~\"~@+>a%"..., 4096) = 4096
+write(1, "JJ!O5>U|bk?HuX.$}O?=^p$!{>tZpi=z"..., 4096) = 4096
+read(0, "n1Qy$'`WJmV$NJQLNt3x3(bCZ9ogzSOI"..., 4096) = 4096
+write(1, "y>4Q^c9V[S:loo0[U:@?osS<~\"~@+>0%"..., 4096) = 4096
+read(0, "(~lv<C&wfMc`8uM`-ELaDy;0M,0:Y%Ka"..., 4096) = 4096
+write(1, "n1Qy$'`WJmV$NJQLNt3x3(bCZ9ogzSOI"..., 4096) = 4096
+read(0, "phpG=M:Wgo0' GP1DkwNBrVjZnCz$OUU"..., 4096) = 4096
+write(1, "(~lv<C&wfMc`8uM`-EL0Dy;0M,0:Y%K0"..., 4096) = 4096
+read(0, "$,x\"S?s`<kKm[Oqp6u|IP)DdL%a${GI_"..., 4096) = 4096
+write(1, "phpG=M:Wgo0' GP1DkwNBrVjZnCz$OUU"..., 4096) = 4096
+read(0, "xyQx_E\\4<L!@!:jbOc?z{lHjF$!Ptbam"..., 4096) = 4096
+write(1, "$,x\"S?s`<kKm[Oqp6u|IP)DdL%0${GI_"..., 4096) = 4096
+read(0, "VXX[I3\\vE7s[8SSKhW=H\1774&QaW9XGe;}"..., 4096) = 4096
+write(1, "xyQx_E\\4<L!@!:jbOc?z{lHjF$!Ptb0m"..., 4096) = 4096
+read(0, "#@/eg]%vv[qfN@XlwyB\177Gi\"HSf0OuSdX"..., 4096) = 4096
+write(1, "VXX[I3\\vE7s[8SSKhW=H\1774&Q0W9XGe;}"..., 4096) = 4096
+read(0, "~R|,krnFX~zP`G#x>+37)?lu;_UY=oT;"..., 4096) = 4096
+write(1, "#@/eg]%vv[qfN@XlwyB\177Gi\"HSf0OuSdX"..., 4096) = 4096
+read(0, "P+w</!$y).;F!OCEmD1D;O,h4e2 o$\"?"..., 4096) = 4096
+write(1, "~R|,krnFX~zP`G#x>+37)?lu;_UY=oT;"..., 4096) = 4096
+read(0, "Y`r8@CV<u/0'Q333(ie$`@44KMqua^Lz"..., 4096) = 4096
+write(1, "P+w</!$y).;F!OCEmD1D;O,h4e2 o$\"?"..., 4096) = 4096
+read(0, "5C||ky1CWe'kER/~@x!-s'c@w!{3A'#7"..., 4096) = 4096
+write(1, "Y`r8@CV<u/0'Q333(ie$`@44KMqu0^Lz"..., 4096) = 4096
+read(0, "yQa.)pSTnE=O>Z\177w@fySi2\"s5d1JgPG`"..., 4096) = 4096
+write(1, "5C||ky1CWe'kER/~@x!-s'c@w!{3A'#7"..., 4096) = 4096
+read(0, "Izb{rUI~V=St5g~o1!VEO9'um<37;/UE"..., 4096) = 4096
+write(1, "yQ0.)pSTnE=O>Z\177w@fySi2\"s5d1JgPG`"..., 4096) = 4096
+read(0, "!f2Z*:!V3Bpkp\177JGpzT~7BvGi]V~-D`n"..., 4096) = 4096
+write(1, "Izb{rUI~V=St5g~o1!VEO9'um<37;/UE"..., 4096) = 4096
+read(0, "|9\177p:C:0}qp.JBsSH<RSQq~i9Fh=&85\""..., 4096) = 4096
+write(1, "!f2Z*:!V3Bpkp\177JGpzT~7BvGi]V~-D`n"..., 4096) = 4096
+read(0, "(Uw ?2V\\}^&0uK$&pD6J|B`>2`>-?V|("..., 4096) = 4096
+write(1, "|9\177p:C:0}qp.JBsSH<RSQq~i9Fh=&85\""..., 4096) = 4096
+read(0, "nx.\\W|0l`W-pu~vEN3nz,,[+1kfPjJxX"..., 4096) = 4096
+write(1, "(Uw ?2V\\}^&0uK$&pD6J|B`>2`>-?V|("..., 4096) = 4096
+read(0, "GWX35gdj?JiW6<La%s;2'+D%;HSd+))2"..., 4096) = 4096
+write(1, "nx.\\W|0l`W-pu~vEN3nz,,[+1kfPjJxX"..., 4096) = 4096
+read(0, "<GYj\\I3GEL:9FY,VgZK~:?rw+pf}}e4y"..., 4096) = 4096
+write(1, "GWX35gdj?JiW6<L0%s;2'+D%;HSd+))2"..., 4096) = 4096
+read(0, "#).|1'rZ^K}>-59>X8LdROqoFfuk^7xb"..., 4096) = 4096
+write(1, "<GYj\\I3GEL:9FY,VgZK~:?rw+pf}}e4y"..., 4096) = 4096
+read(0, "0.-23X1c5-[+r<31thZdq\"4\177!M9!~,Zn"..., 4096) = 4096
+write(1, "#).|1'rZ^K}>-59>X8LdROqoFfuk^7xb"..., 4096) = 4096
+read(0, ",cm_$ez;=(P*\\z\\4AK3*8^\\68ped yZl"..., 4096) = 4096
+write(1, "0.-23X1c5-[+r<31thZdq\"4\177!M9!~,Zn"..., 4096) = 4096
+read(0, "(\177oQ%_aT_03KG%%m(G,z*>vF<o;Oj>sr"..., 4096) = 4096
+write(1, ",cm_$ez;=(P*\\z\\4AK3*8^\\68ped yZl"..., 4096) = 4096
+read(0, ":L\"H0r{@%fVHuEyfiX]5'+X3qc3xmquh"..., 4096) = 4096
+write(1, "(\177oQ%_0T_03KG%%m(G,z*>vF<o;Oj>sr"..., 4096) = 4096
+read(0, "E1}@%ta+]b!p!(YrhlaSS4zfl[p?p;Yu"..., 4096) = 4096
+write(1, ":L\"H0r{@%fVHuEyfiX]5'+X3qc3xmquh"..., 4096) = 4096
+read(0, "!^J^'%*D#q1V[:Er\\QBWdc!CN\"\"]o\"lp"..., 4096) = 4096
+write(1, "E1}@%t0+]b!p!(Yrhl0SS4zfl[p?p;Yu"..., 4096) = 4096
+read(0, "]u:Vv\177rq|1eNcL~.{-(=p}5P`4a+mTqJ"..., 4096) = 4096
+write(1, "!^J^'%*D#q1V[:Er\\QBWdc!CN\"\"]o\"lp"..., 4096) = 4096
+read(0, ",EjMqp eM4m{ee4M7@/N{\"_2!sX~`$.m"..., 4096) = 4096
+write(1, "]u:Vv\177rq|1eNcL~.{-(=p}5P`40+mTqJ"..., 4096) = 4096
+read(0, ">2v`Q ApV/IbOd'|G&K. g:;-z]SI$LG"..., 4096) = 4096
+write(1, ",EjMqp eM4m{ee4M7@/N{\"_2!sX~`$.m"..., 4096) = 4096
+read(0, ":<v7F)j+#_@2D%j'rHng/-pCb`~a>zaY"..., 4096) = 4096
+write(1, ">2v`Q ApV/IbOd'|G&K. g:;-z]SI$LG"..., 4096) = 4096
+read(0, "#&aO}yH;+%dFWPvxin\\U/OL4j9Wrd'-G"..., 4096) = 4096
+write(1, ":<v7F)j+#_@2D%j'rHng/-pCb`~0>z0Y"..., 4096) = 4096
+read(0, "Nt&dqlr@vI:eZR6YTWfGG#m^Ff|F/l`="..., 4096) = 4096
+write(1, "#&0O}yH;+%dFWPvxin\\U/OL4j9Wrd'-G"..., 4096) = 4096
+read(0, "I1UG*xN!z.o4k(lOs6)[E\177!V,_=}9Cdb"..., 4096) = 4096
+write(1, "Nt&dqlr@vI:eZR6YTWfGG#m^Ff|F/l`="..., 4096) = 4096
+read(0, "MHxtQ[zGQ_Ud ev]5RQ4Az>T>,\"WZiyh"..., 4096) = 4096
+write(1, "I1UG*xN!z.o4k(lOs6)[E\177!V,_=}9Cdb"..., 4096) = 4096
+read(0, "VXNq9>`s7%}v64}pU,k]P*|XE-#?1FxH"..., 4096) = 4096
+write(1, "MHxtQ[zGQ_Ud ev]5RQ4Az>T>,\"WZiyh"..., 4096) = 4096
+read(0, "oj19kOP:O#ThoTF/3?T7,u/\"\\Ws)-\\R|"..., 4096) = 4096
+write(1, "VXNq9>`s7%}v64}pU,k]P*|XE-#?1FxH"..., 4096) = 4096
+read(0, "4qF#]c/V1O'W3x4Ue)hIa)|'%>x;KFO_"..., 4096) = 4096
+write(1, "oj19kOP:O#ThoTF/3?T7,u/\"\\Ws)-\\R|"..., 4096) = 4096
+read(0, "ir~UO/%OPQEH6H\\Ig9Nk_#b~0Z.<}`{f"..., 4096) = 4096
+write(1, "4qF#]c/V1O'W3x4Ue)hI0)|'%>x;KFO_"..., 4096) = 4096
+read(0, "A_gzfq(ou;\\8CV=z6aq(*P?tX=}f:d/<"..., 4096) = 4096
+write(1, "ir~UO/%OPQEH6H\\Ig9Nk_#b~0Z.<}`{f"..., 4096) = 4096
+read(0, "xDvxK@lyXF+/JIj,TzW+k6mabIB]Qx!*"..., 4096) = 4096
+write(1, "A_gzfq(ou;\\8CV=z60q(*P?tX=}f:d/<"..., 4096) = 4096
+read(0, "Q)<c/}13?vUH[J\\EbD`z=$'d#2+\"Cbot"..., 4096) = 4096
+write(1, "xDvxK@lyXF+/JIj,TzW+k6m0bIB]Qx!*"..., 4096) = 4096
+read(0, ")=qHQkEJ,kFJOA)IGKi41_-K\\?lldKMm"..., 4096) = 4096
+write(1, "Q)<c/}13?vUH[J\\EbD`z=$'d#2+\"Cbot"..., 4096) = 4096
+read(0, ">t,ikPG`@/l7A?+2wA{dNr5FjF`hK; I"..., 4096) = 4096
+write(1, ")=qHQkEJ,kFJOA)IGKi41_-K\\?lldKMm"..., 4096) = 4096
+read(0, "Dc0H8AJAaL\\h\177`'CUC=>WyA]+4eBpMBt"..., 4096) = 4096
+write(1, ">t,ikPG`@/l7A?+2wA{dNr5FjF`hK; I"..., 4096) = 4096
+read(0, "#4Eevq!r5:IbK\"-4ZMI|DE-,4IiFZre="..., 4096) = 4096
+write(1, "Dc0H8AJA0L\\h\177`'CUC=>WyA]+4eBpMBt"..., 4096) = 4096
+read(0, "~8VK#Q6n5IXG,O*FRk3$1AkknQ@_%!D#"..., 4096) = 4096
+write(1, "#4Eevq!r5:IbK\"-4ZMI|DE-,4IiFZre="..., 4096) = 4096
+read(0, "UY2>U`$#+i@PCR4QxMe/aa/\\W8OC5rCJ"..., 4096) = 4096
+write(1, "~8VK#Q6n5IXG,O*FRk3$1AkknQ@_%!D#"..., 4096) = 4096
+read(0, "\177e@.O+%8A|/\\#SMnW{P|<^\"y0U8,n~qm"..., 4096) = 4096
+write(1, "UY2>U`$#+i@PCR4QxMe/00/\\W8OC5rCJ"..., 4096) = 4096
+read(0, ";r$E%%+#Ls4i(J:8*C}ns|VF:WE8g[6b"..., 4096) = 4096
+write(1, "\177e@.O+%8A|/\\#SMnW{P|<^\"y0U8,n~qm"..., 4096) = 4096
+read(0, "[v3&*@1ztTWl(;duW]^VV kmL+*\"Ncb)"..., 4096) = 4096
+write(1, ";r$E%%+#Ls4i(J:8*C}ns|VF:WE8g[6b"..., 4096) = 4096
+read(0, "T-y{1s6; r+L^Cs{\177ktqbTtb\177]v)/+7c"..., 4096) = 4096
+write(1, "[v3&*@1ztTWl(;duW]^VV kmL+*\"Ncb)"..., 4096) = 4096
+read(0, "<5mo&?2>w!k}9$XU&=`AK,:bg,J3`dK|"..., 4096) = 4096
+write(1, "T-y{1s6; r+L^Cs{\177ktqbTtb\177]v)/+7c"..., 4096) = 4096
+read(0, "538{86glJ(~i,z_rYn;`{<)$}Xm&'GX|"..., 4096) = 4096
+write(1, "<5mo&?2>w!k}9$XU&=`AK,:bg,J3`dK|"..., 4096) = 4096
+read(0, "eX9dyT!o+zwW)YtAM/CgfD)&J`iQ,9uQ"..., 4096) = 4096
+write(1, "538{86glJ(~i,z_rYn;`{<)$}Xm&'GX|"..., 4096) = 4096
+read(0, "12q5T~sLCOP^g|?Tf#Kw;v1JQhoO\\a=m"..., 4096) = 4096
+write(1, "eX9dyT!o+zwW)YtAM/CgfD)&J`iQ,9uQ"..., 4096) = 4096
+read(0, "K$FEOz.gEW?B:wnF_0Y<D#>uF+~V, ,7"..., 4096) = 4096
+write(1, "12q5T~sLCOP^g|?Tf#Kw;v1JQhoO\\0=m"..., 4096) = 4096
+read(0, "YA0]CA.q\"-%SK?[{iY!vQVX .{I8(c=A"..., 4096) = 4096
+write(1, "K$FEOz.gEW?B:wnF_0Y<D#>uF+~V, ,7"..., 4096) = 4096
+read(0, "437 ~EIt&I2Qy{_F(mf><i.gnSupI}\\="..., 4096) = 4096
+write(1, "YA0]CA.q\"-%SK?[{iY!vQVX .{I8(c=A"..., 4096) = 4096
+read(0, "Sp.n)'h7v'?lwm]Uqmg|g~SpBA}@xg>,"..., 4096) = 4096
+write(1, "437 ~EIt&I2Qy{_F(mf><i.gnSupI}\\="..., 4096) = 4096
+read(0, "\177.H;2]HkR[r*\177wPT@9w)FpC2}F&z5Wyt"..., 4096) = 4096
+write(1, "Sp.n)'h7v'?lwm]Uqmg|g~SpBA}@xg>,"..., 4096) = 4096
+read(0, "L|L&c_ZAhP/$]-2\177_#>0exjrTy-X44Ca"..., 4096) = 4096
+write(1, "\177.H;2]HkR[r*\177wPT@9w)FpC2}F&z5Wyt"..., 4096) = 4096
+read(0, "q,QaTK:)5Gg\\=w@<o%v+/ [K7.ujz~eL"..., 4096) = 4096
+write(1, "L|L&c_ZAhP/$]-2\177_#>0exjrTy-X44C0"..., 4096) = 4096
+read(0, "O_2QQJQWP| F IFl\177Odn&w}chi^\177P8F_"..., 4096) = 4096
+write(1, "q,Q0TK:)5Gg\\=w@<o%v+/ [K7.ujz~eL"..., 4096) = 4096
+read(0, "e1SK<c6x'\177w;bdU<>1x%r~EGIbC[};<B"..., 4096) = 4096
+write(1, "O_2QQJQWP| F IFl\177Odn&w}chi^\177P8F_"..., 4096) = 4096
+read(0, "Hwa,_}wKNqd)!-ke8jHfnz9<CX],-.cU"..., 4096) = 4096
+write(1, "e1SK<c6x'\177w;bdU<>1x%r~EGIbC[};<B"..., 4096) = 4096
+read(0, "kM$@bLkjD~:DA)1~rA\177btW=]m~[*sG:>"..., 4096) = 4096
+write(1, "Hw0,_}wKNqd)!-ke8jHfnz9<CX],-.cU"..., 4096) = 4096
+read(0, "6#e(S9*J_TOEJQ+4s.um1)8bh^`Jg'9]"..., 4096) = 4096
+write(1, "kM$@bLkjD~:DA)1~rA\177btW=]m~[*sG:>"..., 4096) = 4096
+read(0, "|l^=h(#a!86qCmGZuVocCWprUO)r[hI7"..., 4096) = 4096
+write(1, "6#e(S9*J_TOEJQ+4s.um1)8bh^`Jg'9]"..., 4096) = 4096
+read(0, "M*7Fd#2S3YBYM*?~&LKW,A7L!tJL-G{:"..., 4096) = 4096
+write(1, "|l^=h(#0!86qCmGZuVocCWprUO)r[hI7"..., 4096) = 4096
+read(0, ")uKwah`9o_6(&{M&-x9,K`LedSpWce'M"..., 4096) = 4096
+write(1, "M*7Fd#2S3YBYM*?~&LKW,A7L!tJL-G{:"..., 4096) = 4096
+read(0, "#(}QRXt\\5+)\177oqTUG=n|FT=(!wGCrZ}U"..., 4096) = 4096
+write(1, ")uKw0h`9o_6(&{M&-x9,K`LedSpWce'M"..., 4096) = 4096
+read(0, "kee]{J_5<{g(kU+_48>M-a0N!HZ]fMmQ"..., 4096) = 4096
+write(1, "#(}QRXt\\5+)\177oqTUG=n|FT=(!wGCrZ}U"..., 4096) = 4096
+read(0, "|gpgj/G0\"2m%zt/p1J(V@OMoD/rfS#KP"..., 4096) = 4096
+write(1, "kee]{J_5<{g(kU+_48>M-00N!HZ]fMmQ"..., 4096) = 4096
+read(0, "&n?$OH)-{CVm;DEh'ta(m@,|QBhE{Zlb"..., 4096) = 4096
+write(1, "|gpgj/G0\"2m%zt/p1J(V@OMoD/rfS#KP"..., 4096) = 4096
+read(0, "kVJhGarQ@}~\\h&(QR2M7xZb>(U?:bb}."..., 4096) = 4096
+write(1, "&n?$OH)-{CVm;DEh't0(m@,|QBhE{Zlb"..., 4096) = 4096
+read(0, "'moPbW1Z|^BgS]lu8=xz0g\\Asn`,J\177\\Q"..., 4096) = 4096
+write(1, "kVJhG0rQ@}~\\h&(QR2M7xZb>(U?:bb}."..., 4096) = 4096
+read(0, "Fkg_^7iSFZTao9]y\\hi*Z*&\"1FI{F{Am"..., 4096) = 4096
+write(1, "'moPbW1Z|^BgS]lu8=xz0g\\Asn`,J\177\\Q"..., 4096) = 4096
+read(0, "F{\\JasC!@S`+51b=SQ{2g5D}:s/,zJK@"..., 4096) = 4096
+write(1, "Fkg_^7iSFZT0o9]y\\hi*Z*&\"1FI{F{Am"..., 4096) = 4096
+read(0, "9=r|%;Ou;w:~3M*aDn}=E!Fe!NR7gABa"..., 4096) = 4096
+write(1, "F{\\J0sC!@S`+51b=SQ{2g5D}:s/,zJK@"..., 4096) = 4096
+read(0, "iEK\177P\\OIL7rN~dA~tf~gy#&8?MySos)X"..., 4096) = 4096
+write(1, "9=r|%;Ou;w:~3M*0Dn}=E!Fe!NR7gAB0"..., 4096) = 4096
+read(0, "M/WR^}[ua\177IbSNy'<RUR*T@H8G[3+gH8"..., 4096) = 4096
+write(1, "iEK\177P\\OIL7rN~dA~tf~gy#&8?MySos)X"..., 4096) = 4096
+read(0, "O(,y/42d_)Tp8m\177Y]n76UHsQGTKR!78P"..., 4096) = 4096
+write(1, "M/WR^}[u0\177IbSNy'<RUR*T@H8G[3+gH8"..., 4096) = 4096
+read(0, "r/t]%yVN4 $<%gfmp]C.{j\"8n5WP9ual"..., 4096) = 4096
+write(1, "O(,y/42d_)Tp8m\177Y]n76UHsQGTKR!78P"..., 4096) = 4096
+read(0, "hs.},)yR13udxLMC\\~I5OM(zaiX&V_w~"..., 4096) = 4096
+write(1, "r/t]%yVN4 $<%gfmp]C.{j\"8n5WP9u0l"..., 4096) = 4096
+read(0, "wf\\cS$rK\"sw(o[UG~\\n]{)|:l0?%O7SF"..., 4096) = 4096
+write(1, "hs.},)yR13udxLMC\\~I5OM(z0iX&V_w~"..., 4096) = 4096
+read(0, "LKpf)\177|'KCV1P&QH4l!x*\"$Pm:EIG@WS"..., 4096) = 4096
+write(1, "wf\\cS$rK\"sw(o[UG~\\n]{)|:l0?%O7SF"..., 4096) = 4096
+read(0, "&D}QSYXB5;c]I]*Ne%,&Wxl0u'nzo\"mu"..., 4096) = 4096
+write(1, "LKpf)\177|'KCV1P&QH4l!x*\"$Pm:EIG@WS"..., 4096) = 4096
+read(0, "+@}y@9n/D%!>t?}k@23W#cNmt8uEfF!q"..., 4096) = 4096
+write(1, "&D}QSYXB5;c]I]*Ne%,&Wxl0u'nzo\"mu"..., 4096) = 4096
+read(0, "kT*|K4xH!u?NHx21a\177:x'kH3\"<svzKne"..., 4096) = 4096
+write(1, "+@}y@9n/D%!>t?}k@23W#cNmt8uEfF!q"..., 4096) = 4096
+read(0, "|x+/js#a[|xp:ziK\177o(IJccnyJ{eY7\"U"..., 4096) = 4096
+write(1, "kT*|K4xH!u?NHx210\177:x'kH3\"<svzKne"..., 4096) = 4096
+read(0, "YyYpvB%C x+lGk\\yunMY!2\\Tm 'Fn~OG"..., 4096) = 4096
+write(1, "|x+/js#0[|xp:ziK\177o(IJccnyJ{eY7\"U"..., 4096) = 4096
+read(0, "x7lBa (ix3rSp^chKKmeO!]&A.WKz~BR"..., 4096) = 4096
+write(1, "YyYpvB%C x+lGk\\yunMY!2\\Tm 'Fn~OG"..., 4096) = 4096
+read(0, "rF/\\.8=V-U.e= lsx`SM[3jnVr6:T?8&"..., 4096) = 4096
+write(1, "x7lB0 (ix3rSp^chKKmeO!]&A.WKz~BR"..., 4096) = 4096
+read(0, "]@ktAeG;\"@7~\177-19L<\177J8O.prkf;Y#c6"..., 4096) = 4096
+write(1, "rF/\\.8=V-U.e= lsx`SM[3jnVr6:T?8&"..., 4096) = 4096
+read(0, "'+w#3)Ut#aK;L&1W4:c:YU:mfoFj<u!D"..., 4096) = 4096
+write(1, "]@ktAeG;\"@7~\177-19L<\177J8O.prkf;Y#c6"..., 4096) = 4096
+read(0, "MS/W'#_l-@mxo2oYcEY?>^$8*}DLL.NY"..., 4096) = 4096
+write(1, "'+w#3)Ut#0K;L&1W4:c:YU:mfoFj<u!D"..., 4096) = 4096
+read(0, "?_;b\\NzU5gzok:8N`>,&k'p=D_O[b8w\""..., 4096) = 4096
+write(1, "MS/W'#_l-@mxo2oYcEY?>^$8*}DLL.NY"..., 4096) = 4096
+read(0, "u5aqqt3z,2L{Adyx|pgm={{])zX-:E10"..., 4096) = 4096
+write(1, "?_;b\\NzU5gzok:8N`>,&k'p=D_O[b8w\""..., 4096) = 4096
+read(0, "le?JJ5^d*Va0Wx2`S\"fj+#4GJY?`i^uV"..., 4096) = 4096
+write(1, "u50qqt3z,2L{Adyx|pgm={{])zX-:E10"..., 4096) = 4096
+read(0, "A+[\"]&U3'c)SUu,M]iB!X-qg\"M}3fiK("..., 4096) = 4096
+write(1, "le?JJ5^d*V00Wx2`S\"fj+#4GJY?`i^uV"..., 4096) = 4096
+read(0, "9He[i@@HdvCUD5\\C!Q>mw|N`tjVDs:Z,"..., 4096) = 4096
+write(1, "A+[\"]&U3'c)SUu,M]iB!X-qg\"M}3fiK("..., 4096) = 4096
+read(0, ":$Jr~7(mS$XrziY)7D.@XiQ1G3s9`s_z"..., 4096) = 4096
+write(1, "9He[i@@HdvCUD5\\C!Q>mw|N`tjVDs:Z,"..., 4096) = 4096
+read(0, "[DZE~Tbw)Q&B?LarLp;ks+Bit2s+u y0"..., 4096) = 4096
+write(1, ":$Jr~7(mS$XrziY)7D.@XiQ1G3s9`s_z"..., 4096) = 4096
+read(0, "GWF|7GowR,cZAsG1|D_.F%Vql/,A=]2E"..., 4096) = 4096
+write(1, "[DZE~Tbw)Q&B?L0rLp;ks+Bit2s+u y0"..., 4096) = 4096
+read(0, "m{J#1i.Ptg<-8X*;)2){=F[fniNr7XCd"..., 4096) = 4096
+write(1, "GWF|7GowR,cZAsG1|D_.F%Vql/,A=]2E"..., 4096) = 4096
+read(0, "&qWRtH@.S~1J9\\6GScXxJVa>&fwX5x\";"..., 4096) = 4096
+write(1, "m{J#1i.Ptg<-8X*;)2){=F[fniNr7XCd"..., 4096) = 4096
+read(0, "QR8~?2@aPP@66y,-pH(>i]#G.EewZrF+"..., 4096) = 4096
+write(1, "&qWRtH@.S~1J9\\6GScXxJV0>&fwX5x\";"..., 4096) = 4096
+read(0, "{d)g392H\"c\\-OKV:oE>_g\1779=#nn%F6VA"..., 4096) = 4096
+write(1, "QR8~?2@0PP@66y,-pH(>i]#G.EewZrF+"..., 4096) = 4096
+read(0, "g(nFM,Dwss@`cx#`EOx1IOv^&#I>YoSA"..., 4096) = 4096
+write(1, "{d)g392H\"c\\-OKV:oE>_g\1779=#nn%F6VA"..., 4096) = 4096
+read(0, "uT\\Zv>52|\"_y\\a`g&Wl`eGJp@N:\177\\:%1"..., 4096) = 4096
+write(1, "g(nFM,Dwss@`cx#`EOx1IOv^&#I>YoSA"..., 4096) = 4096
+read(0, "W# bL{Cn0/trqYwh+94X/a:ra;&\\p]W'"..., 4096) = 4096
+write(1, "uT\\Zv>52|\"_y\\0`g&Wl`eGJp@N:\177\\:%1"..., 4096) = 4096
+read(0, "3(PtrX3#iSslnG\"/wLBMmK+L\177lEx\\]Xo"..., 4096) = 4096
+write(1, "W# bL{Cn0/trqYwh+94X/0:r0;&\\p]W'"..., 4096) = 4096
+read(0, ".+$~l}_Emj_}3#S#(,]w{G_c\\WCh@@)/"..., 4096) = 4096
+write(1, "3(PtrX3#iSslnG\"/wLBMmK+L\177lEx\\]Xo"..., 4096) = 4096
+read(0, "~]Q>J3\\/bY`^SjOpa!,ze*T]c0%Fb ja"..., 4096) = 4096
+write(1, ".+$~l}_Emj_}3#S#(,]w{G_c\\WCh@@)/"..., 4096) = 4096
+read(0, "d1M..+3\\r`u,33_YSS~(;p8Rn6#6K({p"..., 4096) = 4096
+write(1, "~]Q>J3\\/bY`^SjOp0!,ze*T]c0%Fb j0"..., 4096) = 4096
+read(0, "Qf4~NH8(M86\"olr~v_%%3e1WuH/w tF1"..., 4096) = 4096
+write(1, "d1M..+3\\r`u,33_YSS~(;p8Rn6#6K({p"..., 4096) = 4096
+read(0, "A1J\\HeF'h=QQPjw6lAB*U(BGkd^t;lx\\"..., 4096) = 4096
+write(1, "Qf4~NH8(M86\"olr~v_%%3e1WuH/w tF1"..., 4096) = 4096
+read(0, ".|{ 20/w:Mq]P2D(\"13VJU:wD^7O#EZq"..., 4096) = 4096
+write(1, "A1J\\HeF'h=QQPjw6lAB*U(BGkd^t;lx\\"..., 4096) = 4096
+read(0, "?%o*{|#/'*0x&j]R'Fv]&mOza6br:Oo9"..., 4096) = 4096
+write(1, ".|{ 20/w:Mq]P2D(\"13VJU:wD^7O#EZq"..., 4096) = 4096
+read(0, "V0['XX_jAy5r<<NY2sI}4h;q{qKq&),]"..., 4096) = 4096
+write(1, "?%o*{|#/'*0x&j]R'Fv]&mOz06br:Oo9"..., 4096) = 4096
+read(0, "j'<5PVrL<9WU}2j% cz1\177]`Xe/ /s5D]"..., 4096) = 4096
+write(1, "V0['XX_jAy5r<<NY2sI}4h;q{qKq&),]"..., 4096) = 4096
+read(0, "^pG~*q-g\177+1@OEsrj_H|sG/%:N89\177co="..., 4096) = 4096
+write(1, "j'<5PVrL<9WU}2j% cz1\177]`Xe/ /s5D]"..., 4096) = 4096
+read(0, "VA=8-,6?lnm4kF^'J/S%M35lm!jan<ED"..., 4096) = 4096
+write(1, "^pG~*q-g\177+1@OEsrj_H|sG/%:N89\177co="..., 4096) = 4096
+read(0, "yrY_2h#.\\(:nl2Rc}W\"ngb 6NS)fSkN,"..., 4096) = 4096
+write(1, "VA=8-,6?lnm4kF^'J/S%M35lm!j0n<ED"..., 4096) = 4096
+read(0, "*N%\"oJ&=K0nI<?HKPM~[<57uI\\;K3b5}"..., 4096) = 4096
+write(1, "yrY_2h#.\\(:nl2Rc}W\"ngb 6NS)fSkN,"..., 4096) = 4096
+read(0, "xeeXV*r?_D!o3wIOb-&6|d01,iQIfm3^"..., 4096) = 4096
+write(1, "*N%\"oJ&=K0nI<?HKPM~[<57uI\\;K3b5}"..., 4096) = 4096
+read(0, "V{9,H4mQz;_1\"Q]MS~m@s`3$Ee)Va>z7"..., 4096) = 4096
+write(1, "xeeXV*r?_D!o3wIOb-&6|d01,iQIfm3^"..., 4096) = 4096
+read(0, "CE+C$u&!2%Lxl_fuLN{hOYi-_@e\177S86w"..., 4096) = 4096
+write(1, "V{9,H4mQz;_1\"Q]MS~m@s`3$Ee)V0>z7"..., 4096) = 4096
+read(0, "\177NyXg)u*ZTlYl,%<H43hN|mhAhWMD{,C"..., 4096) = 4096
+write(1, "CE+C$u&!2%Lxl_fuLN{hOYi-_@e\177S86w"..., 4096) = 4096
+read(0, "ai8_I[.KM#bv!G+/Y]gR)j6nPL^579SY"..., 4096) = 4096
+write(1, "\177NyXg)u*ZTlYl,%<H43hN|mhAhWMD{,C"..., 4096) = 4096
+read(0, "J1/~'nSB_-?bw#=\177|IZTO5F!i9=+IQaS"..., 4096) = 4096
+write(1, "0i8_I[.KM#bv!G+/Y]gR)j6nPL^579SY"..., 4096) = 4096
+read(0, "1,\177ADX^yIf`{:i.RKv2#m-k<uMa<zRl+"..., 4096) = 4096
+write(1, "J1/~'nSB_-?bw#=\177|IZTO5F!i9=+IQ0S"..., 4096) = 4096
+read(0, "8j$z#cB35_fH66,_7SSW\1779&XLe1S&|o>"..., 4096) = 4096
+write(1, "1,\177ADX^yIf`{:i.RKv2#m-k<uM0<zRl+"..., 4096) = 4096
+read(0, ".g`b(bP]Q;*A`m~p*~6F0kQ_v9d/(w06"..., 4096) = 4096
+write(1, "8j$z#cB35_fH66,_7SSW\1779&XLe1S&|o>"..., 4096) = 4096
+read(0, "w$3:p^fG3\",oq2ik'AD_VQ=~Fh%'6Oi-"..., 4096) = 4096
+write(1, ".g`b(bP]Q;*A`m~p*~6F0kQ_v9d/(w06"..., 4096) = 4096
+read(0, "g3i#}&yXx?];=\\~`~2$RRW2wA$wKA\\dh"..., 4096) = 4096
+write(1, "w$3:p^fG3\",oq2ik'AD_VQ=~Fh%'6Oi-"..., 4096) = 4096
+read(0, "1B1\\^n8r,:udj9-[w037#\"!]O-Y 2tY$"..., 4096) = 4096
+write(1, "g3i#}&yXx?];=\\~`~2$RRW2wA$wKA\\dh"..., 4096) = 4096
+read(0, "1J4wFBd$>H\177EdoVLF/}1E*p7k^[7^T+O"..., 4096) = 4096
+write(1, "1B1\\^n8r,:udj9-[w037#\"!]O-Y 2tY$"..., 4096) = 4096
+read(0, "`O8A|v7;9tPq, 3c9/=Gk>IZOLD7P=c0"..., 4096) = 4096
+write(1, "1J4wFBd$>H\177EdoVLF/}1E*p7k^[7^T+O"..., 4096) = 4096
+read(0, "{58/5gP!tx;HhT,xymU0.'T9Iyh4GF)\""..., 4096) = 4096
+write(1, "`O8A|v7;9tPq, 3c9/=Gk>IZOLD7P=c0"..., 4096) = 4096
+read(0, "N\",9!t>{\177;>|sl)wM62:<bh!4/=Tc911"..., 4096) = 4096
+write(1, "{58/5gP!tx;HhT,xymU0.'T9Iyh4GF)\""..., 4096) = 4096
+read(0, "}|/B2BxJr.BwNpBUTCmfxb)3o\"PeT9NQ"..., 4096) = 4096
+write(1, "N\",9!t>{\177;>|sl)wM62:<bh!4/=Tc911"..., 4096) = 4096
+read(0, "ma$}4|d@N</R>'L\\'>~n|e1!eTCJC4/0"..., 4096) = 4096
+write(1, "}|/B2BxJr.BwNpBUTCmfxb)3o\"PeT9NQ"..., 4096) = 4096
+read(0, "ZIikJ;G|Lu]0(UKU+6+sv~bH/~~NJ<#$"..., 4096) = 4096
+write(1, "m0$}4|d@N</R>'L\\'>~n|e1!eTCJC4/0"..., 4096) = 4096
+read(0, "kZ=O(z9et`(q3W(+/6m<sJ[*RTNxcB:N"..., 4096) = 4096
+write(1, "ZIikJ;G|Lu]0(UKU+6+sv~bH/~~NJ<#$"..., 4096) = 4096
+read(0, "x\\'Sh/fSmL/[6K4Enx)IkdD#*ZFIOnDG"..., 4096) = 4096
+write(1, "kZ=O(z9et`(q3W(+/6m<sJ[*RTNxcB:N"..., 4096) = 4096
+read(0, "vG{5MI/|. oB2A2&PIRWa9iDAs|z#(aZ"..., 4096) = 4096
+write(1, "x\\'Sh/fSmL/[6K4Enx)IkdD#*ZFIOnDG"..., 4096) = 4096
+read(0, "$1zsI#Z}Pt*1VKZ YA8k`]el}TMWF;[+"..., 4096) = 4096
+write(1, "vG{5MI/|. oB2A2&PIRW09iDAs|z#(0Z"..., 4096) = 4096
+read(0, "J5eERj5\"'KQ9t\\quj~[zeu@/a\\7X)3&4"..., 4096) = 4096
+write(1, "$1zsI#Z}Pt*1VKZ YA8k`]el}TMWF;[+"..., 4096) = 4096
+read(0, "/[/F5YP>%=tz2jKtwML ;-=}L,g^u\\Yd"..., 4096) = 4096
+write(1, "J5eERj5\"'KQ9t\\quj~[zeu@/0\\7X)3&4"..., 4096) = 4096
+read(0, "S^GBWR5:nxbb);/:?@o)8N$ku\"3[zs&M"..., 4096) = 4096
+write(1, "/[/F5YP>%=tz2jKtwML ;-=}L,g^u\\Yd"..., 4096) = 4096
+read(0, "9<.#7'lWZRC3K|DD3N@y(PFsa/sV&^{@"..., 4096) = 4096
+write(1, "S^GBWR5:nxbb);/:?@o)8N$ku\"3[zs&M"..., 4096) = 4096
+read(0, "yxGGJZ}B3-{/>&aq;mmz>Gy +M\";\\F!6"..., 4096) = 4096
+write(1, "9<.#7'lWZRC3K|DD3N@y(PFs0/sV&^{@"..., 4096) = 4096
+read(0, "26h}&\"bX)(5T:aQ,K(b&4T&nm^MQ}`Io"..., 4096) = 4096
+write(1, "yxGGJZ}B3-{/>&0q;mmz>Gy +M\";\\F!6"..., 4096) = 4096
+read(0, "\\Ou =qpBI&yW`4l`G;k\"d?b-!]4]L=E("..., 4096) = 4096
+write(1, "26h}&\"bX)(5T:0Q,K(b&4T&nm^MQ}`Io"..., 4096) = 4096
+read(0, "6I__1'a$l6*`QV|RWICx\177u{gWb=8ojG&"..., 4096) = 4096
+write(1, "\\Ou =qpBI&yW`4l`G;k\"d?b-!]4]L=E("..., 4096) = 4096
+read(0, "^O'UI5-~'FjA<|pKfvu?A[ W,gXr=\",\\"..., 4096) = 4096
+write(1, "6I__1'0$l6*`QV|RWICx\177u{gWb=8ojG&"..., 4096) = 4096
+read(0, "(jzt )-/7)D\"jHVNXuK0?=P{P.]1F0rN"..., 4096) = 4096
+write(1, "^O'UI5-~'FjA<|pKfvu?A[ W,gXr=\",\\"..., 4096) = 4096
+read(0, "\177q-Wj5<%3sL\\iqc5+]xF<@.^\"I!\177%3Ud"..., 4096) = 4096
+write(1, "(jzt )-/7)D\"jHVNXuK0?=P{P.]1F0rN"..., 4096) = 4096
+read(0, "\\1R,u:cW3Cx{Ljz9A\177+w%oAm51kzxg\\T"..., 4096) = 4096
+write(1, "\177q-Wj5<%3sL\\iqc5+]xF<@.^\"I!\177%3Ud"..., 4096) = 4096
+read(0, "WY+|+rKX!kh+,Lg-v+-@wU|>O!V$';'^"..., 4096) = 4096
+write(1, "\\1R,u:cW3Cx{Ljz9A\177+w%oAm51kzxg\\T"..., 4096) = 4096
+read(0, "9S}/5L]2n,$!;f<kB>^#]b>B#ndBU(ON"..., 4096) = 4096
+write(1, "WY+|+rKX!kh+,Lg-v+-@wU|>O!V$';'^"..., 4096) = 4096
+read(0, "1HYS&Q_.J_#@5>FY9tU;8ZU|wD`xMtZ_"..., 4096) = 4096
+write(1, "9S}/5L]2n,$!;f<kB>^#]b>B#ndBU(ON"..., 4096) = 4096
+read(0, "NsJoIhA`d-4VjAf8>=}#W3?\\?|+9}U:K"..., 4096) = 4096
+write(1, "1HYS&Q_.J_#@5>FY9tU;8ZU|wD`xMtZ_"..., 4096) = 4096
+read(0, "`:1Jx([fY$135_;]zerJ1:cM^.Y~2fSR"..., 4096) = 4096
+write(1, "NsJoIhA`d-4VjAf8>=}#W3?\\?|+9}U:K"..., 4096) = 4096
+read(0, "  I5k%<npW3rlx:b!TWU{<lfdZu|n'9N"..., 4096) = 4096
+write(1, "`:1Jx([fY$135_;]zerJ1:cM^.Y~2fSR"..., 4096) = 4096
+read(0, "FOZJ\1770?O]4M\"f]w\177GJr5lt'#[KKXjr)0"..., 4096) = 4096
+write(1, "  I5k%<npW3rlx:b!TWU{<lfdZu|n'9N"..., 4096) = 4096
+read(0, "\177{xgsu*ZThv%;`\"Y1HpS9_tSMuyPyc(x"..., 4096) = 4096
+write(1, "FOZJ\1770?O]4M\"f]w\177GJr5lt'#[KKXjr)0"..., 4096) = 4096
+read(0, "6bh^^P0^Y+Z~ 3XlLw+9t_zc5\177%vMg#C"..., 4096) = 4096
+write(1, "\177{xgsu*ZThv%;`\"Y1HpS9_tSMuyPyc(x"..., 4096) = 4096
+read(0, "A\\kY$o{-nG5!Pnm;OM\\Sl1W\177l43FsTa4"..., 4096) = 4096
+write(1, "6bh^^P0^Y+Z~ 3XlLw+9t_zc5\177%vMg#C"..., 4096) = 4096
+read(0, "@[s}7#MP5-k7#SpS;/Vb-(ZG7.B-i&F)"..., 4096) = 4096
+write(1, "A\\kY$o{-nG5!Pnm;OM\\Sl1W\177l43FsT04"..., 4096) = 4096
+read(0, "-)$=<j3jY[DkFsTv_m9#sC~H<i[B;hkH"..., 4096) = 4096
+write(1, "@[s}7#MP5-k7#SpS;/Vb-(ZG7.B-i&F)"..., 4096) = 4096
+read(0, "ZG2]Q<Z@no.6UfopfTWK.Mqc+~NQlX\\F"..., 4096) = 4096
+write(1, "-)$=<j3jY[DkFsTv_m9#sC~H<i[B;hkH"..., 4096) = 4096
+read(0, "_?G8S/U%aB!jrM5~&[9@(GWsn%U7iX|H"..., 4096) = 4096
+write(1, "ZG2]Q<Z@no.6UfopfTWK.Mqc+~NQlX\\F"..., 4096) = 4096
+read(0, "Ft_^Le)O3A%.?%m}{\177wH.Ph\\(64B#TC)"..., 4096) = 4096
+write(1, "_?G8S/U%0B!jrM5~&[9@(GWsn%U7iX|H"..., 4096) = 4096
+read(0, "uj3n+/o*)c;u!joF[lJ%I@7Ma-0a9[%."..., 4096) = 4096
+write(1, "Ft_^Le)O3A%.?%m}{\177wH.Ph\\(64B#TC)"..., 4096) = 4096
+read(0, "dL<f46g<QW!Cy[#\"3p|l6XGmF3_YRN]v"..., 4096) = 4096
+write(1, "uj3n+/o*)c;u!joF[lJ%I@7M0-009[%."..., 4096) = 4096
+read(0, "yIW*<0,ltJxt]XwlPkstEvpz7E:;%\\n^"..., 4096) = 4096
+write(1, "dL<f46g<QW!Cy[#\"3p|l6XGmF3_YRN]v"..., 4096) = 4096
+read(0, "eu`x@j|\"5S\\*?i5Tu\"5v%zCDJ@J|8o@]"..., 4096) = 4096
+write(1, "yIW*<0,ltJxt]XwlPkstEvpz7E:;%\\n^"..., 4096) = 4096
+read(0, "gWnEGXIvW-xoL&gc7HDPrw64 g,&{*9b"..., 4096) = 4096
+write(1, "eu`x@j|\"5S\\*?i5Tu\"5v%zCDJ@J|8o@]"..., 4096) = 4096
+read(0, "H}U*64S?t#Z}mJg%/m !qSePWTl+6=o_"..., 4096) = 4096
+write(1, "gWnEGXIvW-xoL&gc7HDPrw64 g,&{*9b"..., 4096) = 4096
+read(0, "f'lfH886mKY[\177 _-.oUz}k?@]Va{Q'A7"..., 4096) = 4096
+write(1, "H}U*64S?t#Z}mJg%/m !qSePWTl+6=o_"..., 4096) = 4096
+read(0, "Ye\"PLw\\IcL .0P|1XPK\\D\\*\177Y*F0 d|9"..., 4096) = 4096
+write(1, "f'lfH886mKY[\177 _-.oUz}k?@]V0{Q'A7"..., 4096) = 4096
+read(0, "l_I\177Mf`T.E) ix-O94x>U*ok,PqU3@U\177"..., 4096) = 4096
+write(1, "Ye\"PLw\\IcL .0P|1XPK\\D\\*\177Y*F0 d|9"..., 4096) = 4096
+read(0, "ckQ=^kl_\177nH4:rsKJ5G?C%BZxkiZzB#>"..., 4096) = 4096
+write(1, "l_I\177Mf`T.E) ix-O94x>U*ok,PqU3@U\177"..., 4096) = 4096
+read(0, "]`lb@'gy4k6~)hH5HCVHXnFTxUF%wYrU"..., 4096) = 4096
+write(1, "ckQ=^kl_\177nH4:rsKJ5G?C%BZxkiZzB#>"..., 4096) = 4096
+read(0, "%et>4pV1lntx he<::],Z$:0EN1j|ANb"..., 4096) = 4096
+write(1, "]`lb@'gy4k6~)hH5HCVHXnFTxUF%wYrU"..., 4096) = 4096
+read(0, "ImZ1=*}ejIUXQPX06:qppyQ Azb_TDG]"..., 4096) = 4096
+write(1, "%et>4pV1lntx he<::],Z$:0EN1j|ANb"..., 4096) = 4096
+read(0, "~{|(.xxE4 7g%oS kP0X(Q;]%2Jx9JMw"..., 4096) = 4096
+write(1, "ImZ1=*}ejIUXQPX06:qppyQ Azb_TDG]"..., 4096) = 4096
+read(0, "&*|~0}xB\177EZ8j8mz4n=v&7!K)zxnkL\\r"..., 4096) = 4096
+write(1, "~{|(.xxE4 7g%oS kP0X(Q;]%2Jx9JMw"..., 4096) = 4096
+read(0, "=ttr!&Y4OR\"3LW|,p `m6>>okBBrD58A"..., 4096) = 4096
+write(1, "&*|~0}xB\177EZ8j8mz4n=v&7!K)zxnkL\\r"..., 4096) = 4096
+read(0, "D|W?Rl|ez\"V<%w]2A@Cns/ZJ0:^pg`Wk"..., 4096) = 4096
+write(1, "=ttr!&Y4OR\"3LW|,p `m6>>okBBrD58A"..., 4096) = 4096
+read(0, "E!DT{IYgvuAp%[wioGwN%Yk(^>5B-UY3"..., 4096) = 4096
+write(1, "D|W?Rl|ez\"V<%w]2A@Cns/ZJ0:^pg`Wk"..., 4096) = 4096
+read(0, "eY](PxkL0L5I\177~Jz#f=DrAe][@'fd[L)"..., 4096) = 4096
+write(1, "E!DT{IYgvuAp%[wioGwN%Yk(^>5B-UY3"..., 4096) = 4096
+read(0, "D<c{<\"6%>}?+{DpJk}?~CMQc+8kHW*<["..., 4096) = 4096
+write(1, "eY](PxkL0L5I\177~Jz#f=DrAe][@'fd[L)"..., 4096) = 4096
+read(0, "H;1jH{E'c2pz8SRHx(.mhk/e?90/nt2v"..., 4096) = 4096
+write(1, "D<c{<\"6%>}?+{DpJk}?~CMQc+8kHW*<["..., 4096) = 4096
+read(0, "@*8L)YvN2Y85~wjS+[7Di:21[Ba$/IeO"..., 4096) = 4096
+write(1, "H;1jH{E'c2pz8SRHx(.mhk/e?90/nt2v"..., 4096) = 4096
+read(0, "=}v/B['K'3V7EI00\"G-M_#[FIXP?D?Fa"..., 4096) = 4096
+write(1, "@*8L)YvN2Y85~wjS+[7Di:21[B0$/IeO"..., 4096) = 4096
+read(0, "iUB.-1k]\177%Yi,Pe!pdwp,e!vwu6QSB3<"..., 4096) = 4096
+write(1, "=}v/B['K'3V7EI00\"G-M_#[FIXP?D?F0"..., 4096) = 4096
+read(0, "fejxfk]tx5idqG)|*p8?yPK`rAtHkxkQ"..., 4096) = 4096
+write(1, "iUB.-1k]\177%Yi,Pe!pdwp,e!vwu6QSB3<"..., 4096) = 4096
+read(0, "L5+pZ?e.nN:xW$n\177o9ena&Hd/:~t{dq'"..., 4096) = 4096
+write(1, "fejxfk]tx5idqG)|*p8?yPK`rAtHkxkQ"..., 4096) = 4096
+read(0, "~iR~A9__b\"Y+<_a:?zj&/NlBqQ*B%}8#"..., 4096) = 4096
+write(1, "L5+pZ?e.nN:xW$n\177o9en0&Hd/:~t{dq'"..., 4096) = 4096
+read(0, "l7Y)O6T_>[1z-WZ5K/xH#k}l_\"zHUE%!"..., 4096) = 4096
+write(1, "~iR~A9__b\"Y+<_0:?zj&/NlBqQ*B%}8#"..., 4096) = 4096
+read(0, "up#s{/-ldH[(UG#*Sk^5'Fl&|n/KDx@9"..., 4096) = 4096
+write(1, "l7Y)O6T_>[1z-WZ5K/xH#k}l_\"zHUE%!"..., 4096) = 4096
+read(0, "5!3+=QsCkrs5(odAy6EZP#SqqptR`X5u"..., 4096) = 4096
+write(1, "up#s{/-ldH[(UG#*Sk^5'Fl&|n/KDx@9"..., 4096) = 4096
+read(0, "v\"NvN|<0(_i*+c[8>I%<b/jqFfP*!'qx"..., 4096) = 4096
+write(1, "5!3+=QsCkrs5(odAy6EZP#SqqptR`X5u"..., 4096) = 4096
+read(0, "aT10\\SfJ]/q=dKunCjD98N-&?OnW$87F"..., 4096) = 4096
+write(1, "v\"NvN|<0(_i*+c[8>I%<b/jqFfP*!'qx"..., 4096) = 4096
+read(0, "zF{Q@MdV3HB~e}s,``i}bCjU`&Aa:\"1u"..., 4096) = 4096
+write(1, "0T10\\SfJ]/q=dKunCjD98N-&?OnW$87F"..., 4096) = 4096
+read(0, "YHuw1|Z;*Q%$?)sRx^ta\1779W_Bfn4{tgT"..., 4096) = 4096
+write(1, "zF{Q@MdV3HB~e}s,``i}bCjU`&A0:\"1u"..., 4096) = 4096
+read(0, "VUk6*\177K4;7S`E5663dh0EeMLKWD?y*m/"..., 4096) = 4096
+write(1, "YHuw1|Z;*Q%$?)sRx^t0\1779W_Bfn4{tgT"..., 4096) = 4096
+read(0, "$U*+GlPl${zzpZ6eBtJwh}34Z\\P&.\"D2"..., 4096) = 4096
+write(1, "VUk6*\177K4;7S`E5663dh0EeMLKWD?y*m/"..., 4096) = 4096
+read(0, "@gVM$4F1_HROUYu{YV6@5aI7_?q\177/h'/"..., 4096) = 4096
+write(1, "$U*+GlPl${zzpZ6eBtJwh}34Z\\P&.\"D2"..., 4096) = 4096
+read(0, "\1778>FzvS,(Dmc1Wp&CHYNN[H'cdfsn~/n"..., 4096) = 4096
+write(1, "@gVM$4F1_HROUYu{YV6@50I7_?q\177/h'/"..., 4096) = 4096
+read(0, "-#|L~#:i0FGUA`l=/[rHb&IF%6H2[ioH"..., 4096) = 4096
+write(1, "\1778>FzvS,(Dmc1Wp&CHYNN[H'cdfsn~/n"..., 4096) = 4096
+read(0, "v&]f,ws#hzZe2ggt_sdKI-*Fh;Go:1V0"..., 4096) = 4096
+write(1, "-#|L~#:i0FGUA`l=/[rHb&IF%6H2[ioH"..., 4096) = 4096
+read(0, "#j$@yB\"NTD7(=eU*ilI04F`xX~OQu%xx"..., 4096) = 4096
+write(1, "v&]f,ws#hzZe2ggt_sdKI-*Fh;Go:1V0"..., 4096) = 4096
+read(0, ">T^!y^k 9j?\"$=7i-=IoPmfQBQ|3CuZb"..., 4096) = 4096
+write(1, "#j$@yB\"NTD7(=eU*ilI04F`xX~OQu%xx"..., 4096) = 4096
+read(0, "(t_B6oT+IgSkq*<!EcyrMpS5eyu%=R%E"..., 4096) = 4096
+write(1, ">T^!y^k 9j?\"$=7i-=IoPmfQBQ|3CuZb"..., 4096) = 4096
+read(0, "YVa2Nn'3Cdql<LP1yXL1HM1g[|NXsIz,"..., 4096) = 4096
+write(1, "(t_B6oT+IgSkq*<!EcyrMpS5eyu%=R%E"..., 4096) = 4096
+read(0, ".A?N37&e+kE\177)arQiH96Z6(;zl4}Hoz6"..., 4096) = 4096
+write(1, "YV02Nn'3Cdql<LP1yXL1HM1g[|NXsIz,"..., 4096) = 4096
+read(0, "d_5O.-%U5/d-#tC=MVz\177uAD%,^w\\RcS6"..., 4096) = 4096
+write(1, ".A?N37&e+kE\177)0rQiH96Z6(;zl4}Hoz6"..., 4096) = 4096
+read(0, "O[Hn5!HDZ@I{a`I(lbfmCcg0i2JoAQ7p"..., 4096) = 4096
+write(1, "d_5O.-%U5/d-#tC=MVz\177uAD%,^w\\RcS6"..., 4096) = 4096
+read(0, "sNLUjiGwyM-Wah7 WPZAdK1}pYnSNrcA"..., 4096) = 4096
+write(1, "O[Hn5!HDZ@I{0`I(lbfmCcg0i2JoAQ7p"..., 4096) = 4096
+read(0, "fvV)OC\\'8\177?wPN7Ly}mz&yoQ>6wlU\177${"..., 4096) = 4096
+write(1, "sNLUjiGwyM-W0h7 WPZAdK1}pYnSNrcA"..., 4096) = 4096
+read(0, "Qr@S8*Cr%q$30Q1r$<6C>e~65qhnZnZl"..., 4096) = 4096
+write(1, "fvV)OC\\'8\177?wPN7Ly}mz&yoQ>6wlU\177${"..., 4096) = 4096
+read(0, "J@{$\\/&m,`cwXdXH0N\"B>nDvnvpK;uye"..., 4096) = 4096
+write(1, "Qr@S8*Cr%q$30Q1r$<6C>e~65qhnZnZl"..., 4096) = 4096
+read(0, "=C`=V!|\177Tq[\"\"=c)I%!IHw6\"LvXqTxhQ"..., 4096) = 4096
+write(1, "J@{$\\/&m,`cwXdXH0N\"B>nDvnvpK;uye"..., 4096) = 4096
+read(0, "m_Tkz8]&$U^6=LGdXm@=Ubz%1%! ,%FZ"..., 4096) = 4096
+write(1, "=C`=V!|\177Tq[\"\"=c)I%!IHw6\"LvXqTxhQ"..., 4096) = 4096
+read(0, "E]B%^'IdlgY!bU*=msYEQV 6\\H=*|qZ!"..., 4096) = 4096
+write(1, "m_Tkz8]&$U^6=LGdXm@=Ubz%1%! ,%FZ"..., 4096) = 4096
+read(0, "?vy*\\2\"Npy&V:J#0hHhg2FAq*^L\177$+'#"..., 4096) = 4096
+write(1, "E]B%^'IdlgY!bU*=msYEQV 6\\H=*|qZ!"..., 4096) = 4096
+read(0, "OHd(,.m0NK9h(h;)J>xO|ug$j0OdN8\177}"..., 4096) = 4096
+write(1, "?vy*\\2\"Npy&V:J#0hHhg2FAq*^L\177$+'#"..., 4096) = 4096
+read(0, "\"zPK]mt`(\"rp$*NVM|Xdy8s3vJSrPxx2"..., 4096) = 4096
+write(1, "OHd(,.m0NK9h(h;)J>xO|ug$j0OdN8\177}"..., 4096) = 4096
+read(0, "7jhSoO/VTZKtojgMR83b^;4BQ$>gCGoZ"..., 4096) = 4096
+write(1, "\"zPK]mt`(\"rp$*NVM|Xdy8s3vJSrPxx2"..., 4096) = 4096
+read(0, "PQvkgwtfD?%s9vBj/{G%qkwnJ(nFNFX\177"..., 4096) = 4096
+write(1, "7jhSoO/VTZKtojgMR83b^;4BQ$>gCGoZ"..., 4096) = 4096
+read(0, "xM0B.3Zye#7iI'5I{*.ik=Uz[^(H6'dn"..., 4096) = 4096
+write(1, "PQvkgwtfD?%s9vBj/{G%qkwnJ(nFNFX\177"..., 4096) = 4096
+read(0, "asKF+\"+x\"|8hKi3K^=sv;t\177qnW0QC@M$"..., 4096) = 4096
+write(1, "xM0B.3Zye#7iI'5I{*.ik=Uz[^(H6'dn"..., 4096) = 4096
+read(0, "0pRoY KKCVh(+\\\1770~Iq~c5.vM+-R\"I*r"..., 4096) = 4096
+write(1, "0sKF+\"+x\"|8hKi3K^=sv;t\177qnW0QC@M$"..., 4096) = 4096
+read(0, "(nxj*GBm[Pbhg^Uf%F^uJJ2\\Eh8J3<A{"..., 4096) = 4096
+write(1, "0pRoY KKCVh(+\\\1770~Iq~c5.vM+-R\"I*r"..., 4096) = 4096
+read(0, "n_), 4w)&DN\177Y@+R<NKW_zUPjvfSmgR\\"..., 4096) = 4096
+write(1, "(nxj*GBm[Pbhg^Uf%F^uJJ2\\Eh8J3<A{"..., 4096) = 4096
+read(0, "6jULFbBZz{O=DKz/YZ\">+Z`tdZF/AF&W"..., 4096) = 4096
+write(1, "n_), 4w)&DN\177Y@+R<NKW_zUPjvfSmgR\\"..., 4096) = 4096
+read(0, ")|Y~+V)tt?98XU1WF|Yev+PnygUm-\177.v"..., 4096) = 4096
+write(1, "6jULFbBZz{O=DKz/YZ\">+Z`tdZF/AF&W"..., 4096) = 4096
+read(0, "AcD5mYZ1j@<?`_O!7w50vb hK{Jv/|#P"..., 4096) = 4096
+write(1, ")|Y~+V)tt?98XU1WF|Yev+PnygUm-\177.v"..., 4096) = 4096
+read(0, "7mQ?pqVSP/}^8l?dWV*2zip?nWIx^NBV"..., 4096) = 4096
+write(1, "AcD5mYZ1j@<?`_O!7w50vb hK{Jv/|#P"..., 4096) = 4096
+read(0, "vek}}@/8ir(nN=3C}3!\177DZ2~]V]b5L*,"..., 4096) = 4096
+write(1, "7mQ?pqVSP/}^8l?dWV*2zip?nWIx^NBV"..., 4096) = 4096
+read(0, "%JJlYN>b|C|PIjL#lIwS]E9NtChR+N^p"..., 4096) = 4096
+write(1, "vek}}@/8ir(nN=3C}3!\177DZ2~]V]b5L*,"..., 4096) = 4096
+read(0, "xcuYNQ4HFJ;8<>H1L f7Q3(zR8|xM+\\E"..., 4096) = 4096
+write(1, "%JJlYN>b|C|PIjL#lIwS]E9NtChR+N^p"..., 4096) = 4096
+read(0, "5R8$@(KJ(Hg'7</$-Ea&LGkk/v^n\">A8"..., 4096) = 4096
+write(1, "xcuYNQ4HFJ;8<>H1L f7Q3(zR8|xM+\\E"..., 4096) = 4096
+read(0, "#\177!+<_>ML|JRcxPDyQjdQ9R)3,0S<t!\177"..., 4096) = 4096
+write(1, "5R8$@(KJ(Hg'7</$-E0&LGkk/v^n\">A8"..., 4096) = 4096
+read(0, "A`FM=P}abz0].Jb'BlWuk~q<^{W6V^7w"..., 4096) = 4096
+write(1, "#\177!+<_>ML|JRcxPDyQjdQ9R)3,0S<t!\177"..., 4096) = 4096
+read(0, "{reGUVDjfP1+*^>#4M;OMI}\177^Kg>+X('"..., 4096) = 4096
+write(1, "A`FM=P}0bz0].Jb'BlWuk~q<^{W6V^7w"..., 4096) = 4096
+read(0, "|3'HA{I^q_yjrtn!/F\\OY[E@5f9|kSbH"..., 4096) = 4096
+write(1, "{reGUVDjfP1+*^>#4M;OMI}\177^Kg>+X('"..., 4096) = 4096
+read(0, "\\b<-d*AAc)QS.\"-@H\\I &E'@$zryBXN^"..., 4096) = 4096
+write(1, "|3'HA{I^q_yjrtn!/F\\OY[E@5f9|kSbH"..., 4096) = 4096
+read(0, "Mh`Pw,[uones.ZV#(|<_.U1sk\">\"0Iq="..., 4096) = 4096
+write(1, "\\b<-d*AAc)QS.\"-@H\\I &E'@$zryBXN^"..., 4096) = 4096
+read(0, "^r}\\^#k3%xfKy{y6<$Bzr)!hL0y&7=Ou"..., 4096) = 4096
+write(1, "Mh`Pw,[uones.ZV#(|<_.U1sk\">\"0Iq="..., 4096) = 4096
+read(0, ".^Dy\"c?UI7wRg[H];srx3 98#N<\"Pz:_"..., 4096) = 4096
+write(1, "^r}\\^#k3%xfKy{y6<$Bzr)!hL0y&7=Ou"..., 4096) = 4096
+read(0, "{'VsKIVHVj.G=spvbJxDX0zwb/R38p0s"..., 4096) = 4096
+write(1, ".^Dy\"c?UI7wRg[H];srx3 98#N<\"Pz:_"..., 4096) = 4096
+read(0, "OAvHs!ak.F=8HV\"twRd0}]&3e8k|Nt1~"..., 4096) = 4096
+write(1, "{'VsKIVHVj.G=spvbJxDX0zwb/R38p0s"..., 4096) = 4096
+read(0, "/|8oB9potsrYDWE\\ZvDIopN:8b,~JO-Z"..., 4096) = 4096
+write(1, "OAvHs!0k.F=8HV\"twRd0}]&3e8k|Nt1~"..., 4096) = 4096
+read(0, "xF}Gz1\\U}Q;a0B(}RP1&8RR =/G|N\\ZF"..., 4096) = 4096
+write(1, "/|8oB9potsrYDWE\\ZvDIopN:8b,~JO-Z"..., 4096) = 4096
+read(0, "DU{OC`&j(0^_/\"w%B4WGX? HiL7Egy{k"..., 4096) = 4096
+write(1, "xF}Gz1\\U}Q;00B(}RP1&8RR =/G|N\\ZF"..., 4096) = 4096
+read(0, "go=ma4ZO)~600Ya\\KXAcSU@<Sjv\\QQty"..., 4096) = 4096
+write(1, "DU{OC`&j(0^_/\"w%B4WGX? HiL7Egy{k"..., 4096) = 4096
+read(0, "xf*a?{Lr0^ SdKcz$-s9<\"B;%`HE6bco"..., 4096) = 4096
+write(1, "go=m04ZO)~600Y0\\KXAcSU@<Sjv\\QQty"..., 4096) = 4096
+read(0, "+s!^@#qDeg{[68wf:$?JWH(kZ26%}E h"..., 4096) = 4096
+write(1, "xf*0?{Lr0^ SdKcz$-s9<\"B;%`HE6bco"..., 4096) = 4096
+read(0, "~!CBUQ_!<Fcqct0})X\"QPwxz3UBDis0G"..., 4096) = 4096
+write(1, "+s!^@#qDeg{[68wf:$?JWH(kZ26%}E h"..., 4096) = 4096
+read(0, "%,#P4qSdD4P)e:9`>E;lW727?()zb\"Ng"..., 4096) = 4096
+write(1, "~!CBUQ_!<Fcqct0})X\"QPwxz3UBDis0G"..., 4096) = 4096
+read(0, "q_Ee!P,]hQ\177J;QrkgnESrm<]Ir<^KZ]}"..., 4096) = 4096
+write(1, "%,#P4qSdD4P)e:9`>E;lW727?()zb\"Ng"..., 4096) = 4096
+read(0, "84]7A(NlHHV(Sf fndru0un~1w):uk'm"..., 4096) = 4096
+write(1, "q_Ee!P,]hQ\177J;QrkgnESrm<]Ir<^KZ]}"..., 4096) = 4096
+read(0, "4S&H,a=P'5YsK36RTt6zH-3R*9 }u9Ti"..., 4096) = 4096
+write(1, "84]7A(NlHHV(Sf fndru0un~1w):uk'm"..., 4096) = 4096
+read(0, "W]hm)/!y.3/'\177!}P2v_opjynaBD|8MEO"..., 4096) = 4096
+write(1, "4S&H,0=P'5YsK36RTt6zH-3R*9 }u9Ti"..., 4096) = 4096
+read(0, "6`\\HC?>[rJt0'VJvxnUo;UcpO}C HgL>"..., 4096) = 4096
+write(1, "W]hm)/!y.3/'\177!}P2v_opjyn0BD|8MEO"..., 4096) = 4096
+read(0, "~iBo:lwsmOSSxbzc@S4P1K2ku/W&#JTa"..., 4096) = 4096
+write(1, "6`\\HC?>[rJt0'VJvxnUo;UcpO}C HgL>"..., 4096) = 4096
+read(0, "aZbb)Ja\\\177UkMMUfy@vG7t=erraSdt$>5"..., 4096) = 4096
+write(1, "~iBo:lwsmOSSxbzc@S4P1K2ku/W&#JT0"..., 4096) = 4096
+read(0, "!{SHxmk%ajguE\"s8V_~haQ`6maMcEoo&"..., 4096) = 4096
+write(1, "0Zbb)J0\\\177UkMMUfy@vG7t=err0Sdt$>5"..., 4096) = 4096
+read(0, "mo\\GQI[:hm|{p1FOS4$f8V l-P;90+}]"..., 4096) = 4096
+write(1, "!{SHxmk%0jguE\"s8V_~h0Q`6m0McEoo&"..., 4096) = 4096
+read(0, "KY/\177Gdg3+f5<q~g@j|B)N(P8gn8'n>0y"..., 4096) = 4096
+write(1, "mo\\GQI[:hm|{p1FOS4$f8V l-P;90+}]"..., 4096) = 4096
+read(0, "Duuf>7>5}[<k|A'%;]6/vFvr5~#-#c]G"..., 4096) = 4096
+write(1, "KY/\177Gdg3+f5<q~g@j|B)N(P8gn8'n>0y"..., 4096) = 4096
+read(0, "M\"&AI3iU7CT[?mI9=f({ulL\"=l5vJ~tx"..., 4096) = 4096
+write(1, "Duuf>7>5}[<k|A'%;]6/vFvr5~#-#c]G"..., 4096) = 4096
+read(0, "iMn~)-o0>8n=j\\(;\177.I%<X}A%%dQd?y-"..., 4096) = 4096
+write(1, "M\"&AI3iU7CT[?mI9=f({ulL\"=l5vJ~tx"..., 4096) = 4096
+read(0, "Re_Y}.f\\#aq+/H5OE\" ]/S5ti1E94GOG"..., 4096) = 4096
+write(1, "iMn~)-o0>8n=j\\(;\177.I%<X}A%%dQd?y-"..., 4096) = 4096
+read(0, "PP 5ra}p=mx:iot#oE-'V]bXi%Pe%B\1776"..., 4096) = 4096
+write(1, "Re_Y}.f\\#0q+/H5OE\" ]/S5ti1E94GOG"..., 4096) = 4096
+read(0, ")sf|gDWuJ^~?9}$\\um=*\177{i8ekLf2{b{"..., 4096) = 4096
+write(1, "PP 5r0}p=mx:iot#oE-'V]bXi%Pe%B\1776"..., 4096) = 4096
+read(0, "y0z$s;q}8uhU{g-BF>=KbskFT=FOV\"~O"..., 4096) = 4096
+write(1, ")sf|gDWuJ^~?9}$\\um=*\177{i8ekLf2{b{"..., 4096) = 4096
+read(0, "At:&rV Kp7=t@-Z/h&0ol<=R>Sv~'hzH"..., 4096) = 4096
+write(1, "y0z$s;q}8uhU{g-BF>=KbskFT=FOV\"~O"..., 4096) = 4096
+read(0, "*J0{p\177F4v(asH>\177Q |ig>?*$N)tM0xVz"..., 4096) = 4096
+write(1, "At:&rV Kp7=t@-Z/h&0ol<=R>Sv~'hzH"..., 4096) = 4096
+read(0, "AzTC={MRPS3ko\\T\\oW\\[oI=[Rln?\177ku@"..., 4096) = 4096
+write(1, "*J0{p\177F4v(0sH>\177Q |ig>?*$N)tM0xVz"..., 4096) = 4096
+read(0, "A#1RHjb;~eDL!w$1~(4FV}r>c+9QaD,b"..., 4096) = 4096
+write(1, "AzTC={MRPS3ko\\T\\oW\\[oI=[Rln?\177ku@"..., 4096) = 4096
+read(0, "j]o 5C}3'1F1u m~,3W8\\AsODyDyLJB6"..., 4096) = 4096
+write(1, "A#1RHjb;~eDL!w$1~(4FV}r>c+9Q0D,b"..., 4096) = 4096
+read(0, "!{2'e|{Q}`y }/1z~GF-Gvyp5}o8z,4["..., 4096) = 4096
+write(1, "j]o 5C}3'1F1u m~,3W8\\AsODyDyLJB6"..., 4096) = 4096
+read(0, "_+ 1[-'4kG3A\177HE$%w$amz_T\"-${^3L}"..., 4096) = 4096
+write(1, "!{2'e|{Q}`y }/1z~GF-Gvyp5}o8z,4["..., 4096) = 4096
+read(0, "t#yN:~tVj3(*/YT^alo!^-=s 9e+`7,5"..., 4096) = 4096
+write(1, "_+ 1[-'4kG3A\177HE$%w$0mz_T\"-${^3L}"..., 4096) = 4096
+read(0, "[V#?^QFoK2L2\17756=z1Ux 69m8n*r\\>\\x"..., 4096) = 4096
+write(1, "t#yN:~tVj3(*/YT^0lo!^-=s 9e+`7,5"..., 4096) = 4096
+read(0, "Ucp6y1yVkElCcGGoNe6mf<w} \\osnHG#"..., 4096) = 4096
+write(1, "[V#?^QFoK2L2\17756=z1Ux 69m8n*r\\>\\x"..., 4096) = 4096
+read(0, "`z8,E[V/iyOs15.K{y2q,dhz7*u3a)qA"..., 4096) = 4096
+write(1, "Ucp6y1yVkElCcGGoNe6mf<w} \\osnHG#"..., 4096) = 4096
+read(0, "I?uw0OF\"4X_a8-4+qH()fM.UC),vQTCz"..., 4096) = 4096
+write(1, "`z8,E[V/iyOs15.K{y2q,dhz7*u30)qA"..., 4096) = 4096
+read(0, "6I[wWA?B19=d6N=Z%l3G0Tt0Zf,,ZwNP"..., 4096) = 4096
+write(1, "I?uw0OF\"4X_08-4+qH()fM.UC),vQTCz"..., 4096) = 4096
+read(0, ".|sqzib^u$9i\\V_2Z_3/_zt`5{I;d}[r"..., 4096) = 4096
+write(1, "6I[wWA?B19=d6N=Z%l3G0Tt0Zf,,ZwNP"..., 4096) = 4096
+read(0, " wL4.HN\177J&ORC 0k7Z56D\\&Ti\177J YBC9"..., 4096) = 4096
+write(1, ".|sqzib^u$9i\\V_2Z_3/_zt`5{I;d}[r"..., 4096) = 4096
+read(0, "2f;=vz]0&EX_U(I UyE?x)NU_R ypJO\""..., 4096) = 4096
+write(1, " wL4.HN\177J&ORC 0k7Z56D\\&Ti\177J YBC9"..., 4096) = 4096
+read(0, "~T.p.cVRE+=?dNonO6X4-+_%I#B\177kn@I"..., 4096) = 4096
+write(1, "2f;=vz]0&EX_U(I UyE?x)NU_R ypJO\""..., 4096) = 4096
+read(0, "8a-t\177Sn|Ytb6CrffuI\\k-`~F6e@$-B/&"..., 4096) = 4096
+write(1, "~T.p.cVRE+=?dNonO6X4-+_%I#B\177kn@I"..., 4096) = 4096
+read(0, "Lu\\vmfE;RAi[WmW$^mZ[xie6z >84z=a"..., 4096) = 4096
+write(1, "80-t\177Sn|Ytb6CrffuI\\k-`~F6e@$-B/&"..., 4096) = 4096
+read(0, "dC$yH.QRcWbU^.~eSAO8kkLxgD+cI\177`m"..., 4096) = 4096
+write(1, "Lu\\vmfE;RAi[WmW$^mZ[xie6z >84z=0"..., 4096) = 4096
+read(0, "JEr<9byHo3A{;#I5ZE~:P(sJqBbd\\^n&"..., 4096) = 4096
+write(1, "dC$yH.QRcWbU^.~eSAO8kkLxgD+cI\177`m"..., 4096) = 4096
+read(0, "4?'U=\"%.KH={1|y>'51n34E#CXJXscN("..., 4096) = 4096
+write(1, "JEr<9byHo3A{;#I5ZE~:P(sJqBbd\\^n&"..., 4096) = 4096
+read(0, "j&]_{z=\"k\\[zIX~|F,\\^\"4}ZS%8-gL02"..., 4096) = 4096
+write(1, "4?'U=\"%.KH={1|y>'51n34E#CXJXscN("..., 4096) = 4096
+read(0, "NZ_)?m`:))A$\"mlNWur[k)pdyWf s\"@!"..., 4096) = 4096
+write(1, "j&]_{z=\"k\\[zIX~|F,\\^\"4}ZS%8-gL02"..., 4096) = 4096
+read(0, ":?A%Qiy4%vlKlP,H?tBGoI)J=3vO_;AY"..., 4096) = 4096
+write(1, "NZ_)?m`:))A$\"mlNWur[k)pdyWf s\"@!"..., 4096) = 4096
+read(0, "e8`4TfUAK(!t?`Tzmk3p[\177Vyz9ae'#OL"..., 4096) = 4096
+write(1, ":?A%Qiy4%vlKlP,H?tBGoI)J=3vO_;AY"..., 4096) = 4096
+read(0, "%lq|M%aInSSi`7w29mL5N44@J|_/dj\\i"..., 4096) = 4096
+write(1, "e8`4TfUAK(!t?`Tzmk3p[\177Vyz90e'#OL"..., 4096) = 4096
+read(0, "z,J#7LOx#`;~:'XyAif5lpzWC0C?n,tH"..., 4096) = 4096
+write(1, "%lq|M%0InSSi`7w29mL5N44@J|_/dj\\i"..., 4096) = 4096
+read(0, ":6)Pv3\\*1*?kZFb4=\\Ur`7+@8e%Np,u+"..., 4096) = 4096
+write(1, "z,J#7LOx#`;~:'XyAif5lpzWC0C?n,tH"..., 4096) = 4096
+read(0, "n=gEnzKh}Qu4sF5RXG8?3_Og2AJvn>f]"..., 4096) = 4096
+write(1, ":6)Pv3\\*1*?kZFb4=\\Ur`7+@8e%Np,u+"..., 4096) = 4096
+read(0, "}qWlT/[afxCpb1J\\[Qhg:Q\177`^fn;^,h["..., 4096) = 4096
+write(1, "n=gEnzKh}Qu4sF5RXG8?3_Og2AJvn>f]"..., 4096) = 4096
+read(0, "@E*5=_$Yv3g$\"*\177ZTW8AK- ;9 [LHYoH"..., 4096) = 4096
+write(1, "}qWlT/[0fxCpb1J\\[Qhg:Q\177`^fn;^,h["..., 4096) = 4096
+read(0, "8k\\e6jU4]]Kys!k)z?de5Bg+UeR9}_ov"..., 4096) = 4096
+write(1, "@E*5=_$Yv3g$\"*\177ZTW8AK- ;9 [LHYoH"..., 4096) = 4096
+read(0, "^h;P[v8~$Q\\X~aMN\\@[kh2L;)O909:$x"..., 4096) = 4096
+write(1, "8k\\e6jU4]]Kys!k)z?de5Bg+UeR9}_ov"..., 4096) = 4096
+read(0, "T<>y\1779R?\177vK{PsCC\177[yk86{?!1C>Q_d%"..., 4096) = 4096
+write(1, "^h;P[v8~$Q\\X~0MN\\@[kh2L;)O909:$x"..., 4096) = 4096
+read(0, "8IAp=N(~qaZ0s.YQ3,xnTfW9c7q8dwx\\"..., 4096) = 4096
+write(1, "T<>y\1779R?\177vK{PsCC\177[yk86{?!1C>Q_d%"..., 4096) = 4096
+read(0, "Uxe9t[dvWR8.RZ(XHr/o.-J!@mtXa:26"..., 4096) = 4096
+write(1, "8IAp=N(~q0Z0s.YQ3,xnTfW9c7q8dwx\\"..., 4096) = 4096
+read(0, "q#,Lu#cEOglkzkU2W'AJm--u4)9{>$\\o"..., 4096) = 4096
+write(1, "Uxe9t[dvWR8.RZ(XHr/o.-J!@mtX0:26"..., 4096) = 4096
+read(0, "5T9hxS2=*D[}|\\q]}_@|8l.D]\177FLFN3["..., 4096) = 4096
+write(1, "q#,Lu#cEOglkzkU2W'AJm--u4)9{>$\\o"..., 4096) = 4096
+read(0, "yN/?pSE,[oXj0<+|2)mV:*MI9^jX?5}8"..., 4096) = 4096
+write(1, "5T9hxS2=*D[}|\\q]}_@|8l.D]\177FLFN3["..., 4096) = 4096
+read(0, "PW~qReb8#JH>0HIK-|urh;\\qPqwQR^G#"..., 4096) = 4096
+write(1, "yN/?pSE,[oXj0<+|2)mV:*MI9^jX?5}8"..., 4096) = 4096
+read(0, "{C\"SbW|Dj<\"Dl,#Ds/wX\\\"%Ga}@JDlF\177"..., 4096) = 4096
+write(1, "PW~qReb8#JH>0HIK-|urh;\\qPqwQR^G#"..., 4096) = 4096
+read(0, "]kAsX@-S)I[jGsc28O/]dnAB)NfCrON/"..., 4096) = 4096
+write(1, "{C\"SbW|Dj<\"Dl,#Ds/wX\\\"%G0}@JDlF\177"..., 4096) = 4096
+read(0, "_zCokzz\"&csfuCeB9DlI7-r>%pQD&^Lf"..., 4096) = 4096
+write(1, "]kAsX@-S)I[jGsc28O/]dnAB)NfCrON/"..., 4096) = 4096
+read(0, "hJ^H_Jl1[SI#jiO6]JEP'5;HGexcZlkB"..., 4096) = 4096
+write(1, "_zCokzz\"&csfuCeB9DlI7-r>%pQD&^Lf"..., 4096) = 4096
+read(0, "*mQ+c|YovW$?RnIyP\\! IWzKalrD>^'H"..., 4096) = 4096
+write(1, "hJ^H_Jl1[SI#jiO6]JEP'5;HGexcZlkB"..., 4096) = 4096
+read(0, ">_Wg}X/lgX2dV4Uo\\2r7fTF'FCe?Rv\\p"..., 4096) = 4096
+write(1, "*mQ+c|YovW$?RnIyP\\! IWzK0lrD>^'H"..., 4096) = 4096
+read(0, "Y^fbpDgFbNs*p4<']SLT{vL18XO>Qqjj"..., 4096) = 4096
+write(1, ">_Wg}X/lgX2dV4Uo\\2r7fTF'FCe?Rv\\p"..., 4096) = 4096
+read(0, " 2V~r74X<&q~zLi;>A?\177Y>U*9 n:99`9"..., 4096) = 4096
+write(1, "Y^fbpDgFbNs*p4<']SLT{vL18XO>Qqjj"..., 4096) = 4096
+read(0, "\\M5vBG\"qFG?^xZNoF^4K=zF&S6cTw2kS"..., 4096) = 4096
+write(1, " 2V~r74X<&q~zLi;>A?\177Y>U*9 n:99`9"..., 4096) = 4096
+read(0, ")bP@t/qx4?1^sF)[)OE+OAQQ_s\\']n`f"..., 4096) = 4096
+write(1, "\\M5vBG\"qFG?^xZNoF^4K=zF&S6cTw2kS"..., 4096) = 4096
+read(0, "JQg\1779R$x4\177Zc*W\"{\"d-Y/km']9L]{I=&"..., 4096) = 4096
+write(1, ")bP@t/qx4?1^sF)[)OE+OAQQ_s\\']n`f"..., 4096) = 4096
+read(0, "\"1^s$)&nqwLb5Y,C4B.rA<riFi_1`abB"..., 4096) = 4096
+write(1, "JQg\1779R$x4\177Zc*W\"{\"d-Y/km']9L]{I=&"..., 4096) = 4096
+read(0, "Aayj}bu+b,U]-#8BL!896\177x!N!l'1oR3"..., 4096) = 4096
+write(1, "\"1^s$)&nqwLb5Y,C4B.rA<riFi_1`0bB"..., 4096) = 4096
+read(0, "inK+b7@r::;-|\\7iyxI,%*KH&N;,NCNx"..., 4096) = 4096
+write(1, "A0yj}bu+b,U]-#8BL!896\177x!N!l'1oR3"..., 4096) = 4096
+read(0, "QGE.U-02O0wxh`mnKDPTK2\\d=L)o+yE="..., 4096) = 4096
+write(1, "inK+b7@r::;-|\\7iyxI,%*KH&N;,NCNx"..., 4096) = 4096
+read(0, "k2f2K+TG]>]HYsRe0[1YK\177aFsO)]H(\1774"..., 4096) = 4096
+write(1, "QGE.U-02O0wxh`mnKDPTK2\\d=L)o+yE="..., 4096) = 4096
+read(0, "6\"bsz48;yuntkMk|jCHS*3\\)8lp0cf!y"..., 4096) = 4096
+write(1, "k2f2K+TG]>]HYsRe0[1YK\1770FsO)]H(\1774"..., 4096) = 4096
+read(0, "g/<iDmT2Z-gn F$}FO-Q,_jncmApmSS4"..., 4096) = 4096
+write(1, "6\"bsz48;yuntkMk|jCHS*3\\)8lp0cf!y"..., 4096) = 4096
+read(0, "D/%p{fx!kWM`n0daBFEWY^5UDT:OieM-"..., 4096) = 4096
+write(1, "g/<iDmT2Z-gn F$}FO-Q,_jncmApmSS4"..., 4096) = 4096
+read(0, "imD|)|jIors>\177~,~yr%AS`J0x:3(Knw4"..., 4096) = 4096
+write(1, "D/%p{fx!kWM`n0d0BFEWY^5UDT:OieM-"..., 4096) = 4096
+read(0, "kRl?G@.Zons|&VSu<yBl?NWho5f^9TC%"..., 4096) = 4096
+write(1, "imD|)|jIors>\177~,~yr%AS`J0x:3(Knw4"..., 4096) = 4096
+read(0, "(G0SR'Ua([O3S(.2G);mDlBIrkEhlTBT"..., 4096) = 4096
+write(1, "kRl?G@.Zons|&VSu<yBl?NWho5f^9TC%"..., 4096) = 4096
+read(0, "AOl^(Nos|[Prwpa6]$RQ_aR !TKiZYt{"..., 4096) = 4096
+write(1, "(G0SR'U0([O3S(.2G);mDlBIrkEhlTBT"..., 4096) = 4096
+read(0, "Gmt#fsBv8/upfV7n\"GJ`o:]=O3<<eOal"..., 4096) = 4096
+write(1, "AOl^(Nos|[Prwp06]$RQ_0R !TKiZYt{"..., 4096) = 4096
+read(0, "cnM[qf%_2/!x\\#)dLPpn/CStT:S\177Y8r<"..., 4096) = 4096
+write(1, "Gmt#fsBv8/upfV7n\"GJ`o:]=O3<<eO0l"..., 4096) = 4096
+read(0, "gu'B0&r>)Gb''9r]PIC8rr#I7>.|JFN1"..., 4096) = 4096
+write(1, "cnM[qf%_2/!x\\#)dLPpn/CStT:S\177Y8r<"..., 4096) = 4096
+read(0, "XnCCV}f!e~'S|m]d]s9;WV_2umNK$f?<"..., 4096) = 4096
+write(1, "gu'B0&r>)Gb''9r]PIC8rr#I7>.|JFN1"..., 4096) = 4096
+read(0, "18_-E!Qz6~~AJj@,@|]p7v6^6YUu~GIp"..., 4096) = 4096
+write(1, "XnCCV}f!e~'S|m]d]s9;WV_2umNK$f?<"..., 4096) = 4096
+read(0, "sju80*V!kZgLw6fsK -Chu,!>lzmvnui"..., 4096) = 4096
+write(1, "18_-E!Qz6~~AJj@,@|]p7v6^6YUu~GIp"..., 4096) = 4096
+read(0, "\".pdh{Na+mxDwl,=;m[HPM\177F.8Ri`m/C"..., 4096) = 4096
+write(1, "sju80*V!kZgLw6fsK -Chu,!>lzmvnui"..., 4096) = 4096
+read(0, "WS6Df[N9lj(9a8t\177g| uD]E@@0p .k_e"..., 4096) = 4096
+write(1, "\".pdh{N0+mxDwl,=;m[HPM\177F.8Ri`m/C"..., 4096) = 4096
+read(0, "z+4HXw+oE-2Q.7,p{R{U}9$8KX5Gmt-G"..., 4096) = 4096
+write(1, "WS6Df[N9lj(908t\177g| uD]E@@0p .k_e"..., 4096) = 4096
+read(0, "HLys\"c,~e5AThUS7w8e;x\177ml(:Z:=)Jf"..., 4096) = 4096
+write(1, "z+4HXw+oE-2Q.7,p{R{U}9$8KX5Gmt-G"..., 4096) = 4096
+read(0, "FO4%53=B[W+me~_]6h#IG)EY\"|?ju@m<"..., 4096) = 4096
+write(1, "HLys\"c,~e5AThUS7w8e;x\177ml(:Z:=)Jf"..., 4096) = 4096
+read(0, "\":!=Y%~Q%[cDe5goyOn \"$Qml58hd&dF"..., 4096) = 4096
+write(1, "FO4%53=B[W+me~_]6h#IG)EY\"|?ju@m<"..., 4096) = 4096
+read(0, "|$+:t{h@L`Rg#0k|<([KwwS %)H\"\"mO^"..., 4096) = 4096
+write(1, "\":!=Y%~Q%[cDe5goyOn \"$Qml58hd&dF"..., 4096) = 4096
+read(0, "h(+nwM9g^m 6KKEnkO^/UVz\177<L#9uct="..., 4096) = 4096
+write(1, "|$+:t{h@L`Rg#0k|<([KwwS %)H\"\"mO^"..., 4096) = 4096
+read(0, "IU;?MuIosH:\"-`2mlP6w/:moCj0-Vwe\177"..., 4096) = 4096
+write(1, "h(+nwM9g^m 6KKEnkO^/UVz\177<L#9uct="..., 4096) = 4096
+read(0, "-<6'rnXuWl4~L-Q~XiNO&!RpiCWSp}#}"..., 4096) = 4096
+write(1, "IU;?MuIosH:\"-`2mlP6w/:moCj0-Vwe\177"..., 4096) = 4096
+read(0, "RDv,E'2L9@? )h[(/q{/Y/jAGFRWd-U6"..., 4096) = 4096
+write(1, "-<6'rnXuWl4~L-Q~XiNO&!RpiCWSp}#}"..., 4096) = 4096
+read(0, " f^%Q]sP-`7#>RaKP|buf{ge9JkY{PS{"..., 4096) = 4096
+write(1, "RDv,E'2L9@? )h[(/q{/Y/jAGFRWd-U6"..., 4096) = 4096
+read(0, "9^qzN)\177:l7t,s%t?r83aPN:@ }IoJ^;d"..., 4096) = 4096
+write(1, " f^%Q]sP-`7#>R0KP|buf{ge9JkY{PS{"..., 4096) = 4096
+read(0, "<uAgjG>ihr?8QH$px7[$fHe>R1{_FR+B"..., 4096) = 4096
+write(1, "9^qzN)\177:l7t,s%t?r830PN:@ }IoJ^;d"..., 4096) = 4096
+read(0, ")'\177xl-'M!KMp?1L:xT7nv)&U^V.t]XvG"..., 4096) = 4096
+write(1, "<uAgjG>ihr?8QH$px7[$fHe>R1{_FR+B"..., 4096) = 4096
+read(0, "P%9 *1AiE3NwmvH*,{J#(lJb$fL5vVIF"..., 4096) = 4096
+write(1, ")'\177xl-'M!KMp?1L:xT7nv)&U^V.t]XvG"..., 4096) = 4096
+read(0, "=hApXCMBbmI2\"Cl+afmFd,[,OTN0G)^D"..., 4096) = 4096
+write(1, "P%9 *1AiE3NwmvH*,{J#(lJb$fL5vVIF"..., 4096) = 4096
+read(0, "@nf\1773La};Z>,F=/eta$\\&<jm~QZ{uc}5"..., 4096) = 4096
+write(1, "=hApXCMBbmI2\"Cl+0fmFd,[,OTN0G)^D"..., 4096) = 4096
+read(0, "08u~luJ4?BO;M2!}|8\177Wy)DI#G~$Y9:I"..., 4096) = 4096
+write(1, "@nf\1773L0};Z>,F=/et0$\\&<jm~QZ{uc}5"..., 4096) = 4096
+read(0, "\\|a]B_%K+[\\+Z$fltcdF<\"<(I\"uXU<Mq"..., 4096) = 4096
+write(1, "08u~luJ4?BO;M2!}|8\177Wy)DI#G~$Y9:I"..., 4096) = 4096
+read(0, "c*bkPr2;=Q<^Y,TPxTk)\177{\177|4F_,G|B*"..., 4096) = 4096
+write(1, "\\|0]B_%K+[\\+Z$fltcdF<\"<(I\"uXU<Mq"..., 4096) = 4096
+read(0, "8M~&wwl0l.fhNOsSsA/ejN[<@FM]c7v|"..., 4096) = 4096
+write(1, "c*bkPr2;=Q<^Y,TPxTk)\177{\177|4F_,G|B*"..., 4096) = 4096
+read(0, "2RU'\177GG,PH@9==,^1hzB`R@;1>lqR)XE"..., 4096) = 4096
+write(1, "8M~&wwl0l.fhNOsSsA/ejN[<@FM]c7v|"..., 4096) = 4096
+read(0, ">.'Y{#i58zt3Mj773v3>7yB]ey/\177;?f9"..., 4096) = 4096
+write(1, "2RU'\177GG,PH@9==,^1hzB`R@;1>lqR)XE"..., 4096) = 4096
+read(0, "e@C})K6;J\177ythhEYe_BcCT;]24gWCUyh"..., 4096) = 4096
+write(1, ">.'Y{#i58zt3Mj773v3>7yB]ey/\177;?f9"..., 4096) = 4096
+read(0, "Oq/&#@\"70/Q8CE*Y_..6PpAfmD~9cUH3"..., 4096) = 4096
+write(1, "e@C})K6;J\177ythhEYe_BcCT;]24gWCUyh"..., 4096) = 4096
+read(0, "+S0b5m*)AQIF@vn?%_17mgd::u4[St^>"..., 4096) = 4096
+write(1, "Oq/&#@\"70/Q8CE*Y_..6PpAfmD~9cUH3"..., 4096) = 4096
+read(0, "j;}</lBcb3gj.~u=wS_^#K7_|G;FWJh!"..., 4096) = 4096
+write(1, "+S0b5m*)AQIF@vn?%_17mgd::u4[St^>"..., 4096) = 4096
+read(0, "e.+YkoIjK);/SBQXKg2ZGJy!JVC7.r~s"..., 4096) = 4096
+write(1, "j;}</lBcb3gj.~u=wS_^#K7_|G;FWJh!"..., 4096) = 4096
+read(0, "'r=GV]w{|C9X(\";maQx%bb.>/)XD|FA$"..., 4096) = 4096
+write(1, "e.+YkoIjK);/SBQXKg2ZGJy!JVC7.r~s"..., 4096) = 4096
+read(0, "_0~/8cdoa%}adWDMsz,L`|3\"K*QkmB[L"..., 4096) = 4096
+write(1, "'r=GV]w{|C9X(\";m0Qx%bb.>/)XD|FA$"..., 4096) = 4096
+read(0, "O]_^wt[V33{:A.0me@i9{H1,5eOes3;\""..., 4096) = 4096
+write(1, "_0~/8cdo0%}0dWDMsz,L`|3\"K*QkmB[L"..., 4096) = 4096
+read(0, "DCAhTIa.!sf8\177%7~_ eD(02=`GOG$6}I"..., 4096) = 4096
+write(1, "O]_^wt[V33{:A.0me@i9{H1,5eOes3;\""..., 4096) = 4096
+read(0, "k4HGOpMp7d+)@7<GKn:j;wz@3av~5Z, "..., 4096) = 4096
+write(1, "DCAhTI0.!sf8\177%7~_ eD(02=`GOG$6}I"..., 4096) = 4096
+read(0, "1Ve~\177M$nZQ\"#~Z]h$52ql` r#r07sQ=d"..., 4096) = 4096
+write(1, "k4HGOpMp7d+)@7<GKn:j;wz@30v~5Z, "..., 4096) = 4096
+read(0, "}G/$MPpN>J1N^:l&os-!& `+iN3{ufUr"..., 4096) = 4096
+write(1, "1Ve~\177M$nZQ\"#~Z]h$52ql` r#r07sQ=d"..., 4096) = 4096
+read(0, "7P'JyL,#7(Z8pGs\"G*}BUX[0ePnTMzLd"..., 4096) = 4096
+write(1, "}G/$MPpN>J1N^:l&os-!& `+iN3{ufUr"..., 4096) = 4096
+read(0, "D3C}`.<&@3&\\ Be0a7[]ce~e#It&3mzW"..., 4096) = 4096
+write(1, "7P'JyL,#7(Z8pGs\"G*}BUX[0ePnTMzLd"..., 4096) = 4096
+read(0, "lS/OI_|\177VQ9FXV=Fv:v/G#\177sA2aQY^\\%"..., 4096) = 4096
+write(1, "D3C}`.<&@3&\\ Be007[]ce~e#It&3mzW"..., 4096) = 4096
+read(0, "iu`d0Ajq.tY9ON#f{1]}Q_U'-% A@D=)"..., 4096) = 4096
+write(1, "lS/OI_|\177VQ9FXV=Fv:v/G#\177sA20QY^\\%"..., 4096) = 4096
+read(0, "ynu8.:H@hO5Y_HdJPu iDL2&W@i~&4{\177"..., 4096) = 4096
+write(1, "iu`d0Ajq.tY9ON#f{1]}Q_U'-% A@D=)"..., 4096) = 4096
+read(0, ";\"-;lgl}'[I4BGID4TmVOW0pm=V[IO;d"..., 4096) = 4096
+write(1, "ynu8.:H@hO5Y_HdJPu iDL2&W@i~&4{\177"..., 4096) = 4096
+read(0, "<O#__3H.yIa^yd)W?I9^p8!-VW|l0w?,"..., 4096) = 4096
+write(1, ";\"-;lgl}'[I4BGID4TmVOW0pm=V[IO;d"..., 4096) = 4096
+read(0, "PD.FCzVXBB\"p{sSS21*-\"A,@[63FjQs{"..., 4096) = 4096
+write(1, "<O#__3H.yI0^yd)W?I9^p8!-VW|l0w?,"..., 4096) = 4096
+read(0, "dsLKAC>'*+YsKp*J_u2tL%mkF=6 5^1z"..., 4096) = 4096
+write(1, "PD.FCzVXBB\"p{sSS21*-\"A,@[63FjQs{"..., 4096) = 4096
+read(0, "aUJZk@U:NkLT`-4Iz`wEY3hN?+~eoT2P"..., 4096) = 4096
+write(1, "dsLKAC>'*+YsKp*J_u2tL%mkF=6 5^1z"..., 4096) = 4096
+read(0, "1-i%ngMLWW#YLP$5h{m~;yD\177ZDeJI\\]["..., 4096) = 4096
+write(1, "0UJZk@U:NkLT`-4Iz`wEY3hN?+~eoT2P"..., 4096) = 4096
+read(0, "WhzLVO^uUr\"6kX6xau KRyw_}[OL1s<h"..., 4096) = 4096
+write(1, "1-i%ngMLWW#YLP$5h{m~;yD\177ZDeJI\\]["..., 4096) = 4096
+read(0, "5,~rJ$Fco\"x]s?|4U^j0b,/6~Gg_Cb=8"..., 4096) = 4096
+write(1, "WhzLVO^uUr\"6kX6x0u KRyw_}[OL1s<h"..., 4096) = 4096
+read(0, "l\177n=|5b0CA1}~IT:]KK9gIOSpqNPtWg`"..., 4096) = 4096
+write(1, "5,~rJ$Fco\"x]s?|4U^j0b,/6~Gg_Cb=8"..., 4096) = 4096
+read(0, "57YWlE';!-f-\\!RO_ALZD[&Vls^H@g25"..., 4096) = 4096
+write(1, "l\177n=|5b0CA1}~IT:]KK9gIOSpqNPtWg`"..., 4096) = 4096
+read(0, "[e0_uv&4~{,:7tyPNX'glmcTM.`xfj!!"..., 4096) = 4096
+write(1, "57YWlE';!-f-\\!RO_ALZD[&Vls^H@g25"..., 4096) = 4096
+read(0, "WO=Th/*d^Ioi?_Irh#i4f(/9T~j@E<R|"..., 4096) = 4096
+write(1, "[e0_uv&4~{,:7tyPNX'glmcTM.`xfj!!"..., 4096) = 4096
+read(0, "U1h,>wsHgaHk~_gXv[sFgX)[Q_ih<2 q"..., 4096) = 4096
+write(1, "WO=Th/*d^Ioi?_Irh#i4f(/9T~j@E<R|"..., 4096) = 4096
+read(0, "KH|buCWm /*Vuv6`Im.(~JWDExP/\"e+M"..., 4096) = 4096
+write(1, "U1h,>wsHg0Hk~_gXv[sFgX)[Q_ih<2 q"..., 4096) = 4096
+read(0, "|KrdT8_ci($sn<6m?w878{t$DCc(I[o&"..., 4096) = 4096
+write(1, "KH|buCWm /*Vuv6`Im.(~JWDExP/\"e+M"..., 4096) = 4096
+read(0, "QDKYv$(^%%Xc{N,QsKA2<21=4MMiXzN)"..., 4096) = 4096
+write(1, "|KrdT8_ci($sn<6m?w878{t$DCc(I[o&"..., 4096) = 4096
+read(0, "*oY(_z2$[jD-re$8Y,>vI,u'h5{6YW3C"..., 4096) = 4096
+write(1, "QDKYv$(^%%Xc{N,QsKA2<21=4MMiXzN)"..., 4096) = 4096
+read(0, "k! OharpF| \"z=n@?n~uG;Jg)@mvGk(r"..., 4096) = 4096
+write(1, "*oY(_z2$[jD-re$8Y,>vI,u'h5{6YW3C"..., 4096) = 4096
+read(0, " gjR<5UPlc\".Pfz@w#O+arFTi;5Wb*dB"..., 4096) = 4096
+write(1, "k! Oh0rpF| \"z=n@?n~uG;Jg)@mvGk(r"..., 4096) = 4096
+read(0, "489T#=6*#7|geJ\177T.7&|[*Al:MyOxn{m"..., 4096) = 4096
+write(1, " gjR<5UPlc\".Pfz@w#O+0rFTi;5Wb*dB"..., 4096) = 4096
+read(0, "yN7iK>cQFN6#{cZ59wuMd|h4&LfQ_&=X"..., 4096) = 4096
+write(1, "489T#=6*#7|geJ\177T.7&|[*Al:MyOxn{m"..., 4096) = 4096
+read(0, "mzuE>9,9D|x_fR^t@u[ck)Kp'p/=N8>{"..., 4096) = 4096
+write(1, "yN7iK>cQFN6#{cZ59wuMd|h4&LfQ_&=X"..., 4096) = 4096
+read(0, "X) Rf2diJV*X=^3X5[Xg^'HX+u5G\\ri4"..., 4096) = 4096
+write(1, "mzuE>9,9D|x_fR^t@u[ck)Kp'p/=N8>{"..., 4096) = 4096
+read(0, ")IIrTC&jYv*x6Gz-D^=/:c<UTWYoF=l/"..., 4096) = 4096
+write(1, "X) Rf2diJV*X=^3X5[Xg^'HX+u5G\\ri4"..., 4096) = 4096
+read(0, "Z\"'-j|e$Y#`fk,JcOBXt,a^5H\\njJE\177%"..., 4096) = 4096
+write(1, ")IIrTC&jYv*x6Gz-D^=/:c<UTWYoF=l/"..., 4096) = 4096
+read(0, "pXLsv/J6g0$x%#ax[N;4?t63%nWbu&Ye"..., 4096) = 4096
+write(1, "Z\"'-j|e$Y#`fk,JcOBXt,0^5H\\njJE\177%"..., 4096) = 4096
+read(0, "3]p ut6@^SV+4[z8rf^ZF}rQ7?Mi=_j1"..., 4096) = 4096
+write(1, "pXLsv/J6g0$x%#0x[N;4?t63%nWbu&Ye"..., 4096) = 4096
+read(0, "n 9q1R&P_Z6OB_W>M tOED[3@f. PQ\177?"..., 4096) = 4096
+write(1, "3]p ut6@^SV+4[z8rf^ZF}rQ7?Mi=_j1"..., 4096) = 4096
+read(0, "r$yLdH@7?+cZ&F$#)'9:~2+c(lf<m_w?"..., 4096) = 4096
+write(1, "n 9q1R&P_Z6OB_W>M tOED[3@f. PQ\177?"..., 4096) = 4096
+read(0, "w6*kl+LWzhw~T2,.)T6UpF,T;'V)PO=G"..., 4096) = 4096
+write(1, "r$yLdH@7?+cZ&F$#)'9:~2+c(lf<m_w?"..., 4096) = 4096
+read(0, "w|60\"Bok^y>E\\,ER@ES7\177pgh3Zr4@#v8"..., 4096) = 4096
+write(1, "w6*kl+LWzhw~T2,.)T6UpF,T;'V)PO=G"..., 4096) = 4096
+read(0, "XahN@wgLYV09:<8;]3c\\cvuI![9/P>.("..., 4096) = 4096
+write(1, "w|60\"Bok^y>E\\,ER@ES7\177pgh3Zr4@#v8"..., 4096) = 4096
+read(0, ">aT2cX;?_xxD^d5sE\"AR^\"SjtEG[(v='"..., 4096) = 4096
+write(1, "X0hN@wgLYV09:<8;]3c\\cvuI![9/P>.("..., 4096) = 4096
+read(0, "BN{I7!6l6C8JP36rm6\\J-YMlsnVbwZfy"..., 4096) = 4096
+write(1, ">0T2cX;?_xxD^d5sE\"AR^\"SjtEG[(v='"..., 4096) = 4096
+read(0, "hK{6?4]8.~-6oi?GOjS.A570O5qAZN=C"..., 4096) = 4096
+write(1, "BN{I7!6l6C8JP36rm6\\J-YMlsnVbwZfy"..., 4096) = 4096
+read(0, "OnR\\Cne[y5'_To-)+vu0)svJr*wsRTT!"..., 4096) = 4096
+write(1, "hK{6?4]8.~-6oi?GOjS.A570O5qAZN=C"..., 4096) = 4096
+read(0, "x&m8la;ekD?[.MF+*l\\Cv3AtZs'.'F. "..., 4096) = 4096
+write(1, "OnR\\Cne[y5'_To-)+vu0)svJr*wsRTT!"..., 4096) = 4096
+read(0, "D[jmt[12OkPsq<R4@:R bm. }D=kj(I."..., 4096) = 4096
+write(1, "x&m8l0;ekD?[.MF+*l\\Cv3AtZs'.'F. "..., 4096) = 4096
+read(0, "<8+(=04'Mj[@Z~omcU8-T\177 v%sr`43DQ"..., 4096) = 4096
+write(1, "D[jmt[12OkPsq<R4@:R bm. }D=kj(I."..., 4096) = 4096
+read(0, "sw@mD\177?KM+p5&ohEH_m[J!`gS+8k1Gl$"..., 4096) = 4096
+write(1, "<8+(=04'Mj[@Z~omcU8-T\177 v%sr`43DQ"..., 4096) = 4096
+read(0, "=hw&[s\"z1cz3?~73uCEqtt+KD=YU\177e\177}"..., 4096) = 4096
+write(1, "sw@mD\177?KM+p5&ohEH_m[J!`gS+8k1Gl$"..., 4096) = 4096
+read(0, "6sn$%\\|~NQCA{0/<)$s8|rpsUAMglF.\""..., 4096) = 4096
+write(1, "=hw&[s\"z1cz3?~73uCEqtt+KD=YU\177e\177}"..., 4096) = 4096
+read(0, "L`+oeGG2Ept+c2Y4-]\177x>lYng+t.Kh6w"..., 4096) = 4096
+write(1, "6sn$%\\|~NQCA{0/<)$s8|rpsUAMglF.\""..., 4096) = 4096
+read(0, "Y{IW*d@Tt*HkT<C#t\\/PgHOu44 nkCID"..., 4096) = 4096
+write(1, "L`+oeGG2Ept+c2Y4-]\177x>lYng+t.Kh6w"..., 4096) = 4096
+read(0, "nc:bvGvR#*#_:]fM;/.Daz5T$5L%ac\"O"..., 4096) = 4096
+write(1, "Y{IW*d@Tt*HkT<C#t\\/PgHOu44 nkCID"..., 4096) = 4096
+read(0, "6faEeS[<Ax&uS^c{Sp|3CB}+qa;bO*!f"..., 4096) = 4096
+write(1, "nc:bvGvR#*#_:]fM;/.D0z5T$5L%0c\"O"..., 4096) = 4096
+read(0, "3/+Ew3McOF}ok7s,~f39x8nJtj.+4<_'"..., 4096) = 4096
+write(1, "6f0EeS[<Ax&uS^c{Sp|3CB}+q0;bO*!f"..., 4096) = 4096
+read(0, "E6(ECoQ\"x\\Wp7*cj}U9&w_^:s>Fc)4tN"..., 4096) = 4096
+write(1, "3/+Ew3McOF}ok7s,~f39x8nJtj.+4<_'"..., 4096) = 4096
+read(0, "uznm6=?zz=Ro-&K7Yr'@<2V@a.H|O~RD"..., 4096) = 4096
+write(1, "E6(ECoQ\"x\\Wp7*cj}U9&w_^:s>Fc)4tN"..., 4096) = 4096
+read(0, ":s|) ><}y)nv.XVW95mz,&3Y|*5\"KC\\e"..., 4096) = 4096
+write(1, "uznm6=?zz=Ro-&K7Yr'@<2V@0.H|O~RD"..., 4096) = 4096
+read(0, ":>m9OSUS}-::*4tcE0,'3&%cx*;@Oa:I"..., 4096) = 4096
+write(1, ":s|) ><}y)nv.XVW95mz,&3Y|*5\"KC\\e"..., 4096) = 4096
+read(0, "=DC.P;Q|2AnZm/0x$twE#GpbT,+qg5k%"..., 4096) = 4096
+write(1, ":>m9OSUS}-::*4tcE0,'3&%cx*;@O0:I"..., 4096) = 4096
+read(0, "$LTuG1e#XGqE'Kq=&l;)@RQ]/#^EWfs;"..., 4096) = 4096
+write(1, "=DC.P;Q|2AnZm/0x$twE#GpbT,+qg5k%"..., 4096) = 4096
+read(0, "S^&)JTUl{EL%:b375P>Sl`<O([6C2pLe"..., 4096) = 4096
+write(1, "$LTuG1e#XGqE'Kq=&l;)@RQ]/#^EWfs;"..., 4096) = 4096
+read(0, "fPi\177\"lI-\"<2MOx$w6Rjys;Xyh\177gxgQ;M"..., 4096) = 4096
+write(1, "S^&)JTUl{EL%:b375P>Sl`<O([6C2pLe"..., 4096) = 4096
+read(0, "K ??b!M~X+#t$Q*!m_E~v\"A*fk* ;K(f"..., 4096) = 4096
+write(1, "fPi\177\"lI-\"<2MOx$w6Rjys;Xyh\177gxgQ;M"..., 4096) = 4096
+read(0, "Wz0gs'I-^'Z{AQ>VOPA-QYw6HM\177&B)%Y"..., 4096) = 4096
+write(1, "K ??b!M~X+#t$Q*!m_E~v\"A*fk* ;K(f"..., 4096) = 4096
+read(0, "19::6HVoqz<WNf%n-ng>oW|E nRKq<Kb"..., 4096) = 4096
+write(1, "Wz0gs'I-^'Z{AQ>VOPA-QYw6HM\177&B)%Y"..., 4096) = 4096
+read(0, "9U`0CG\"l1&;qs<AH+o5M{?h*2G3*)j\"\""..., 4096) = 4096
+write(1, "19::6HVoqz<WNf%n-ng>oW|E nRKq<Kb"..., 4096) = 4096
+read(0, "+|m\\\177B}TH^Nj~]~6\\XowytN.j:a|6N:!"..., 4096) = 4096
+write(1, "9U`0CG\"l1&;qs<AH+o5M{?h*2G3*)j\"\""..., 4096) = 4096
+read(0, "'3oHUzE'JM\177%W0_CRmxmW#\177g@Tl|@HDG"..., 4096) = 4096
+write(1, "+|m\\\177B}TH^Nj~]~6\\XowytN.j:0|6N:!"..., 4096) = 4096
+read(0, "Y,#[,;\"{gHv}*5oe<lc\177oHa2fslw4ELM"..., 4096) = 4096
+write(1, "'3oHUzE'JM\177%W0_CRmxmW#\177g@Tl|@HDG"..., 4096) = 4096
+read(0, "x~7u'=L5LexKyWU?2 q'EQ.)jy#];ifs"..., 4096) = 4096
+write(1, "Y,#[,;\"{gHv}*5oe<lc\177oH02fslw4ELM"..., 4096) = 4096
+read(0, "cmFyKOzUl7Hz.-2<TWoUv_Oyc#tAH0b,"..., 4096) = 4096
+write(1, "x~7u'=L5LexKyWU?2 q'EQ.)jy#];ifs"..., 4096) = 4096
+read(0, "dLrZ4K/9+ Db^AhWENmgzu.K,y[CSIv7"..., 4096) = 4096
+write(1, "cmFyKOzUl7Hz.-2<TWoUv_Oyc#tAH0b,"..., 4096) = 4096
+read(0, "IUDcMDVbeAS?$|[*1-UW6_qKMV#vo.(y"..., 4096) = 4096
+write(1, "dLrZ4K/9+ Db^AhWENmgzu.K,y[CSIv7"..., 4096) = 4096
+read(0, "Ka`lZ@\"ux L\"1Th4|!^=R3I>SH2M.iiY"..., 4096) = 4096
+write(1, "IUDcMDVbeAS?$|[*1-UW6_qKMV#vo.(y"..., 4096) = 4096
+read(0, "C8X>l)B~2'f@Jfe\177]!#[Yic%SNP=-tsP"..., 4096) = 4096
+write(1, "K0`lZ@\"ux L\"1Th4|!^=R3I>SH2M.iiY"..., 4096) = 4096
+read(0, "THJc3+.oS-.g,LnSMvS [ G~\\:)s=L{q"..., 4096) = 4096
+write(1, "C8X>l)B~2'f@Jfe\177]!#[Yic%SNP=-tsP"..., 4096) = 4096
+read(0, "e.WPXiN_RmlKeo2l#S=p~X1F+ <HNf3s"..., 4096) = 4096
+write(1, "THJc3+.oS-.g,LnSMvS [ G~\\:)s=L{q"..., 4096) = 4096
+read(0, "4xBHy*oL6{>Q):;]4RX:9\\&Be~mq6;M*"..., 4096) = 4096
+write(1, "e.WPXiN_RmlKeo2l#S=p~X1F+ <HNf3s"..., 4096) = 4096
+read(0, "UkJE\\!MbQ P>X(,L=032x+q<!-=pVVd+"..., 4096) = 4096
+write(1, "4xBHy*oL6{>Q):;]4RX:9\\&Be~mq6;M*"..., 4096) = 4096
+read(0, "+-`M=\\]ODx4<4s//Lg[\177V]G}+BeY0,p{"..., 4096) = 4096
+write(1, "UkJE\\!MbQ P>X(,L=032x+q<!-=pVVd+"..., 4096) = 4096
+read(0, "TxMoXx.APtPQ\\\"B\\%9-S+\\Liwlh@\"m)V"..., 4096) = 4096
+write(1, "+-`M=\\]ODx4<4s//Lg[\177V]G}+BeY0,p{"..., 4096) = 4096
+read(0, "v+M]a~U)3-.)LzojbFY0}.iP&[b40.='"..., 4096) = 4096
+write(1, "TxMoXx.APtPQ\\\"B\\%9-S+\\Liwlh@\"m)V"..., 4096) = 4096
+read(0, "oy5<LZ\"sYCV(!L@%?DX7bi`Ohip{*W*Y"..., 4096) = 4096
+write(1, "v+M]0~U)3-.)LzojbFY0}.iP&[b40.='"..., 4096) = 4096
+read(0, "Db&c\177ebB]M36~v4<gv(<h]:?}7'wIX\\N"..., 4096) = 4096
+write(1, "oy5<LZ\"sYCV(!L@%?DX7bi`Ohip{*W*Y"..., 4096) = 4096
+read(0, "gkmTJN0qym'^DlrXk}b~D\177C67YiQ B h"..., 4096) = 4096
+write(1, "Db&c\177ebB]M36~v4<gv(<h]:?}7'wIX\\N"..., 4096) = 4096
+read(0, "rK%j_bTkA#Cef!?i1EuvMNJ_lalBOQFA"..., 4096) = 4096
+write(1, "gkmTJN0qym'^DlrXk}b~D\177C67YiQ B h"..., 4096) = 4096
+read(0, ":T%L%z(_mDoiAEtHKRc>Ustu^a84&95@"..., 4096) = 4096
+write(1, "rK%j_bTkA#Cef!?i1EuvMNJ_l0lBOQFA"..., 4096) = 4096
+read(0, "Z q .L9\"<@LzgN%UDoE@3*\"7Wdj!t+ O"..., 4096) = 4096
+write(1, ":T%L%z(_mDoiAEtHKRc>Ustu^084&95@"..., 4096) = 4096
+read(0, "7Uw(tr/chOG' hh;YB.>)|)MMDrPt7tk"..., 4096) = 4096
+write(1, "Z q .L9\"<@LzgN%UDoE@3*\"7Wdj!t+ O"..., 4096) = 4096
+read(0, "$D_+trCwHZ>Kf#0}`>6&_x\"D#cBB)J.m"..., 4096) = 4096
+write(1, "7Uw(tr/chOG' hh;YB.>)|)MMDrPt7tk"..., 4096) = 4096
+read(0, "|bh$[r(5p`7^.m81\\NNE\177|.%~bc=_6H;"..., 4096) = 4096
+write(1, "$D_+trCwHZ>Kf#0}`>6&_x\"D#cBB)J.m"..., 4096) = 4096
+read(0, "fn?hVf2`=L6PfeD4s}SC~Hb/$M^]rUFX"..., 4096) = 4096
+write(1, "|bh$[r(5p`7^.m81\\NNE\177|.%~bc=_6H;"..., 4096) = 4096
+read(0, ".\\#k#&Gb{4klhA[FMAwt$~4<L$P[jRWx"..., 4096) = 4096
+write(1, "fn?hVf2`=L6PfeD4s}SC~Hb/$M^]rUFX"..., 4096) = 4096
+read(0, "#+FNXAVV[2-Wp! 7[\"z,KU1]zqwa<.O?"..., 4096) = 4096
+write(1, ".\\#k#&Gb{4klhA[FMAwt$~4<L$P[jRWx"..., 4096) = 4096
+read(0, "IRo}<zw1(Z6z~HI'RC3L.SC`/QNut7Y="..., 4096) = 4096
+write(1, "#+FNXAVV[2-Wp! 7[\"z,KU1]zqw0<.O?"..., 4096) = 4096
+read(0, "Crv(hW#^&/6[@PFR'9UOp,UO\177 lz&`BI"..., 4096) = 4096
+write(1, "IRo}<zw1(Z6z~HI'RC3L.SC`/QNut7Y="..., 4096) = 4096
+read(0, "|AlvV)={QozsViPb>rfE4d[b\177Ghaa(4]"..., 4096) = 4096
+write(1, "Crv(hW#^&/6[@PFR'9UOp,UO\177 lz&`BI"..., 4096) = 4096
+read(0, "VNPmJI`n82|t)!bwf\"mluoVvwHK&b0Cx"..., 4096) = 4096
+write(1, "|AlvV)={QozsViPb>rfE4d[b\177Gh00(4]"..., 4096) = 4096
+read(0, "1e,v'Bq %)0|&Zu=N||l!!Pg8Y/Nu7f&"..., 4096) = 4096
+write(1, "VNPmJI`n82|t)!bwf\"mluoVvwHK&b0Cx"..., 4096) = 4096
+read(0, "zFJw8\\6L:p>/K\177#%(KO8ki H2oNbq}xL"..., 4096) = 4096
+write(1, "1e,v'Bq %)0|&Zu=N||l!!Pg8Y/Nu7f&"..., 4096) = 4096
+read(0, "9uiI<8gB?ZOOafa1T.ldfptjO+0]J*(c"..., 4096) = 4096
+write(1, "zFJw8\\6L:p>/K\177#%(KO8ki H2oNbq}xL"..., 4096) = 4096
+read(0, "=OXt{g*#9;+\177qrZ3ThAd^+D6[c;IEPQb"..., 4096) = 4096
+write(1, "9uiI<8gB?ZOO0f01T.ldfptjO+0]J*(c"..., 4096) = 4096
+read(0, "s.7B;%L:)af/ o>Ob*dVPX~egZ=-XE:+"..., 4096) = 4096
+write(1, "=OXt{g*#9;+\177qrZ3ThAd^+D6[c;IEPQb"..., 4096) = 4096
+read(0, "6O0OrVUdUH{pU{\"gr+D2U|9Nw/[r%$u{"..., 4096) = 4096
+write(1, "s.7B;%L:)0f/ o>Ob*dVPX~egZ=-XE:+"..., 4096) = 4096
+read(0, "_\177^0V,f0=.GV6UN`wo+izvs2 \"uEP\"Ap"..., 4096) = 4096
+write(1, "6O0OrVUdUH{pU{\"gr+D2U|9Nw/[r%$u{"..., 4096) = 4096
+read(0, "\"Y[Hb-jbgUs pI=[v\\@]f0U919\\Z1q(s"..., 4096) = 4096
+write(1, "_\177^0V,f0=.GV6UN`wo+izvs2 \"uEP\"Ap"..., 4096) = 4096
+read(0, "tx!L-hZnEoBj |$6G-joLR }UW11vKhj"..., 4096) = 4096
+write(1, "\"Y[Hb-jbgUs pI=[v\\@]f0U919\\Z1q(s"..., 4096) = 4096
+read(0, ">8z%##vG9rH@e#g8u|342 gAlVr{0@fN"..., 4096) = 4096
+write(1, "tx!L-hZnEoBj |$6G-joLR }UW11vKhj"..., 4096) = 4096
+read(0, "$&{e2<c\\H-#6!o']<u^CqB/-I0( 'lBk"..., 4096) = 4096
+write(1, ">8z%##vG9rH@e#g8u|342 gAlVr{0@fN"..., 4096) = 4096
+read(0, "wB[lt*kSEm<;lGK0K;W0>\"teLXz:~::u"..., 4096) = 4096
+write(1, "$&{e2<c\\H-#6!o']<u^CqB/-I0( 'lBk"..., 4096) = 4096
+read(0, "?TgH& S7Fo.bLUS-`28f~s\\t\"v-,h]&g"..., 4096) = 4096
+write(1, "wB[lt*kSEm<;lGK0K;W0>\"teLXz:~::u"..., 4096) = 4096
+read(0, "*,.!(h7'pDS%Z#KMG7@tg`4j29c]z\"*d"..., 4096) = 4096
+write(1, "?TgH& S7Fo.bLUS-`28f~s\\t\"v-,h]&g"..., 4096) = 4096
+read(0, "oVKisO0{2n-pE=5c1aPxDLfP}U9.ryea"..., 4096) = 4096
+write(1, "*,.!(h7'pDS%Z#KMG7@tg`4j29c]z\"*d"..., 4096) = 4096
+read(0, ".!o<NrPqjp%5<XG='Z>)yqZ\\+ nX{E1*"..., 4096) = 4096
+write(1, "oVKisO0{2n-pE=5c10PxDLfP}U9.rye0"..., 4096) = 4096
+read(0, "b!.'j\\8tr@ke5y9B7H0yafXMZzb7lIKO"..., 4096) = 4096
+write(1, ".!o<NrPqjp%5<XG='Z>)yqZ\\+ nX{E1*"..., 4096) = 4096
+read(0, "1BDd2JuepvSm|qnO,'mdw8sPdSiAK=d\\"..., 4096) = 4096
+write(1, "b!.'j\\8tr@ke5y9B7H0y0fXMZzb7lIKO"..., 4096) = 4096
+read(0, "S9lPR& =\"jp*&\\vw)`=aC6~\177Z{B|oi9C"..., 4096) = 4096
+write(1, "1BDd2JuepvSm|qnO,'mdw8sPdSiAK=d\\"..., 4096) = 4096
+read(0, "\"AvW~*FaNj(4i\177<0-@8UR:RYom >x5$Z"..., 4096) = 4096
+write(1, "S9lPR& =\"jp*&\\vw)`=0C6~\177Z{B|oi9C"..., 4096) = 4096
+read(0, "tR}fZLpQOr!D\\tGgMx4{,`PIc2[w4iwh"..., 4096) = 4096
+write(1, "\"AvW~*F0Nj(4i\177<0-@8UR:RYom >x5$Z"..., 4096) = 4096
+read(0, "`S-\"fXjjOtn-KNXv#=62vY3/TG8$;,<{"..., 4096) = 4096
+write(1, "tR}fZLpQOr!D\\tGgMx4{,`PIc2[w4iwh"..., 4096) = 4096
+read(0, "JHShl~*fJx)AnN(X.$t,p8HnJl8)+bQ5"..., 4096) = 4096
+write(1, "`S-\"fXjjOtn-KNXv#=62vY3/TG8$;,<{"..., 4096) = 4096
+read(0, "Js|C>)x8/?4F_*q~Y_?ke2g5=#J,<9_f"..., 4096) = 4096
+write(1, "JHShl~*fJx)AnN(X.$t,p8HnJl8)+bQ5"..., 4096) = 4096
+read(0, "lv<l=IAY3W[<+Aoe8Y#*V/bXyk1dAo8-"..., 4096) = 4096
+write(1, "Js|C>)x8/?4F_*q~Y_?ke2g5=#J,<9_f"..., 4096) = 4096
+read(0, "h\177dO>O!Q-^:jy 78F,AN!0#ZtZviEoEm"..., 4096) = 4096
+write(1, "lv<l=IAY3W[<+Aoe8Y#*V/bXyk1dAo8-"..., 4096) = 4096
+read(0, "+7ifn;/G]-]yz;TtIrep\\D3FRXlmG_m2"..., 4096) = 4096
+write(1, "h\177dO>O!Q-^:jy 78F,AN!0#ZtZviEoEm"..., 4096) = 4096
+read(0, "w\177Wt=K!mT?_,;uZtHN4Cv*}aew\\J1a(i"..., 4096) = 4096
+write(1, "+7ifn;/G]-]yz;TtIrep\\D3FRXlmG_m2"..., 4096) = 4096
+read(0, "_an\"1#>&BQy2~/N3AKX#&^-x=2+p^t8}"..., 4096) = 4096
+write(1, "w\177Wt=K!mT?_,;uZtHN4Cv*}0ew\\J10(i"..., 4096) = 4096
+read(0, "Q&*Bg3-,;@J gON7p7&bF!7LP7B KhJ\\"..., 4096) = 4096
+write(1, "_0n\"1#>&BQy2~/N3AKX#&^-x=2+p^t8}"..., 4096) = 4096
+read(0, "EL3lZy{.U*Zv{Fert0.@\\U$A<t0Br\\O7"..., 4096) = 4096
+write(1, "Q&*Bg3-,;@J gON7p7&bF!7LP7B KhJ\\"..., 4096) = 4096
+read(0, "o/E!-PnY.`]#Y#-ID0r)6T]<=x+cp/G_"..., 4096) = 4096
+write(1, "EL3lZy{.U*Zv{Fert0.@\\U$A<t0Br\\O7"..., 4096) = 4096
+read(0, "Rw|M8{W_1Bqwe__T/m.oj0(%CZy[jIC|"..., 4096) = 4096
+write(1, "o/E!-PnY.`]#Y#-ID0r)6T]<=x+cp/G_"..., 4096) = 4096
+read(0, "ayC{E/\177Zi@t#.vb!c;I'|0Ai6w'\\!;'C"..., 4096) = 4096
+write(1, "Rw|M8{W_1Bqwe__T/m.oj0(%CZy[jIC|"..., 4096) = 4096
+read(0, "XP6SZcr0ks h}J1CO.@J~COb KnCV [n"..., 4096) = 4096
+write(1, "0yC{E/\177Zi@t#.vb!c;I'|0Ai6w'\\!;'C"..., 4096) = 4096
+read(0, "B768+2~MU.t06KZCN('\\JG'vef\\A!ez$"..., 4096) = 4096
+write(1, "XP6SZcr0ks h}J1CO.@J~COb KnCV [n"..., 4096) = 4096
+read(0, "[yI7_M]xhyb\177$Ek6vd?^}Ewa0(:/X#*s"..., 4096) = 4096
+write(1, "B768+2~MU.t06KZCN('\\JG'vef\\A!ez$"..., 4096) = 4096
+read(0, "I=kyX-\\H}1+&9LM\177T1 #,Q?s~#w*`]\")"..., 4096) = 4096
+write(1, "[yI7_M]xhyb\177$Ek6vd?^}Ew00(:/X#*s"..., 4096) = 4096
+read(0, "1=T\"=d*]Xo{W]jvh g~u=~a~=2R8.IZ@"..., 4096) = 4096
+write(1, "I=kyX-\\H}1+&9LM\177T1 #,Q?s~#w*`]\")"..., 4096) = 4096
+read(0, "u?g~,LC;Xk$X9vSs^8.? _H!w#TuhU}="..., 4096) = 4096
+write(1, "1=T\"=d*]Xo{W]jvh g~u=~0~=2R8.IZ@"..., 4096) = 4096
+read(0, "Oj2l`/@'zkh.W?!Gn0'f,+kmrtB!W9l&"..., 4096) = 4096
+write(1, "u?g~,LC;Xk$X9vSs^8.? _H!w#TuhU}="..., 4096) = 4096
+read(0, "8qL^~^R &B1aM/`0jNjWn6h(Mc+;md1&"..., 4096) = 4096
+write(1, "Oj2l`/@'zkh.W?!Gn0'f,+kmrtB!W9l&"..., 4096) = 4096
+read(0, "0/;sB7f\177v^J]yf5@mL|D\177&(I\177O/yKKs["..., 4096) = 4096
+write(1, "8qL^~^R &B10M/`0jNjWn6h(Mc+;md1&"..., 4096) = 4096
+read(0, "lRd5mTzDq'%~4o:s>Er~6Y?=/|QE\177Tgk"..., 4096) = 4096
+write(1, "0/;sB7f\177v^J]yf5@mL|D\177&(I\177O/yKKs["..., 4096) = 4096
+read(0, "wTyHsX;05<K(:^UP=->|]&bbwcbp\\wO4"..., 4096) = 4096
+write(1, "lRd5mTzDq'%~4o:s>Er~6Y?=/|QE\177Tgk"..., 4096) = 4096
+read(0, ")-)fN'jGOR}B\177$PzZ:`BEKvk#[/tFr[O"..., 4096) = 4096
+write(1, "wTyHsX;05<K(:^UP=->|]&bbwcbp\\wO4"..., 4096) = 4096
+read(0, "Ds=s1^0f_\177[<ymgVX&\"XLvJw60'VNWWr"..., 4096) = 4096
+write(1, ")-)fN'jGOR}B\177$PzZ:`BEKvk#[/tFr[O"..., 4096) = 4096
+read(0, "so0GF81T\\Q\177M'W72>}u?=M5#M:_Ng13Z"..., 4096) = 4096
+write(1, "Ds=s1^0f_\177[<ymgVX&\"XLvJw60'VNWWr"..., 4096) = 4096
+read(0, "tP1@C\\IOkAI;{:'19Smc~)sH\">S%[|^P"..., 4096) = 4096
+write(1, "so0GF81T\\Q\177M'W72>}u?=M5#M:_Ng13Z"..., 4096) = 4096
+read(0, "' O &F3)<A9#$EpX\"N>h%{$9vIR 3>V:"..., 4096) = 4096
+write(1, "tP1@C\\IOkAI;{:'19Smc~)sH\">S%[|^P"..., 4096) = 4096
+read(0, "6bRVl\"6;&.j+gSzxLLIa\177jqsB&P;tG`*"..., 4096) = 4096
+write(1, "' O &F3)<A9#$EpX\"N>h%{$9vIR 3>V:"..., 4096) = 4096
+read(0, "`KEfS\"IJQa!$+UC8v+@S*m|(@'Nn;`_["..., 4096) = 4096
+write(1, "6bRVl\"6;&.j+gSzxLLI0\177jqsB&P;tG`*"..., 4096) = 4096
+read(0, "rQ/i_`Tok15AAjFZ4qK Oj2%=\" k9#L,"..., 4096) = 4096
+write(1, "`KEfS\"IJQ0!$+UC8v+@S*m|(@'Nn;`_["..., 4096) = 4096
+read(0, "~do[R*0i!XQ)gvMahU'G~sJPGyWu~|t\\"..., 4096) = 4096
+write(1, "rQ/i_`Tok15AAjFZ4qK Oj2%=\" k9#L,"..., 4096) = 4096
+read(0, "4ytki@a:n+M+\\/ `#+\\%i)&0XcY`\\5tP"..., 4096) = 4096
+write(1, "~do[R*0i!XQ)gvM0hU'G~sJPGyWu~|t\\"..., 4096) = 4096
+read(0, "RGkVk\177d+Asf2\177!1GIcR%dB1yR5[:ej%7"..., 4096) = 4096
+write(1, "4ytki@0:n+M+\\/ `#+\\%i)&0XcY`\\5tP"..., 4096) = 4096
+read(0, "DXZ{raIVwcK)@uK_hf#Vdf=rU<Mh&!>*"..., 4096) = 4096
+write(1, "RGkVk\177d+Asf2\177!1GIcR%dB1yR5[:ej%7"..., 4096) = 4096
+read(0, "O 8eZV\"*!\\\177J*s_^Zl6i_<[yO$Jc_$3."..., 4096) = 4096
+write(1, "DXZ{r0IVwcK)@uK_hf#Vdf=rU<Mh&!>*"..., 4096) = 4096
+read(0, "HeI/h,jCp@FAK,FJ<x$`\\q\\R's#82m]:"..., 4096) = 4096
+write(1, "O 8eZV\"*!\\\177J*s_^Zl6i_<[yO$Jc_$3."..., 4096) = 4096
+read(0, "eCcMq]U[}veF c.1_e<8H\\;ZGoy;&|{L"..., 4096) = 4096
+write(1, "HeI/h,jCp@FAK,FJ<x$`\\q\\R's#82m]:"..., 4096) = 4096
+read(0, "VX&Zh8.~41viTJ\"heFPlv}I\\{\\XhfQ$<"..., 4096) = 4096
+write(1, "eCcMq]U[}veF c.1_e<8H\\;ZGoy;&|{L"..., 4096) = 4096
+read(0, "k;d{DAi3r>=`ztRRJ(eVDH[Q/_0yK\"@6"..., 4096) = 4096
+write(1, "VX&Zh8.~41viTJ\"heFPlv}I\\{\\XhfQ$<"..., 4096) = 4096
+read(0, "iR^_`uPn\177#s1!|SnB/E^cuv4^ebVVvy@"..., 4096) = 4096
+write(1, "k;d{DAi3r>=`ztRRJ(eVDH[Q/_0yK\"@6"..., 4096) = 4096
+read(0, "ALnV\177cT<N+% cfl;\177ESI:@]4S`wb^\\?\177"..., 4096) = 4096
+write(1, "iR^_`uPn\177#s1!|SnB/E^cuv4^ebVVvy@"..., 4096) = 4096
+read(0, "b.#\\rv]AZabjrOS\177+Y0'OaxR4a$2hkz+"..., 4096) = 4096
+write(1, "ALnV\177cT<N+% cfl;\177ESI:@]4S`wb^\\?\177"..., 4096) = 4096
+read(0, "'3Wm#e!1kK{[NXC`_5T~81Fe\177^s4=v;$"..., 4096) = 4096
+write(1, "b.#\\rv]AZ0bjrOS\177+Y0'O0xR40$2hkz+"..., 4096) = 4096
+read(0, "d'#c2CH@S,py)RJ(zdUO~ii='R\\:$f2H"..., 4096) = 4096
+write(1, "'3Wm#e!1kK{[NXC`_5T~81Fe\177^s4=v;$"..., 4096) = 4096
+read(0, "4N\"\"6u$w?G( :n$Sm.\177Xp`TJi;`Hu%I)"..., 4096) = 4096
+write(1, "d'#c2CH@S,py)RJ(zdUO~ii='R\\:$f2H"..., 4096) = 4096
+read(0, "(\177|S]2PtkU+Vi3<&3ka@\177o(g-21oYi.A"..., 4096) = 4096
+write(1, "4N\"\"6u$w?G( :n$Sm.\177Xp`TJi;`Hu%I)"..., 4096) = 4096
+read(0, "TyiMDr{6skGqeOk(6 Bc\"$qe&lj[:CuN"..., 4096) = 4096
+write(1, "(\177|S]2PtkU+Vi3<&3k0@\177o(g-21oYi.A"..., 4096) = 4096
+read(0, "J_(/KVI]PY`B-2x&pov4_xv)\177g2--D&X"..., 4096) = 4096
+write(1, "TyiMDr{6skGqeOk(6 Bc\"$qe&lj[:CuN"..., 4096) = 4096
+read(0, "+a$\177|<97!HTYWYS(~p\\`TmX)XW(Ec XN"..., 4096) = 4096
+write(1, "J_(/KVI]PY`B-2x&pov4_xv)\177g2--D&X"..., 4096) = 4096
+read(0, "]RLEj)\\kppD>U?dsk\"\"$.xTd`!J;8o,U"..., 4096) = 4096
+write(1, "+0$\177|<97!HTYWYS(~p\\`TmX)XW(Ec XN"..., 4096) = 4096
+read(0, "{#hj!fm?`8hLPoRpnmb.>yUw- AE^zRZ"..., 4096) = 4096
+write(1, "]RLEj)\\kppD>U?dsk\"\"$.xTd`!J;8o,U"..., 4096) = 4096
+read(0, "]W9N(L>\"WIjrj~(4\"v)3?qYdS\177x3!Lk^"..., 4096) = 4096
+write(1, "{#hj!fm?`8hLPoRpnmb.>yUw- AE^zRZ"..., 4096) = 4096
+read(0, "CYC8c5`A\\&!9Y~4yR\\KGq5'.9bR4y8!|"..., 4096) = 4096
+write(1, "]W9N(L>\"WIjrj~(4\"v)3?qYdS\177x3!Lk^"..., 4096) = 4096
+read(0, "@zM&5s*J`YLLVKl\\b~1_q#z~jida'z>'"..., 4096) = 4096
+write(1, "CYC8c5`A\\&!9Y~4yR\\KGq5'.9bR4y8!|"..., 4096) = 4096
+read(0, "I~y\"bwxsC/$rk+QNCHh1eRr,V`:gWJra"..., 4096) = 4096
+write(1, "@zM&5s*J`YLLVKl\\b~1_q#z~jid0'z>'"..., 4096) = 4096
+read(0, "<u~:EEtSa./\\J~#iHc:Ww]I]ic:+dIo`"..., 4096) = 4096
+write(1, "I~y\"bwxsC/$rk+QNCHh1eRr,V`:gWJr0"..., 4096) = 4096
+read(0, "gi\"E\"\\q$Tz2yt\"7ph\"%N&>^,uQ;.@zYg"..., 4096) = 4096
+write(1, "<u~:EEtS0./\\J~#iHc:Ww]I]ic:+dIo`"..., 4096) = 4096
+read(0, "iku=H,YV+L_nHiKxw{{.Bg!V'8oDy23B"..., 4096) = 4096
+write(1, "gi\"E\"\\q$Tz2yt\"7ph\"%N&>^,uQ;.@zYg"..., 4096) = 4096
+read(0, ">ZOwX'iBgKo|6;1mu-}%vyv0h/xWM.\177k"..., 4096) = 4096
+write(1, "iku=H,YV+L_nHiKxw{{.Bg!V'8oDy23B"..., 4096) = 4096
+read(0, "{m\177k:xw2I@6xk.RHWJ\177FPhx,!R*ujRbf"..., 4096) = 4096
+write(1, ">ZOwX'iBgKo|6;1mu-}%vyv0h/xWM.\177k"..., 4096) = 4096
+read(0, "dPA(*fw:\"*i}\\0JHwg#9!>J%r0`<q0e5"..., 4096) = 4096
+write(1, "{m\177k:xw2I@6xk.RHWJ\177FPhx,!R*ujRbf"..., 4096) = 4096
+read(0, "w>Pg$;P4!l\\TPdekdXT`8GyK\177-lKo7\177F"..., 4096) = 4096
+write(1, "dPA(*fw:\"*i}\\0JHwg#9!>J%r0`<q0e5"..., 4096) = 4096
+read(0, "m~KA%`\"9n(Z?\"!ZUg(Utn]j_x,FEQS[~"..., 4096) = 4096
+write(1, "w>Pg$;P4!l\\TPdekdXT`8GyK\177-lKo7\177F"..., 4096) = 4096
+read(0, "s(^V\\.4\"?$'Av}`ej*2|c_@82{.S\177)*r"..., 4096) = 4096
+write(1, "m~KA%`\"9n(Z?\"!ZUg(Utn]j_x,FEQS[~"..., 4096) = 4096
+read(0, "?d/4;7xsv}o^p~K*@5_x~\177W0u#C`|KG;"..., 4096) = 4096
+write(1, "s(^V\\.4\"?$'Av}`ej*2|c_@82{.S\177)*r"..., 4096) = 4096
+read(0, "Z2orh*MTmzQz#6LBc{[fQ;,^,tEihg>#"..., 4096) = 4096
+write(1, "?d/4;7xsv}o^p~K*@5_x~\177W0u#C`|KG;"..., 4096) = 4096
+read(0, "?D<3(\\tBJE' YRBYbuYvw7\\a@'w7B0+A"..., 4096) = 4096
+write(1, "Z2orh*MTmzQz#6LBc{[fQ;,^,tEihg>#"..., 4096) = 4096
+read(0, "k Zw@DV&1r!<KAn^j= )v6H(N]KcC59/"..., 4096) = 4096
+write(1, "?D<3(\\tBJE' YRBYbuYvw7\\0@'w7B0+A"..., 4096) = 4096
+read(0, "@Ppp f3+t73[qf2Tf\\:XYS2#T-Ws_Eu "..., 4096) = 4096
+write(1, "k Zw@DV&1r!<KAn^j= )v6H(N]KcC59/"..., 4096) = 4096
+read(0, "e-Y3*+*hL8,.[zp[JC,o'\\UG6;g{}Q(b"..., 4096) = 4096
+write(1, "@Ppp f3+t73[qf2Tf\\:XYS2#T-Ws_Eu "..., 4096) = 4096
+read(0, "o J9Jv@*)yf]PW/_u@jUn3i@T/O}m$T<"..., 4096) = 4096
+write(1, "e-Y3*+*hL8,.[zp[JC,o'\\UG6;g{}Q(b"..., 4096) = 4096
+read(0, "kw.4g^voO{3_8@50#nB^oFUDn'GV<Wwg"..., 4096) = 4096
+write(1, "o J9Jv@*)yf]PW/_u@jUn3i@T/O}m$T<"..., 4096) = 4096
+read(0, "}2\\\177[a^$@bDVp+N&i`p[Tk<kmyQ!u:2R"..., 4096) = 4096
+write(1, "kw.4g^voO{3_8@50#nB^oFUDn'GV<Wwg"..., 4096) = 4096
+read(0, ";B6` \"Zgjy Og\\\\a,f.p.Q[x-e   37;"..., 4096) = 4096
+write(1, "}2\\\177[0^$@bDVp+N&i`p[Tk<kmyQ!u:2R"..., 4096) = 4096
+read(0, "&0k*NC4>/ZL^D\177:0}c<9[t`Q\177(r1%AQ+"..., 4096) = 4096
+write(1, ";B6` \"Zgjy Og\\\\0,f.p.Q[x-e   37;"..., 4096) = 4096
+read(0, "g\177aK5`*H\177tvVRb@hu_;OJwW7v`2oH1`p"..., 4096) = 4096
+write(1, "&0k*NC4>/ZL^D\177:0}c<9[t`Q\177(r1%AQ+"..., 4096) = 4096
+read(0, "lc]\1779`RoJ@\\5+sBXF$l%x&jPiaM/ TkL"..., 4096) = 4096
+write(1, "g\1770K5`*H\177tvVRb@hu_;OJwW7v`2oH1`p"..., 4096) = 4096
+read(0, "`%5fM/7Ld(x3@V#pgy\177Lsg^d],0?tWo4"..., 4096) = 4096
+write(1, "lc]\1779`RoJ@\\5+sBXF$l%x&jPi0M/ TkL"..., 4096) = 4096
+read(0, "CX~kuQ6Bu;dkR+oq^[246U'[hp3Kp8/s"..., 4096) = 4096
+write(1, "`%5fM/7Ld(x3@V#pgy\177Lsg^d],0?tWo4"..., 4096) = 4096
+read(0, "t\"cg%#]'{_vCISe5=I^wtY!C^l:%A&pu"..., 4096) = 4096
+write(1, "CX~kuQ6Bu;dkR+oq^[246U'[hp3Kp8/s"..., 4096) = 4096
+read(0, "]8PaufW_b:)e4j{6y%9Fe4f:Z`vgzM>X"..., 4096) = 4096
+write(1, "t\"cg%#]'{_vCISe5=I^wtY!C^l:%A&pu"..., 4096) = 4096
+read(0, "*?82V|k5=>i0sPE^i<e9%@>gk7K{\\0vG"..., 4096) = 4096
+write(1, "]8P0ufW_b:)e4j{6y%9Fe4f:Z`vgzM>X"..., 4096) = 4096
+read(0, "8'gmE[dv\\*\177!M*]7oN`qHPCSm@Vn\\m]T"..., 4096) = 4096
+write(1, "*?82V|k5=>i0sPE^i<e9%@>gk7K{\\0vG"..., 4096) = 4096
+read(0, "$eyf$1$S4GB}z\"F<A[`ZxM*K=XZh?\"`C"..., 4096) = 4096
+write(1, "8'gmE[dv\\*\177!M*]7oN`qHPCSm@Vn\\m]T"..., 4096) = 4096
+read(0, "\177<sC}*|;Vy1kI]hDB<?wehecI@qsofBN"..., 4096) = 4096
+write(1, "$eyf$1$S4GB}z\"F<A[`ZxM*K=XZh?\"`C"..., 4096) = 4096
+read(0, "D3\")P,O!u?<K:Gq?StcspZy_0K_FBJ^G"..., 4096) = 4096
+write(1, "\177<sC}*|;Vy1kI]hDB<?wehecI@qsofBN"..., 4096) = 4096
+read(0, "g7o(mh9.M,<socA$WjL<~~|\"w3_9\177C7g"..., 4096) = 4096
+write(1, "D3\")P,O!u?<K:Gq?StcspZy_0K_FBJ^G"..., 4096) = 4096
+read(0, "wjk#?S*n|Q,M!Bky6j T>IaL[xj%]sNT"..., 4096) = 4096
+write(1, "g7o(mh9.M,<socA$WjL<~~|\"w3_9\177C7g"..., 4096) = 4096
+read(0, "0,+\\1xTmw\"NJ) v,Rb?SADAFoHi}Fjl6"..., 4096) = 4096
+write(1, "wjk#?S*n|Q,M!Bky6j T>I0L[xj%]sNT"..., 4096) = 4096
+read(0, "af^?m={Y f`\177E#KP#E}5Pa[ 1UH#eksG"..., 4096) = 4096
+write(1, "0,+\\1xTmw\"NJ) v,Rb?SADAFoHi}Fjl6"..., 4096) = 4096
+read(0, "41{61jXD4Eo]}s=6ZxBG2:~UA8WG48ZI"..., 4096) = 4096
+write(1, "0f^?m={Y f`\177E#KP#E}5P0[ 1UH#eksG"..., 4096) = 4096
+read(0, "<*2[HPE{s9#^w28'q;e9:g`FS;az>C?:"..., 4096) = 4096
+write(1, "41{61jXD4Eo]}s=6ZxBG2:~UA8WG48ZI"..., 4096) = 4096
+read(0, "xIMHT,zhb6Qc93W,j^BIYQVt2Q\"?MahE"..., 4096) = 4096
+write(1, "<*2[HPE{s9#^w28'q;e9:g`FS;0z>C?:"..., 4096) = 4096
+read(0, "0u;\177hI(OU\1775aHL/.g'(zQ}aDqq^M~J]n"..., 4096) = 4096
+write(1, "xIMHT,zhb6Qc93W,j^BIYQVt2Q\"?M0hE"..., 4096) = 4096
+read(0, "4yU(91(O8yU55>m^QS;$gKZO-ws$qmT%"..., 4096) = 4096
+write(1, "0u;\177hI(OU\17750HL/.g'(zQ}0Dqq^M~J]n"..., 4096) = 4096
+read(0, "GHP\177HQy\177SN]m&c`\\1K#rs0<<_b`JEZdl"..., 4096) = 4096
+write(1, "4yU(91(O8yU55>m^QS;$gKZO-ws$qmT%"..., 4096) = 4096
+read(0, "lQoRoam2,:+m[Qv.gp`Cg$=D-^i5tTx`"..., 4096) = 4096
+write(1, "GHP\177HQy\177SN]m&c`\\1K#rs0<<_b`JEZdl"..., 4096) = 4096
+read(0, "(<;(CSy)wk%&?|IxVq+#tz`3GDL2leat"..., 4096) = 4096
+write(1, "lQoRo0m2,:+m[Qv.gp`Cg$=D-^i5tTx`"..., 4096) = 4096
+read(0, "EobHjhrU}V,VZF}nMHA>(^M;[gBk&g}+"..., 4096) = 4096
+write(1, "(<;(CSy)wk%&?|IxVq+#tz`3GDL2le0t"..., 4096) = 4096
+read(0, "Y!Lx61We*o#*RWozUT;]fB5bO\"|U+Upd"..., 4096) = 4096
+write(1, "EobHjhrU}V,VZF}nMHA>(^M;[gBk&g}+"..., 4096) = 4096
+read(0, "tOHR}z._PinK\"f0S98p7Y7>wGn1#R0|&"..., 4096) = 4096
+write(1, "Y!Lx61We*o#*RWozUT;]fB5bO\"|U+Upd"..., 4096) = 4096
+read(0, "W|&E(w8N5IO;D>\\uv`^[kdKVN8gW9 8p"..., 4096) = 4096
+write(1, "tOHR}z._PinK\"f0S98p7Y7>wGn1#R0|&"..., 4096) = 4096
+read(0, "ss8X/V0(9f*3I[B$w0T#l=Ou+.7.-C\" "..., 4096) = 4096
+write(1, "W|&E(w8N5IO;D>\\uv`^[kdKVN8gW9 8p"..., 4096) = 4096
+read(0, "R*$uGCW-XePnY>3BHd]xvY?.R:M:4nif"..., 4096) = 4096
+write(1, "ss8X/V0(9f*3I[B$w0T#l=Ou+.7.-C\" "..., 4096) = 4096
+read(0, "N*#H@\"d0`mT%/EV_+g_dyRCm]DhD9y&h"..., 4096) = 4096
+write(1, "R*$uGCW-XePnY>3BHd]xvY?.R:M:4nif"..., 4096) = 4096
+read(0, "k}CAXKVmt+X@?sAwhKUaKl:Nz^84EtUp"..., 4096) = 4096
+write(1, "N*#H@\"d0`mT%/EV_+g_dyRCm]DhD9y&h"..., 4096) = 4096
+read(0, "dY`b[Ilo0~OJr\".36Ai=wWzpZ=\177JFuAj"..., 4096) = 4096
+write(1, "k}CAXKVmt+X@?sAwhKU0Kl:Nz^84EtUp"..., 4096) = 4096
+read(0, "s[+w}pqj!N'!Pb ~9z[WuZ6E|sZysRrf"..., 4096) = 4096
+write(1, "dY`b[Ilo0~OJr\".36Ai=wWzpZ=\177JFuAj"..., 4096) = 4096
+read(0, "k!]%SS hR9ovH.'mSNsw,N@7+m{x5:$ "..., 4096) = 4096
+write(1, "s[+w}pqj!N'!Pb ~9z[WuZ6E|sZysRrf"..., 4096) = 4096
+read(0, "iZc4i40@!t5/yf'pjK!DYp[-o1i:k3aT"..., 4096) = 4096
+write(1, "k!]%SS hR9ovH.'mSNsw,N@7+m{x5:$ "..., 4096) = 4096
+read(0, "Uu`4JC<,cPrLj{%h_G*c [?Z\"^*L-`wc"..., 4096) = 4096
+write(1, "iZc4i40@!t5/yf'pjK!DYp[-o1i:k30T"..., 4096) = 4096
+read(0, "S^NeA,sWt;-&WbP5\\\\pP_VBH;{!^)qd<"..., 4096) = 4096
+write(1, "Uu`4JC<,cPrLj{%h_G*c [?Z\"^*L-`wc"..., 4096) = 4096
+read(0, "&>2FdDRxQ$-G{If$_VfXk2\\G5cn22or8"..., 4096) = 4096
+write(1, "S^NeA,sWt;-&WbP5\\\\pP_VBH;{!^)qd<"..., 4096) = 4096
+read(0, "2b;4NF;Nd#.=6sq~v4-\\%eGWkC*#!){t"..., 4096) = 4096
+write(1, "&>2FdDRxQ$-G{If$_VfXk2\\G5cn22or8"..., 4096) = 4096
+read(0, "bg_Dfn'JQB!9:PX;Xv%c;,-m8?=vA^8c"..., 4096) = 4096
+write(1, "2b;4NF;Nd#.=6sq~v4-\\%eGWkC*#!){t"..., 4096) = 4096
+read(0, ".>2L@hxVpa5<j[f`0ts^!Ijza38h1N= "..., 4096) = 4096
+write(1, "bg_Dfn'JQB!9:PX;Xv%c;,-m8?=vA^8c"..., 4096) = 4096
+read(0, "\177}(\177;P!+=)\\Dm\"0#Gn?t`*}mPgB,SwsR"..., 4096) = 4096
+write(1, ".>2L@hxVp05<j[f`0ts^!Ijz038h1N= "..., 4096) = 4096
+read(0, "sdj`aM9,_J%[x\"D)gw[<L|LX|\177a]rU>f"..., 4096) = 4096
+write(1, "\177}(\177;P!+=)\\Dm\"0#Gn?t`*}mPgB,SwsR"..., 4096) = 4096
+read(0, "LJud\"jJ2J8=!I!U>Q]tg0\\a?@CU H](U"..., 4096) = 4096
+write(1, "sdj`0M9,_J%[x\"D)gw[<L|LX|\1770]rU>f"..., 4096) = 4096
+read(0, ";<s@M_Tvt`w\177*>rg,)KJd5>7L)f@%dw "..., 4096) = 4096
+write(1, "LJud\"jJ2J8=!I!U>Q]tg0\\0?@CU H](U"..., 4096) = 4096
+read(0, "YBHs)G*Z`T{}A]PuF1g\"64C?`AkM92aR"..., 4096) = 4096
+write(1, ";<s@M_Tvt`w\177*>rg,)KJd5>7L)f@%dw "..., 4096) = 4096
+read(0, "F?EC36RC;Vx]Y^R:[`zXpXVRNj{#hXrn"..., 4096) = 4096
+write(1, "YBHs)G*Z`T{}A]PuF1g\"64C?`AkM920R"..., 4096) = 4096
+read(0, "S'PwohBBUS{Ek9QtH?eg61`,J)W/\177n4R"..., 4096) = 4096
+write(1, "F?EC36RC;Vx]Y^R:[`zXpXVRNj{#hXrn"..., 4096) = 4096
+read(0, "*HWm@PN9dEjG7 S>\\,&=rZ[;C:.\177&x3p"..., 4096) = 4096
+write(1, "S'PwohBBUS{Ek9QtH?eg61`,J)W/\177n4R"..., 4096) = 4096
+read(0, "+RF3I(A9H,B^Tx%daa'\177 -O`q2uQd4 o"..., 4096) = 4096
+write(1, "*HWm@PN9dEjG7 S>\\,&=rZ[;C:.\177&x3p"..., 4096) = 4096
+read(0, "09nf76&0mvI3WOCF_o J?36D&BcH(7}x"..., 4096) = 4096
+write(1, "+RF3I(A9H,B^Tx%d00'\177 -O`q2uQd4 o"..., 4096) = 4096
+read(0, "jej\"%UAttagd4t)eHe!&(l pF.2<Na)x"..., 4096) = 4096
+write(1, "09nf76&0mvI3WOCF_o J?36D&BcH(7}x"..., 4096) = 4096
+read(0, "nGTFmM>=u:dykVve9=)k01 x|EP=]=3L"..., 4096) = 4096
+write(1, "jej\"%UAtt0gd4t)eHe!&(l pF.2<N0)x"..., 4096) = 4096
+read(0, ".ZKz:y`,!l\\\177SO k;[g>Gh%g;*6^Qt~@"..., 4096) = 4096
+write(1, "nGTFmM>=u:dykVve9=)k01 x|EP=]=3L"..., 4096) = 4096
+read(0, "WX2w7ytlC[`|o\"KKGxLNG](t p/`yOa0"..., 4096) = 4096
+write(1, ".ZKz:y`,!l\\\177SO k;[g>Gh%g;*6^Qt~@"..., 4096) = 4096
+read(0, "lpS%lH0dJ^G/6o'=Ln2pi~v)#<nsn{q:"..., 4096) = 4096
+write(1, "WX2w7ytlC[`|o\"KKGxLNG](t p/`yO00"..., 4096) = 4096
+read(0, "peM2|n)I/BR/~iXtVo#PCS,O\177#msi{aZ"..., 4096) = 4096
+write(1, "lpS%lH0dJ^G/6o'=Ln2pi~v)#<nsn{q:"..., 4096) = 4096
+read(0, "(aaev~+HH*Yao*iIX;C,O\1770eiB\"+=/8%"..., 4096) = 4096
+write(1, "peM2|n)I/BR/~iXtVo#PCS,O\177#msi{0Z"..., 4096) = 4096
+read(0, "?{D`^\\ZN.QR@G4UI-*w ?LO-C,LjK-,J"..., 4096) = 4096
+write(1, "(00ev~+HH*Y0o*iIX;C,O\1770eiB\"+=/8%"..., 4096) = 4096
+read(0, "1H[Y>=vS8{ ['1 ZrNr@z;zA9dg\")LDz"..., 4096) = 4096
+write(1, "?{D`^\\ZN.QR@G4UI-*w ?LO-C,LjK-,J"..., 4096) = 4096
+read(0, "yt/5]<!Y.THwGU/.x\177v y|\\<D8cE]O$W"..., 4096) = 4096
+write(1, "1H[Y>=vS8{ ['1 ZrNr@z;zA9dg\")LDz"..., 4096) = 4096
+read(0, "Pw8sHX_TVL^jl6wSpJ2@AIJG?eV-'le7"..., 4096) = 4096
+write(1, "yt/5]<!Y.THwGU/.x\177v y|\\<D8cE]O$W"..., 4096) = 4096
+read(0, "H+x[@gWUjV6ttWR3M8elL-S`8CO;}c#E"..., 4096) = 4096
+write(1, "Pw8sHX_TVL^jl6wSpJ2@AIJG?eV-'le7"..., 4096) = 4096
+read(0, ";f|/='8OEl$tbko-z9I^o48Gq$Sk>yN9"..., 4096) = 4096
+write(1, "H+x[@gWUjV6ttWR3M8elL-S`8CO;}c#E"..., 4096) = 4096
+read(0, "v37D#jA0>73%W<vf]vyenT+\177kpo*CX\"9"..., 4096) = 4096
+write(1, ";f|/='8OEl$tbko-z9I^o48Gq$Sk>yN9"..., 4096) = 4096
+read(0, "odH>V\"ZSA2!|6Z/TRG#iApP6Bf\\j{[`j"..., 4096) = 4096
+write(1, "v37D#jA0>73%W<vf]vyenT+\177kpo*CX\"9"..., 4096) = 4096
+read(0, ":nL0^U]ki25@@@5f@DI\"|==}E7!^7ijQ"..., 4096) = 4096
+write(1, "odH>V\"ZSA2!|6Z/TRG#iApP6Bf\\j{[`j"..., 4096) = 4096
+read(0, "[~7a4LbN1@OSeXq0O!uB|^b#Y;c=!}q<"..., 4096) = 4096
+write(1, ":nL0^U]ki25@@@5f@DI\"|==}E7!^7ijQ"..., 4096) = 4096
+read(0, ";~Ks(9AD@87PN;a'+Dse,W%e$St_w*.s"..., 4096) = 4096
+write(1, "[~704LbN1@OSeXq0O!uB|^b#Y;c=!}q<"..., 4096) = 4096
+read(0, "R}TT;j/m8L@UI 2}yG8N,o+B~=)9iY};"..., 4096) = 4096
+write(1, ";~Ks(9AD@87PN;0'+Dse,W%e$St_w*.s"..., 4096) = 4096
+read(0, ">NP[(I\\[r7-KDfO6H]CK6'56Xz<X-^`K"..., 4096) = 4096
+write(1, "R}TT;j/m8L@UI 2}yG8N,o+B~=)9iY};"..., 4096) = 4096
+read(0, "yT^y=\177INto(@_GTvQd_VJDy|jmb=Um3."..., 4096) = 4096
+write(1, ">NP[(I\\[r7-KDfO6H]CK6'56Xz<X-^`K"..., 4096) = 4096
+read(0, "(oQHkObHe8+Y.; @Y-=Hn603=%zGBgNJ"..., 4096) = 4096
+write(1, "yT^y=\177INto(@_GTvQd_VJDy|jmb=Um3."..., 4096) = 4096
+read(0, "D-<=~<-V~:tH`=E8!A^91j9|(uC`y-}="..., 4096) = 4096
+write(1, "(oQHkObHe8+Y.; @Y-=Hn603=%zGBgNJ"..., 4096) = 4096
+read(0, "={TE@fDR HRfM228~$IFdB#1Z\\1na;4_"..., 4096) = 4096
+write(1, "D-<=~<-V~:tH`=E8!A^91j9|(uC`y-}="..., 4096) = 4096
+read(0, "b2rvrecY.dN) g|D@`h^Gh*W%-+P>ap`"..., 4096) = 4096
+write(1, "={TE@fDR HRfM228~$IFdB#1Z\\1n0;4_"..., 4096) = 4096
+read(0, "BuF.,ZJ$pK\\^yOa/*P)O@eiqwKMBFPUh"..., 4096) = 4096
+write(1, "b2rvrecY.dN) g|D@`h^Gh*W%-+P>0p`"..., 4096) = 4096
+read(0, "zL#A=+`Ub@'+j8ql2>==Wg5sn6j~Rk?M"..., 4096) = 4096
+write(1, "BuF.,ZJ$pK\\^yO0/*P)O@eiqwKMBFPUh"..., 4096) = 4096
+read(0, "4*h?y\"#Gn}s+=G_GWS'v5Hk&v~&5MmYA"..., 4096) = 4096
+write(1, "zL#A=+`Ub@'+j8ql2>==Wg5sn6j~Rk?M"..., 4096) = 4096
+read(0, ">!rO9sFA imy|i\\XV,}sn4bQj.7NTAFs"..., 4096) = 4096
+write(1, "4*h?y\"#Gn}s+=G_GWS'v5Hk&v~&5MmYA"..., 4096) = 4096
+read(0, "qU}{u<sQ=-K-\"N7o Cs1jIH}PGEqnYD?"..., 4096) = 4096
+write(1, ">!rO9sFA imy|i\\XV,}sn4bQj.7NTAFs"..., 4096) = 4096
+read(0, "xZ6:3s#R\"\177,a|Y^PT`-OWn'n[.c\177t>Ql"..., 4096) = 4096
+write(1, "qU}{u<sQ=-K-\"N7o Cs1jIH}PGEqnYD?"..., 4096) = 4096
+read(0, "k`)JyfPJMe3@78o<t@Msu@VkQOA_6K#b"..., 4096) = 4096
+write(1, "xZ6:3s#R\"\177,0|Y^PT`-OWn'n[.c\177t>Ql"..., 4096) = 4096
+read(0, "7`4%KW`7w<[@NOew<|q?g[=3gXy$Ym\177P"..., 4096) = 4096
+write(1, "k`)JyfPJMe3@78o<t@Msu@VkQOA_6K#b"..., 4096) = 4096
+read(0, "X]sUuP6TkzUU03kC0)vM$+Rylry$BiW["..., 4096) = 4096
+write(1, "7`4%KW`7w<[@NOew<|q?g[=3gXy$Ym\177P"..., 4096) = 4096
+read(0, "FrvOpn*v{{TA.e.;kg~.UYV**@;%@IGf"..., 4096) = 4096
+write(1, "X]sUuP6TkzUU03kC0)vM$+Rylry$BiW["..., 4096) = 4096
+read(0, "q;^en&:zu%o!RF>qfJ{/h\"Y:~l&sxL*j"..., 4096) = 4096
+write(1, "FrvOpn*v{{TA.e.;kg~.UYV**@;%@IGf"..., 4096) = 4096
+read(0, "K8X\177GqFd=h,z\\o1|}/|@\\`zqS;$+u[Z@"..., 4096) = 4096
+write(1, "q;^en&:zu%o!RF>qfJ{/h\"Y:~l&sxL*j"..., 4096) = 4096
+read(0, "@B3\177!FCL#:Pyxo2v2g?+fnl6xU!Cud05"..., 4096) = 4096
+write(1, "K8X\177GqFd=h,z\\o1|}/|@\\`zqS;$+u[Z@"..., 4096) = 4096
+read(0, "Qyf_v'q!SNle7!]s\\xS-^!`q63i\177\\15-"..., 4096) = 4096
+write(1, "@B3\177!FCL#:Pyxo2v2g?+fnl6xU!Cud05"..., 4096) = 4096
+read(0, "gFy\"6EmW5vGfy<$/2k@DX+@,qaB\"X /\177"..., 4096) = 4096
+write(1, "Qyf_v'q!SNle7!]s\\xS-^!`q63i\177\\15-"..., 4096) = 4096
+read(0, "Fj~kh194pxcd\177ZkHa,3_vPG/|bi>&sD,"..., 4096) = 4096
+write(1, "gFy\"6EmW5vGfy<$/2k@DX+@,q0B\"X /\177"..., 4096) = 4096
+read(0, "Mn3fZ]Lw&nZ(+8K~USY{R/\177;(wCnoLh}"..., 4096) = 4096
+write(1, "Fj~kh194pxcd\177ZkH0,3_vPG/|bi>&sD,"..., 4096) = 4096
+read(0, ":YHK&yJKyQoF:p5iw29l2oyQ_3mI)N,#"..., 4096) = 4096
+write(1, "Mn3fZ]Lw&nZ(+8K~USY{R/\177;(wCnoLh}"..., 4096) = 4096
+read(0, "B+$1.kARSa\177<h{)#|'Cp!9|A_W{ASx{V"..., 4096) = 4096
+write(1, ":YHK&yJKyQoF:p5iw29l2oyQ_3mI)N,#"..., 4096) = 4096
+read(0, "+Ar&27G.:3Sdm&%I-1z}#JhzTX,,!5=m"..., 4096) = 4096
+write(1, "B+$1.kARS0\177<h{)#|'Cp!9|A_W{ASx{V"..., 4096) = 4096
+read(0, "3 EB\\CRo2+S?ISy\"pTYR^%M5:g-[?]~2"..., 4096) = 4096
+write(1, "+Ar&27G.:3Sdm&%I-1z}#JhzTX,,!5=m"..., 4096) = 4096
+read(0, "DG[ap\"hKr_+0sgclMmVNElTy%T3b.\"+R"..., 4096) = 4096
+write(1, "3 EB\\CRo2+S?ISy\"pTYR^%M5:g-[?]~2"..., 4096) = 4096
+read(0, "8h'Vg*5:pTs-{]~+)aWmbk1Mm$0s#W,{"..., 4096) = 4096
+write(1, "DG[0p\"hKr_+0sgclMmVNElTy%T3b.\"+R"..., 4096) = 4096
+read(0, "KM7e#@NA\177.K!EXpu]&Bdi?Ga-CO]g`:s"..., 4096) = 4096
+write(1, "8h'Vg*5:pTs-{]~+)0Wmbk1Mm$0s#W,{"..., 4096) = 4096
+read(0, ",_PFY)l\177GY.iZkJU2m7ITZm1i65/q/n]"..., 4096) = 4096
+write(1, "KM7e#@NA\177.K!EXpu]&Bdi?G0-CO]g`:s"..., 4096) = 4096
+read(0, "= [bf,#n+ARA1!XvcOWUu:{NX$NqI\"UG"..., 4096) = 4096
+write(1, ",_PFY)l\177GY.iZkJU2m7ITZm1i65/q/n]"..., 4096) = 4096
+read(0, "VP!57&.a,iwb)ytrKM4voV3f<5.w?KTv"..., 4096) = 4096
+write(1, "= [bf,#n+ARA1!XvcOWUu:{NX$NqI\"UG"..., 4096) = 4096
+read(0, "93P$ck95!zlZB$u(=p<e?P_>t0\\HPuei"..., 4096) = 4096
+write(1, "VP!57&.0,iwb)ytrKM4voV3f<5.w?KTv"..., 4096) = 4096
+read(0, ",*]>KDS(\177&q8_d\177T;2AiB7>[_+2Cj6UV"..., 4096) = 4096
+write(1, "93P$ck95!zlZB$u(=p<e?P_>t0\\HPuei"..., 4096) = 4096
+read(0, "2pRV;/qg/rR~\\#j]fG*|)MYq3OwgLY<^"..., 4096) = 4096
+write(1, ",*]>KDS(\177&q8_d\177T;2AiB7>[_+2Cj6UV"..., 4096) = 4096
+read(0, "ou4FB6lG8{(0$dWd&-i;H(g`:Fp'{g*J"..., 4096) = 4096
+write(1, "2pRV;/qg/rR~\\#j]fG*|)MYq3OwgLY<^"..., 4096) = 4096
+read(0, "ww3UC|p\\/I5^6K3VkWz;s!S#$ysU@*Ax"..., 4096) = 4096
+write(1, "ou4FB6lG8{(0$dWd&-i;H(g`:Fp'{g*J"..., 4096) = 4096
+read(0, "?`$S>M*+#U??l;M/.MJaj92k$tTL ;! "..., 4096) = 4096
+write(1, "ww3UC|p\\/I5^6K3VkWz;s!S#$ysU@*Ax"..., 4096) = 4096
+read(0, "VHM[P_!\177S#[!e/7J%APbtOBa]|xaVJ8l"..., 4096) = 4096
+write(1, "?`$S>M*+#U??l;M/.MJ0j92k$tTL ;! "..., 4096) = 4096
+read(0, "c1}I-n`4czQki{Ai\177iQO^+s-)?FAUY!x"..., 4096) = 4096
+write(1, "VHM[P_!\177S#[!e/7J%APbtOB0]|x0VJ8l"..., 4096) = 4096
+read(0, "jhX%mb@#]FFJS\177n,LlSL>a98{!E&9Q$#"..., 4096) = 4096
+write(1, "c1}I-n`4czQki{Ai\177iQO^+s-)?FAUY!x"..., 4096) = 4096
+read(0, "=-5|'_,i<EcJBsW fLgz:7\\^my8D[55X"..., 4096) = 4096
+write(1, "jhX%mb@#]FFJS\177n,LlSL>098{!E&9Q$#"..., 4096) = 4096
+read(0, "0Q#v1]T.e/F7^!}px\177VzOISwOA_L1@r\""..., 4096) = 4096
+write(1, "=-5|'_,i<EcJBsW fLgz:7\\^my8D[55X"..., 4096) = 4096
+read(0, "oKZq qaaM/6>\177?zIY=#}%#zn5xs`l.z;"..., 4096) = 4096
+write(1, "0Q#v1]T.e/F7^!}px\177VzOISwOA_L1@r\""..., 4096) = 4096
+read(0, "6n,yG\\9K7UzqTpbY,)&4/z<jq\177B(kkD\""..., 4096) = 4096
+write(1, "oKZq q00M/6>\177?zIY=#}%#zn5xs`l.z;"..., 4096) = 4096
+read(0, "qPE&`~;dL|d9/@Ycx<&*6?Nx|*yJcHo4"..., 4096) = 4096
+write(1, "6n,yG\\9K7UzqTpbY,)&4/z<jq\177B(kkD\""..., 4096) = 4096
+read(0, "H=p$:zO~L74EMcpiV\\$C\\)a67k:ut{i="..., 4096) = 4096
+write(1, "qPE&`~;dL|d9/@Ycx<&*6?Nx|*yJcHo4"..., 4096) = 4096
+read(0, ">dT_Cm0mDO9*(QN-FOWqAI9,M4Q/aWM`"..., 4096) = 4096
+write(1, "H=p$:zO~L74EMcpiV\\$C\\)067k:ut{i="..., 4096) = 4096
+read(0, "F/hms!i.*2Rfe}e`CJpI\\MuE%{D]KsRR"..., 4096) = 4096
+write(1, ">dT_Cm0mDO9*(QN-FOWqAI9,M4Q/0WM`"..., 4096) = 4096
+read(0, "7dc\177A9jn&%wP.\" xEuS*XA+P~@t$L&JC"..., 4096) = 4096
+write(1, "F/hms!i.*2Rfe}e`CJpI\\MuE%{D]KsRR"..., 4096) = 4096
+read(0, "Z\177[7[]0\"-;f87GGm<cOWq[!hYm%&(U]b"..., 4096) = 4096
+write(1, "7dc\177A9jn&%wP.\" xEuS*XA+P~@t$L&JC"..., 4096) = 4096
+read(0, "WuqtsnngHCwVJO|F4g9DQlN{k;)]5(1L"..., 4096) = 4096
+write(1, "Z\177[7[]0\"-;f87GGm<cOWq[!hYm%&(U]b"..., 4096) = 4096
+read(0, "++{)YxX;e*1,'u\\\177^:QjC+i,sO([t*)\177"..., 4096) = 4096
+write(1, "WuqtsnngHCwVJO|F4g9DQlN{k;)]5(1L"..., 4096) = 4096
+read(0, "I5}i{ezV0h\"Z!viK?!TZt\\(YUd8`|$@F"..., 4096) = 4096
+write(1, "++{)YxX;e*1,'u\\\177^:QjC+i,sO([t*)\177"..., 4096) = 4096
+read(0, "V`sMR/Bu/Z\\J3`$M-I>_vjUKoav#D[{z"..., 4096) = 4096
+write(1, "I5}i{ezV0h\"Z!viK?!TZt\\(YUd8`|$@F"..., 4096) = 4096
+read(0, "Bm~/_fsS6+R|i0Z>.D|^#kzfvUsLlA ."..., 4096) = 4096
+write(1, "V`sMR/Bu/Z\\J3`$M-I>_vjUKo0v#D[{z"..., 4096) = 4096
+read(0, "la\"@J\\*;a3Y\"#J;L&4c`n5;I2bK)M^G:"..., 4096) = 4096
+write(1, "Bm~/_fsS6+R|i0Z>.D|^#kzfvUsLlA ."..., 4096) = 4096
+read(0, "p\\He/^{[@GA^RuBDCO-4[%wmwn'*O:p@"..., 4096) = 4096
+write(1, "l0\"@J\\*;03Y\"#J;L&4c`n5;I2bK)M^G:"..., 4096) = 4096
+read(0, "_#\\=[Smm\"C [orUuc\"t?bWSDe3CV+n0J"..., 4096) = 4096
+write(1, "p\\He/^{[@GA^RuBDCO-4[%wmwn'*O:p@"..., 4096) = 4096
+read(0, "9aE=xYA$\\x=*;b6_/7m%bW91jrj#<SpU"..., 4096) = 4096
+write(1, "_#\\=[Smm\"C [orUuc\"t?bWSDe3CV+n0J"..., 4096) = 4096
+read(0, "Pxx_D<}iK!0\177bg9@_ZGD6U@Q=z*sxZE)"..., 4096) = 4096
+write(1, "90E=xYA$\\x=*;b6_/7m%bW91jrj#<SpU"..., 4096) = 4096
+read(0, "i+nH:;KL*&t3QC@ H~NAqv73/gNy]7+G"..., 4096) = 4096
+write(1, "Pxx_D<}iK!0\177bg9@_ZGD6U@Q=z*sxZE)"..., 4096) = 4096
+read(0, " p\"-e<7{YE>A0m%S?7tI4'JL{N$`sr-t"..., 4096) = 4096
+write(1, "i+nH:;KL*&t3QC@ H~NAqv73/gNy]7+G"..., 4096) = 4096
+read(0, ":J8}v{/W*I ],EA'yu;8qsAh .-sBS:\\"..., 4096) = 4096
+write(1, " p\"-e<7{YE>A0m%S?7tI4'JL{N$`sr-t"..., 4096) = 4096
+read(0, "**$~%w0qx%rU3a,/y4\">MugHR<F]'#mq"..., 4096) = 4096
+write(1, ":J8}v{/W*I ],EA'yu;8qsAh .-sBS:\\"..., 4096) = 4096
+read(0, ";eQ~&k81Dp7Zr.'HkT&[b#Y,`w?cP!gl"..., 4096) = 4096
+write(1, "**$~%w0qx%rU30,/y4\">MugHR<F]'#mq"..., 4096) = 4096
+read(0, "*R/Yx/@Dm_C&*5uz9r:Fcrt4[\"=Iu|m`"..., 4096) = 4096
+write(1, ";eQ~&k81Dp7Zr.'HkT&[b#Y,`w?cP!gl"..., 4096) = 4096
+read(0, "@iL\\p\"T+\"hheovCt$%s<{8Py5n3 XG.x"..., 4096) = 4096
+write(1, "*R/Yx/@Dm_C&*5uz9r:Fcrt4[\"=Iu|m`"..., 4096) = 4096
+read(0, "wo!at'_6!ik*Bk'I}N3Z2EzA>1V&<~E3"..., 4096) = 4096
+write(1, "@iL\\p\"T+\"hheovCt$%s<{8Py5n3 XG.x"..., 4096) = 4096
+read(0, "pSAHu;H~HdQ\1775g.29P]Pk?I__\\2SFbtw"..., 4096) = 4096
+write(1, "wo!0t'_6!ik*Bk'I}N3Z2EzA>1V&<~E3"..., 4096) = 4096
+read(0, "T?S8z&R$XP%N.A/063E,%OSr)r+ZX[(l"..., 4096) = 4096
+write(1, "pSAHu;H~HdQ\1775g.29P]Pk?I__\\2SFbtw"..., 4096) = 4096
+read(0, "l\\LyNxpvQkWo7^&y4Pw]([Y`J!s}}-yI"..., 4096) = 4096
+write(1, "T?S8z&R$XP%N.A/063E,%OSr)r+ZX[(l"..., 4096) = 4096
+read(0, ",,rKVA'nHbH5-]HfC@$^X+;S}r4I=HD*"..., 4096) = 4096
+write(1, "l\\LyNxpvQkWo7^&y4Pw]([Y`J!s}}-yI"..., 4096) = 4096
+read(0, "SyQ1xc0WQeU^g5q#SJ)\\t7,Km7T(w~f*"..., 4096) = 4096
+write(1, ",,rKVA'nHbH5-]HfC@$^X+;S}r4I=HD*"..., 4096) = 4096
+read(0, "<`h(OX+X?l9L:&XOiqn[=f1I\177;@<hvj$"..., 4096) = 4096
+write(1, "SyQ1xc0WQeU^g5q#SJ)\\t7,Km7T(w~f*"..., 4096) = 4096
+read(0, "/nM{&}Z\"tZEDzaqJqBwL3_;qL')<GH V"..., 4096) = 4096
+write(1, "<`h(OX+X?l9L:&XOiqn[=f1I\177;@<hvj$"..., 4096) = 4096
+read(0, "Y$96X +PyFf~\\?Z:hy('SN*x^]b}6H8O"..., 4096) = 4096
+write(1, "/nM{&}Z\"tZEDz0qJqBwL3_;qL')<GH V"..., 4096) = 4096
+read(0, "ir*4.P<OKL)6S/qy\177biJE'&Q!?2bd6_M"..., 4096) = 4096
+write(1, "Y$96X +PyFf~\\?Z:hy('SN*x^]b}6H8O"..., 4096) = 4096
+read(0, "@\\QUKZR-*K'8V(1?&m0=bR~*m\177@B-I=N"..., 4096) = 4096
+write(1, "ir*4.P<OKL)6S/qy\177biJE'&Q!?2bd6_M"..., 4096) = 4096
+read(0, "&tY35ukAS2T^y<nZ9u4vq_\"9:qR=|\\Tc"..., 4096) = 4096
+write(1, "@\\QUKZR-*K'8V(1?&m0=bR~*m\177@B-I=N"..., 4096) = 4096
+read(0, "FpToF7au1~\\&#16E_%XQ73s=HFX+\\8^\""..., 4096) = 4096
+write(1, "&tY35ukAS2T^y<nZ9u4vq_\"9:qR=|\\Tc"..., 4096) = 4096
+read(0, "[]5*n7~8Psab@cP<]qpC=25_21aHX\"P3"..., 4096) = 4096
+write(1, "FpToF70u1~\\&#16E_%XQ73s=HFX+\\8^\""..., 4096) = 4096
+read(0, "(J-8F_!0A`z;uwI>wG?0FEqdS@T3gt#O"..., 4096) = 4096
+write(1, "[]5*n7~8Ps0b@cP<]qpC=25_210HX\"P3"..., 4096) = 4096
+read(0, "\"VXt93WnXav':!@iX,GE>ii_j}+=]v|_"..., 4096) = 4096
+write(1, "(J-8F_!0A`z;uwI>wG?0FEqdS@T3gt#O"..., 4096) = 4096
+read(0, "[fY|__DS@qEraP+ [c6@i9%>gCo2c'1~"..., 4096) = 4096
+write(1, "\"VXt93WnX0v':!@iX,GE>ii_j}+=]v|_"..., 4096) = 4096
+read(0, "kg%gcaf%SWRoK%d]c*pPhn\"sB8)iy{gD"..., 4096) = 4096
+write(1, "[fY|__DS@qEr0P+ [c6@i9%>gCo2c'1~"..., 4096) = 4096
+read(0, "]#DL#7\177p[LFE-51VTvy$W)]SkUXIvur4"..., 4096) = 4096
+write(1, "kg%gc0f%SWRoK%d]c*pPhn\"sB8)iy{gD"..., 4096) = 4096
+read(0, "Cn^.9Nx:Qb<[imUPsC\"2{e~=P#~t<;B?"..., 4096) = 4096
+write(1, "]#DL#7\177p[LFE-51VTvy$W)]SkUXIvur4"..., 4096) = 4096
+read(0, "w&[9sl-:biQ\\pg 2sxYIwYG)Y*-P[+6S"..., 4096) = 4096
+write(1, "Cn^.9Nx:Qb<[imUPsC\"2{e~=P#~t<;B?"..., 4096) = 4096
+read(0, "{0e_=+:!&HhDF[jF9#uq1j\">UaB7\"45^"..., 4096) = 4096
+write(1, "w&[9sl-:biQ\\pg 2sxYIwYG)Y*-P[+6S"..., 4096) = 4096
+read(0, "#6U^4z$a5D=lxBy*i\\tS<zppt!hD0rH3"..., 4096) = 4096
+write(1, "{0e_=+:!&HhDF[jF9#uq1j\">U0B7\"45^"..., 4096) = 4096
+read(0, "rO9U!RH sUduK/ :f|#qt6mjoO_3-_*_"..., 4096) = 4096
+write(1, "#6U^4z$05D=lxBy*i\\tS<zppt!hD0rH3"..., 4096) = 4096
+read(0, "51W-{o:q^x)6YZ>z!2wQlcp,7%(;6{:+"..., 4096) = 4096
+write(1, "rO9U!RH sUduK/ :f|#qt6mjoO_3-_*_"..., 4096) = 4096
+read(0, "XAZMzBbn?H&*D<w7(t,CZ]ux){!lsILK"..., 4096) = 4096
+write(1, "51W-{o:q^x)6YZ>z!2wQlcp,7%(;6{:+"..., 4096) = 4096
+read(0, ")z_uSC:y%LSe8l({%n8Dx{&G,M[=#Ywl"..., 4096) = 4096
+write(1, "XAZMzBbn?H&*D<w7(t,CZ]ux){!lsILK"..., 4096) = 4096
+read(0, "zzxRdcM,KQUH^m;P3LHVal]fet\\i@pZ:"..., 4096) = 4096
+write(1, ")z_uSC:y%LSe8l({%n8Dx{&G,M[=#Ywl"..., 4096) = 4096
+read(0, "ZgV-CipUD7*3HIFeu3~Glx2'2qAVs}TM"..., 4096) = 4096
+write(1, "zzxRdcM,KQUH^m;P3LHV0l]fet\\i@pZ:"..., 4096) = 4096
+read(0, "TsJ{xrNYuC3&=b-C=Y&xducdF>Tal#i "..., 4096) = 4096
+write(1, "ZgV-CipUD7*3HIFeu3~Glx2'2qAVs}TM"..., 4096) = 4096
+read(0, "=+7qLHI\\}4xH2[l!mR9=;wE@F>\177=((x&"..., 4096) = 4096
+write(1, "TsJ{xrNYuC3&=b-C=Y&xducdF>T0l#i "..., 4096) = 4096
+read(0, "bFKI\"737PTDNA%DnUrxM\\;KnL$ ?CTv%"..., 4096) = 4096
+write(1, "=+7qLHI\\}4xH2[l!mR9=;wE@F>\177=((x&"..., 4096) = 4096
+read(0, "&.0x2fQ.4vI S9Bd\\'\".Q{P?(WS-po.V"..., 4096) = 4096
+write(1, "bFKI\"737PTDNA%DnUrxM\\;KnL$ ?CTv%"..., 4096) = 4096
+read(0, "}KhG[ A>8MT,8uQ)MH2>W0p,#Yx=v[AS"..., 4096) = 4096
+write(1, "&.0x2fQ.4vI S9Bd\\'\".Q{P?(WS-po.V"..., 4096) = 4096
+read(0, "n~}WAR-W$fULj|>O<rs%bvyX3zM!Da1s"..., 4096) = 4096
+write(1, "}KhG[ A>8MT,8uQ)MH2>W0p,#Yx=v[AS"..., 4096) = 4096
+read(0, "FR/_;6FJz3O0lUl&mqJgr'i!f\\vN`kYf"..., 4096) = 4096
+write(1, "n~}WAR-W$fULj|>O<rs%bvyX3zM!D01s"..., 4096) = 4096
+read(0, "$;AY`v2`xrgyZ{r?HJjnW,WcvuHfA(t%"..., 4096) = 4096
+write(1, "FR/_;6FJz3O0lUl&mqJgr'i!f\\vN`kYf"..., 4096) = 4096
+read(0, "c[UG:,\\;,Gqs1,b(G`~HM09/@@v=F?[)"..., 4096) = 4096
+write(1, "$;AY`v2`xrgyZ{r?HJjnW,WcvuHfA(t%"..., 4096) = 4096
+read(0, ">4Q!=g43!$vQX6>pj!:Qrvr1VMY:f<P$"..., 4096) = 4096
+write(1, "c[UG:,\\;,Gqs1,b(G`~HM09/@@v=F?[)"..., 4096) = 4096
+read(0, "r6j$64o\\1Be]Sr!/A\177g#7Kup\\Xs\177KA/="..., 4096) = 4096
+write(1, ">4Q!=g43!$vQX6>pj!:Qrvr1VMY:f<P$"..., 4096) = 4096
+read(0, "3O9FLt;X])F$>DsY4+L:{+~}N_b84sG'"..., 4096) = 4096
+write(1, "r6j$64o\\1Be]Sr!/A\177g#7Kup\\Xs\177KA/="..., 4096) = 4096
+read(0, "nN\\GN|e^0YTkT@V@\1771RUcoe[tYu~DPT2"..., 4096) = 4096
+write(1, "3O9FLt;X])F$>DsY4+L:{+~}N_b84sG'"..., 4096) = 4096
+read(0, "@; 5.kb,aI.tiu\\\177!ydjkOQ2F]5/v/1w"..., 4096) = 4096
+write(1, "nN\\GN|e^0YTkT@V@\1771RUcoe[tYu~DPT2"..., 4096) = 4096
+read(0, "B4Fmvi:_yJ_U,*2N@(ZyRrb(X(Wr6f48"..., 4096) = 4096
+write(1, "@; 5.kb,0I.tiu\\\177!ydjkOQ2F]5/v/1w"..., 4096) = 4096
+read(0, "u$`4nf~j7@T2u!tI^=CCJ8-?8pV1,}ha"..., 4096) = 4096
+write(1, "B4Fmvi:_yJ_U,*2N@(ZyRrb(X(Wr6f48"..., 4096) = 4096
+read(0, "N7!ybuoO<y-Pi \\Aueg<58FVpZ:CCX1Q"..., 4096) = 4096
+write(1, "u$`4nf~j7@T2u!tI^=CCJ8-?8pV1,}h0"..., 4096) = 4096
+read(0, "F2#tfCyj[BL|6w)8<.F:Y\177M8^#=RN+}t"..., 4096) = 4096
+write(1, "N7!ybuoO<y-Pi \\Aueg<58FVpZ:CCX1Q"..., 4096) = 4096
+read(0, "/<c|=W)fgH1rJSg_&),NZ41Oy3G9VH\177e"..., 4096) = 4096
+write(1, "F2#tfCyj[BL|6w)8<.F:Y\177M8^#=RN+}t"..., 4096) = 4096
+read(0, "Lnt7aqHP 5 ^fvJ| uz0}uWe6!#]T$b "..., 4096) = 4096
+write(1, "/<c|=W)fgH1rJSg_&),NZ41Oy3G9VH\177e"..., 4096) = 4096
+read(0, "VectxS:N8Io:F)pb*LFx(XRV@%W}cfb9"..., 4096) = 4096
+write(1, "Lnt70qHP 5 ^fvJ| uz0}uWe6!#]T$b "..., 4096) = 4096
+read(0, "I[:P{.ByQ.8ci%GY<PEmwJ TFs7uBq8l"..., 4096) = 4096
+write(1, "VectxS:N8Io:F)pb*LFx(XRV@%W}cfb9"..., 4096) = 4096
+read(0, "N|O85:l4n[84o_nawkZ#03l','YXObv]"..., 4096) = 4096
+write(1, "I[:P{.ByQ.8ci%GY<PEmwJ TFs7uBq8l"..., 4096) = 4096
+read(0, "B#<MwdPo&=^X~9(7G;>jn)rSep#jF~mh"..., 4096) = 4096
+write(1, "N|O85:l4n[84o_n0wkZ#03l','YXObv]"..., 4096) = 4096
+read(0, "qIs\"cEr'n8M1:[-Sf&VYIhjZAQ)^J,U{"..., 4096) = 4096
+write(1, "B#<MwdPo&=^X~9(7G;>jn)rSep#jF~mh"..., 4096) = 4096
+read(0, "+eR&5cM;l,JvLU1.q s~KJdvXF8_bs&m"..., 4096) = 4096
+write(1, "qIs\"cEr'n8M1:[-Sf&VYIhjZAQ)^J,U{"..., 4096) = 4096
+read(0, "EH8w$>k9eT6Z+ {dxW[r(1_QCH-R5xf:"..., 4096) = 4096
+write(1, "+eR&5cM;l,JvLU1.q s~KJdvXF8_bs&m"..., 4096) = 4096
+read(0, "_P)>R8gIc5{KLxf$T-Vk.h}/<A|ofCU%"..., 4096) = 4096
+write(1, "EH8w$>k9eT6Z+ {dxW[r(1_QCH-R5xf:"..., 4096) = 4096
+read(0, "-/M[PskMXFb@KG6?`D@+=)Z/jh\177;cJQP"..., 4096) = 4096
+write(1, "_P)>R8gIc5{KLxf$T-Vk.h}/<A|ofCU%"..., 4096) = 4096
+read(0, "|\"qJzE-u_I1\\3$-f!4}{(bB[RNYh9~sv"..., 4096) = 4096
+write(1, "-/M[PskMXFb@KG6?`D@+=)Z/jh\177;cJQP"..., 4096) = 4096
+read(0, "~j.A}vYYEArU\177I+ED.E_UgEWN}}*nmNL"..., 4096) = 4096
+write(1, "|\"qJzE-u_I1\\3$-f!4}{(bB[RNYh9~sv"..., 4096) = 4096
+read(0, "oAtgJf1'+x,2b0I[;<_*-N7be/PJ].?L"..., 4096) = 4096
+write(1, "~j.A}vYYEArU\177I+ED.E_UgEWN}}*nmNL"..., 4096) = 4096
+read(0, "T.\\'xyPG*Ialoz[O'QY'8iz+RR(J6NwJ"..., 4096) = 4096
+write(1, "oAtgJf1'+x,2b0I[;<_*-N7be/PJ].?L"..., 4096) = 4096
+read(0, "YG,0wns.G[j\177b{5[{v`b\"_5Q7:;*n#W'"..., 4096) = 4096
+write(1, "T.\\'xyPG*I0loz[O'QY'8iz+RR(J6NwJ"..., 4096) = 4096
+read(0, "-r~qK7u9QIN)d Usw<r>M4!\177@OEU\"w?0"..., 4096) = 4096
+write(1, "YG,0wns.G[j\177b{5[{v`b\"_5Q7:;*n#W'"..., 4096) = 4096
+read(0, "ujB$B``$PfU~qbE,LPvnx0|IsZj~_y%4"..., 4096) = 4096
+write(1, "-r~qK7u9QIN)d Usw<r>M4!\177@OEU\"w?0"..., 4096) = 4096
+read(0, "Ia\177VZ1V!y^X_4I5*@~K\\;AthGJqFO1FY"..., 4096) = 4096
+write(1, "ujB$B``$PfU~qbE,LPvnx0|IsZj~_y%4"..., 4096) = 4096
+read(0, "`?}n(wX-cZIK:'miz]Jg6~bi:#pm#\\jc"..., 4096) = 4096
+write(1, "I0\177VZ1V!y^X_4I5*@~K\\;AthGJqFO1FY"..., 4096) = 4096
+read(0, "v)*HS1vgXDC<pe}_9z*zQ8@zL_@[wTxM"..., 4096) = 4096
+write(1, "`?}n(wX-cZIK:'miz]Jg6~bi:#pm#\\jc"..., 4096) = 4096
+read(0, "JEv`g;{`%_QR;I^CCis}]zN-6KV5-yc7"..., 4096) = 4096
+write(1, "v)*HS1vgXDC<pe}_9z*zQ8@zL_@[wTxM"..., 4096) = 4096
+read(0, "\\z()\177l=AOO:kV6XdrX~=Uc_6@:pQjg?'"..., 4096) = 4096
+write(1, "JEv`g;{`%_QR;I^CCis}]zN-6KV5-yc7"..., 4096) = 4096
+read(0, "j&0;A)c59\\$0=KJ,P&[\"{XZqs4;^Q91;"..., 4096) = 4096
+write(1, "\\z()\177l=AOO:kV6XdrX~=Uc_6@:pQjg?'"..., 4096) = 4096
+read(0, ">DOYZN:qqloU~UX}eiW9{E@*psJe3g}1"..., 4096) = 4096
+write(1, "j&0;A)c59\\$0=KJ,P&[\"{XZqs4;^Q91;"..., 4096) = 4096
+read(0, "y5EwQFSE[^04t\"KP.r\"cw0=q8g4d9Ih2"..., 4096) = 4096
+write(1, ">DOYZN:qqloU~UX}eiW9{E@*psJe3g}1"..., 4096) = 4096
+read(0, "%L\"u\"kXsCk`3Al\\[:u'o9./3$\"4ky3~~"..., 4096) = 4096
+write(1, "y5EwQFSE[^04t\"KP.r\"cw0=q8g4d9Ih2"..., 4096) = 4096
+read(0, "N2SRSGj$9I~tr%>8pc Ku\177WUF[QoI\"zw"..., 4096) = 4096
+write(1, "%L\"u\"kXsCk`3Al\\[:u'o9./3$\"4ky3~~"..., 4096) = 4096
+read(0, "aj5Y5uiA`D6^4PJROp`w&JMqnE].xSaY"..., 4096) = 4096
+write(1, "N2SRSGj$9I~tr%>8pc Ku\177WUF[QoI\"zw"..., 4096) = 4096
+read(0, "$E,keG.\"W7QSTImtia[h:&RB!^'AGG7+"..., 4096) = 4096
+write(1, "0j5Y5uiA`D6^4PJROp`w&JMqnE].xS0Y"..., 4096) = 4096
+read(0, "tiQav])Ljv}v(IJv;&cAx\"Cj_Mme[Z5/"..., 4096) = 4096
+write(1, "$E,keG.\"W7QSTImti0[h:&RB!^'AGG7+"..., 4096) = 4096
+read(0, "&YB_XWYZQQqnRfDT}xVn4\\E(7/);i@?o"..., 4096) = 4096
+write(1, "tiQ0v])Ljv}v(IJv;&cAx\"Cj_Mme[Z5/"..., 4096) = 4096
+read(0, "Lbk}l'lZ@[:(j%&R`xaY*M5L(A[V[HP'"..., 4096) = 4096
+write(1, "&YB_XWYZQQqnRfDT}xVn4\\E(7/);i@?o"..., 4096) = 4096
+read(0, "]l\177DrXJDv%lP$`_r6zu/7+x#12aXYpd6"..., 4096) = 4096
+write(1, "Lbk}l'lZ@[:(j%&R`x0Y*M5L(A[V[HP'"..., 4096) = 4096
+read(0, "h(DW5F'oYiref_=Vuo}yzMTx&j{q_|r("..., 4096) = 4096
+write(1, "]l\177DrXJDv%lP$`_r6zu/7+x#120XYpd6"..., 4096) = 4096
+read(0, "A&5]dZU $6B]2|/`rx~zf$'eJK28[j<}"..., 4096) = 4096
+write(1, "h(DW5F'oYiref_=Vuo}yzMTx&j{q_|r("..., 4096) = 4096
+read(0, "\\j_ZgF~nh9=CJ(bb:)[`z%kHHHBb?C,\\"..., 4096) = 4096
+write(1, "A&5]dZU $6B]2|/`rx~zf$'eJK28[j<}"..., 4096) = 4096
+read(0, "$QD.sZyfC);k(^M_(^_f=P0}Wl~y@Q_D"..., 4096) = 4096
+write(1, "\\j_ZgF~nh9=CJ(bb:)[`z%kHHHBb?C,\\"..., 4096) = 4096
+read(0, "qn0\177p X|J:Z4m<nZ~Cse'*%vfqM}P2o!"..., 4096) = 4096
+write(1, "$QD.sZyfC);k(^M_(^_f=P0}Wl~y@Q_D"..., 4096) = 4096
+read(0, "tv1N'9!0c`6\\)`>NTj$i-8(!9)Li8gYl"..., 4096) = 4096
+write(1, "qn0\177p X|J:Z4m<nZ~Cse'*%vfqM}P2o!"..., 4096) = 4096
+read(0, "`,;!\\!L\177QLv_*W|/'\177E@t'F<T_RXn#4."..., 4096) = 4096
+write(1, "tv1N'9!0c`6\\)`>NTj$i-8(!9)Li8gYl"..., 4096) = 4096
+read(0, "h}2'L`YGN&@rNqLN\177KOy1;J\"J\177|9lKq4"..., 4096) = 4096
+write(1, "`,;!\\!L\177QLv_*W|/'\177E@t'F<T_RXn#4."..., 4096) = 4096
+read(0, "E]Mj_O?s|YYy&kX.>`UWw-CtGjI<./\1773"..., 4096) = 4096
+write(1, "h}2'L`YGN&@rNqLN\177KOy1;J\"J\177|9lKq4"..., 4096) = 4096
+read(0, "-LbN!TpOCUy@{!\"\\BsKW=,N`knGtQ(,^"..., 4096) = 4096
+write(1, "E]Mj_O?s|YYy&kX.>`UWw-CtGjI<./\1773"..., 4096) = 4096
+read(0, "ca_sm{TQ<F@&4Z\\#4#NxTMW]'v.~}1\"@"..., 4096) = 4096
+write(1, "-LbN!TpOCUy@{!\"\\BsKW=,N`knGtQ(,^"..., 4096) = 4096
+read(0, "yJ\\?7$^3z#X?VG_bLn\"EOq*lO=jvkrrD"..., 4096) = 4096
+write(1, "c0_sm{TQ<F@&4Z\\#4#NxTMW]'v.~}1\"@"..., 4096) = 4096
+read(0, "NIcm5az/-#HCmFE3vF<v(SGqp_/*!rY/"..., 4096) = 4096
+write(1, "yJ\\?7$^3z#X?VG_bLn\"EOq*lO=jvkrrD"..., 4096) = 4096
+read(0, "xU!`f:BE_J,0kj/`r7U*3p?[&r*%Us!."..., 4096) = 4096
+write(1, "NIcm50z/-#HCmFE3vF<v(SGqp_/*!rY/"..., 4096) = 4096
+read(0, "j,_S8+uc,VOun'n|TVshiZu0>7:<4a\177_"..., 4096) = 4096
+write(1, "xU!`f:BE_J,0kj/`r7U*3p?[&r*%Us!."..., 4096) = 4096
+read(0, "M)>i#CBf^=7arwyf5?yMsTqD?^rXo3`}"..., 4096) = 4096
+write(1, "j,_S8+uc,VOun'n|TVshiZu0>7:<40\177_"..., 4096) = 4096
+read(0, "D9c'\"Gd38yhr{|m/0,\"HvAmX#fsb(@l,"..., 4096) = 4096
+write(1, "M)>i#CBf^=70rwyf5?yMsTqD?^rXo3`}"..., 4096) = 4096
+read(0, "hYL~^~nq/K*^^jP.\177;{>'xIgv_o.XU\" "..., 4096) = 4096
+write(1, "D9c'\"Gd38yhr{|m/0,\"HvAmX#fsb(@l,"..., 4096) = 4096
+read(0, " 5YsA) 5?:/&]8ICdGUYaK&B \1775'j)^j"..., 4096) = 4096
+write(1, "hYL~^~nq/K*^^jP.\177;{>'xIgv_o.XU\" "..., 4096) = 4096
+read(0, "[[?+'suZT~u\177#Z(Y}b&N]~$rn_N:0WbK"..., 4096) = 4096
+write(1, " 5YsA) 5?:/&]8ICdGUY0K&B \1775'j)^j"..., 4096) = 4096
+read(0, "}>C<FRsdkVVc5dx/>)V*iF|\\hu@+1S@/"..., 4096) = 4096
+write(1, "[[?+'suZT~u\177#Z(Y}b&N]~$rn_N:0WbK"..., 4096) = 4096
+read(0, "`4N*%-%FGlJeUBrGJ)*oWvY$'=q\"Bt~#"..., 4096) = 4096
+write(1, "}>C<FRsdkVVc5dx/>)V*iF|\\hu@+1S@/"..., 4096) = 4096
+read(0, "G6Bp&\"JH]emj[XTKv[PP23g_nd-7[fS#"..., 4096) = 4096
+write(1, "`4N*%-%FGlJeUBrGJ)*oWvY$'=q\"Bt~#"..., 4096) = 4096
+read(0, "qU~Mf4%$\177/<bg(!g9$)\177HI# KjB<ak+R"..., 4096) = 4096
+write(1, "G6Bp&\"JH]emj[XTKv[PP23g_nd-7[fS#"..., 4096) = 4096
+read(0, "^#zCUsHR5oxay/]/cTD\\#?P<c8<6g$x%"..., 4096) = 4096
+write(1, "qU~Mf4%$\177/<bg(!g9$)\177HI# KjB<0k+R"..., 4096) = 4096
+read(0, "jCt!S\",0%Xe7O:nX|F34O%Y1\"2[`GXV1"..., 4096) = 4096
+write(1, "^#zCUsHR5ox0y/]/cTD\\#?P<c8<6g$x%"..., 4096) = 4096
+read(0, "9hevz~o?,TBUB_X,@~tFP|fqp58*^OxW"..., 4096) = 4096
+write(1, "jCt!S\",0%Xe7O:nX|F34O%Y1\"2[`GXV1"..., 4096) = 4096
+read(0, "*Oc^RfH7^'xM<ygCQT\177`x4VBli~`>J{H"..., 4096) = 4096
+write(1, "9hevz~o?,TBUB_X,@~tFP|fqp58*^OxW"..., 4096) = 4096
+read(0, "42:vFNjPx>2jFE5rG@O5o(f1o>G;7 ++"..., 4096) = 4096
+write(1, "*Oc^RfH7^'xM<ygCQT\177`x4VBli~`>J{H"..., 4096) = 4096
+read(0, "5L&8*4>\":xGPKLCiQ@FP,A8\\yh7Z{}:1"..., 4096) = 4096
+write(1, "42:vFNjPx>2jFE5rG@O5o(f1o>G;7 ++"..., 4096) = 4096
+read(0, "k)J_'hm/ooCv9,#-HhG<.$@-@V%Ob7>-"..., 4096) = 4096
+write(1, "5L&8*4>\":xGPKLCiQ@FP,A8\\yh7Z{}:1"..., 4096) = 4096
+read(0, "z`S\177`>Y:&KuH=e7xb`Ez=snvPi'BmpcG"..., 4096) = 4096
+write(1, "k)J_'hm/ooCv9,#-HhG<.$@-@V%Ob7>-"..., 4096) = 4096
+read(0, "^m8Nf+~E\"3wy-DR9'_?]y.n3R4X>8^\177V"..., 4096) = 4096
+write(1, "z`S\177`>Y:&KuH=e7xb`Ez=snvPi'BmpcG"..., 4096) = 4096
+read(0, "ELZ _z#Ev&z-tn18{W!}(\\F3ZPxpPMTv"..., 4096) = 4096
+write(1, "^m8Nf+~E\"3wy-DR9'_?]y.n3R4X>8^\177V"..., 4096) = 4096
+read(0, "H7B37Yw'A'v>.|h^9Dn,!95LSo8Zp?Ky"..., 4096) = 4096
+write(1, "ELZ _z#Ev&z-tn18{W!}(\\F3ZPxpPMTv"..., 4096) = 4096
+read(0, "x:zwFC4=zB~7i`{x4lg2uMke~:0uZ,-2"..., 4096) = 4096
+write(1, "H7B37Yw'A'v>.|h^9Dn,!95LSo8Zp?Ky"..., 4096) = 4096
+read(0, "eo;*WT|\177a#$ *`O/jU6_hUdJL?cMH?ym"..., 4096) = 4096
+write(1, "x:zwFC4=zB~7i`{x4lg2uMke~:0uZ,-2"..., 4096) = 4096
+read(0, "j;w/#[yUQ8f%H].GBU1o).LU`smuaN5+"..., 4096) = 4096
+write(1, "eo;*WT|\1770#$ *`O/jU6_hUdJL?cMH?ym"..., 4096) = 4096
+read(0, "oO$Jw($nSkX)8@+(+Jk)4-,)I[|Ed2j3"..., 4096) = 4096
+write(1, "j;w/#[yUQ8f%H].GBU1o).LU`smu0N5+"..., 4096) = 4096
+read(0, "CqorYR kK<;i+\\<8T|h'0VOIlgGWDXCg"..., 4096) = 4096
+write(1, "oO$Jw($nSkX)8@+(+Jk)4-,)I[|Ed2j3"..., 4096) = 4096
+read(0, " nc(5R+>,*B-.uEJtl0AFei@5-7nJ/r*"..., 4096) = 4096
+write(1, "CqorYR kK<;i+\\<8T|h'0VOIlgGWDXCg"..., 4096) = 4096
+read(0, "uZ,Jq6N8&-G9iq[\177Fy+q['0JZ_EaczF8"..., 4096) = 4096
+write(1, " nc(5R+>,*B-.uEJtl0AFei@5-7nJ/r*"..., 4096) = 4096
+read(0, "Ak!eO=V-g$3!xJd[FfRyo{;.^~Q4m5@."..., 4096) = 4096
+write(1, "uZ,Jq6N8&-G9iq[\177Fy+q['0JZ_E0czF8"..., 4096) = 4096
+read(0, "3M%b]>?hXT\177muXes4jf|SKdt!Z#l)\"3|"..., 4096) = 4096
+write(1, "Ak!eO=V-g$3!xJd[FfRyo{;.^~Q4m5@."..., 4096) = 4096
+read(0, "t`VgiOZ]\177FQ<Mc]I\177 gXSw@L-\\1I,~R!"..., 4096) = 4096
+write(1, "3M%b]>?hXT\177muXes4jf|SKdt!Z#l)\"3|"..., 4096) = 4096
+read(0, "`\177 (\"6UOG04T=]To$19x.&Au Lr80wCP"..., 4096) = 4096
+write(1, "t`VgiOZ]\177FQ<Mc]I\177 gXSw@L-\\1I,~R!"..., 4096) = 4096
+read(0, ";H\"SDB^<\"akn6De4C]|2[>.jo8pP\"^1="..., 4096) = 4096
+write(1, "`\177 (\"6UOG04T=]To$19x.&Au Lr80wCP"..., 4096) = 4096
+read(0, ",vF%\"c3EnCkXt;*x2pH}w>/k nW;75FC"..., 4096) = 4096
+write(1, ";H\"SDB^<\"0kn6De4C]|2[>.jo8pP\"^1="..., 4096) = 4096
+read(0, "f\\3}VP-sxr}lMF3Y7lkz<m3AG VeMZ84"..., 4096) = 4096
+write(1, ",vF%\"c3EnCkXt;*x2pH}w>/k nW;75FC"..., 4096) = 4096
+read(0, "nZxU<kNwa0UK\"&K,ZL|OOu9O6P.-`i{N"..., 4096) = 4096
+write(1, "f\\3}VP-sxr}lMF3Y7lkz<m3AG VeMZ84"..., 4096) = 4096
+read(0, "g+:.q r&/`f\\DaiV=\\|b\\qr(^@XE0^WW"..., 4096) = 4096
+write(1, "nZxU<kNw00UK\"&K,ZL|OOu9O6P.-`i{N"..., 4096) = 4096
+read(0, "-9,6IDu5}*B~w1PLM9,kpQF-J@v?fm`S"..., 4096) = 4096
+write(1, "g+:.q r&/`f\\D0iV=\\|b\\qr(^@XE0^WW"..., 4096) = 4096
+read(0, "|Zfqf{~o4xZIGHOs({4#(,EGFF~'sp(P"..., 4096) = 4096
+write(1, "-9,6IDu5}*B~w1PLM9,kpQF-J@v?fm`S"..., 4096) = 4096
+read(0, "6V+Nb)5Ahv]f-rhmihE!S7WV-2$f.)]%"..., 4096) = 4096
+write(1, "|Zfqf{~o4xZIGHOs({4#(,EGFF~'sp(P"..., 4096) = 4096
+read(0, "<S]MZY~El||'Sy~!(kUPMe(~'tIeJBAF"..., 4096) = 4096
+write(1, "6V+Nb)5Ahv]f-rhmihE!S7WV-2$f.)]%"..., 4096) = 4096
+read(0, "knBvjm~<6vuOo +.(rY*87ez|L7#(VoS"..., 4096) = 4096
+write(1, "<S]MZY~El||'Sy~!(kUPMe(~'tIeJBAF"..., 4096) = 4096
+read(0, "y9\\?+=3<5=r<'P*;3webwD/$aL[Hi(}B"..., 4096) = 4096
+write(1, "knBvjm~<6vuOo +.(rY*87ez|L7#(VoS"..., 4096) = 4096
+read(0, "Nb#PF#!Y#5YsN_B;DX%*I^Jgi!BIE\177ZS"..., 4096) = 4096
+write(1, "y9\\?+=3<5=r<'P*;3webwD/$0L[Hi(}B"..., 4096) = 4096
+read(0, "G@Ro\177W&wT[KCr_E_&4r[6GAX9 _6<G'd"..., 4096) = 2880
+write(1, "Nb#PF#!Y#5YsN_B;DX%*I^Jgi!BIE\177ZS"..., 4096) = 4096
+read(0, "", 4096)                       = 0
+write(1, "G@Ro\177W&wT[KCr_E_&4r[6GAX9 _6<G'd"..., 2880) = 2880
+exit_group(0)                           = ?
++++ exited with 0 +++

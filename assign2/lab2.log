@@ -1,0 +1,54 @@
+LAB
+
+Using C locale
+
+Creating sorted list of English words
+-sort /usr/share/dict/words > words: creates words file in pwd, filled with sorted list of every line in /usr/share/dict/words
+
+Getting the html file of the assignment webpage
+-wget https://web.cs.ucla.edu/classes/winter18/cs35L/assign/assign2.html
+
+Crude implementation of English spell checker (as assignment describes)
+-tr -c 'A-Za-z' '[\n*]' < assign2.html: Lists every word fragment with at least one newline char between each
+-tr -cs 'A-Za-z' '[\n*]' < assign2.html: Lists every word fragment with exactly one newline char between each
+-tr -cs 'A-Za-z' '[\n*]' < assign2.html | sort: Output is the same as the last command except sorted
+-tr -cs 'A-Za-z' '[\n*]' < assign2.html | sort -u: Output is the same as the last except it has deleted repeated words
+-tr -cs 'A-Za-z' '[\n*]' < assign2.html | sort -u | comm - words: The output contains all word fragments that were in assign2.html or the words file, in 3 columns. The 1st is for fragments only in assign2.html (not in the dictionary), the 2nd is for fragments only in words, and the 3rd is for fragments in both (valid words)
+-tr -cs 'A-Za-z' '[\n*]' < assign2.html | sort -u | comm -23 - words: Only prints word fragments in column 1, or in other words, the incorrect words in assign2.html
+
+Getting a copy of the english to hawaiian dictionary, and of the assignment webpage:
+wget http://mauimapp.com/moolelo/hwnwdseng.htm
+wget https://web.cs.ucla.edu/classes/winter18/cs35L/assign/assign2.html
+
+Creating buildwords:
+1st line = #!/bin/bash
+-Each step is piped into the following step
+1. cat <&0: reads all of stdin, without the limitations I found with the 'read' command, which stopped at each newline
+2. tr "\n" " ": replaces all newlines with spaces
+3. tr "\t" " ": replaces all tabs with spaces
+4. sed 's/<u>a<\/u>/a/g':replace <u>a</u> with a
+5. tr "\`" "\'": replaces every ` with '
+6. grep - -o -e \<tr\>[[:space:]]*\<td\>[[:alpha:]]*\</td\>[[:space:]]*\<td\>[[:alpha:][:space:],\']*\</td\>[[:space:]]*\</tr\>: Finds all occurrences of the pattern <tr>   <td>english_word</td>    <td>hawaiian_word</td>     </tr> and lists them line by line into stdout, which of course gets piped to the next command
+7. sed 's/<\/td> *<\/tr>//g': deletes the </td>    </tr> that comes after the hawaiian word
+8. sed 's/<tr> *<td>[[:alpha:]]*<\/td> *<td>//g': deletes everything that comes before the hawaiian word
+9. tr ", " "\n": replace every comma or space with a newline. This splits all hawaiian words by any comma AND/OR space
+10. tr '[:upper:]' '[:lower:]': replace every uppercase letter with its lowercase equivalent
+11. grep - -o -e ^[pkmnwlhaeiou\']*$: deletes every line which has letters outside of the hawaiian alphabet, by searching for every line which contains only those letters
+12. sort -u: sorts the remaining lines, deleting repeats.
+
+Testing Buildwords:
+1. English spell-checker on assign2.html:
+   'tr -cs 'A-Za-z\`' '[\n*]' < assign2.html | tr "\`" "\'" | tr '[:upper:]' '[:lower:]' | sort -u | comm -23 - words | grep . -c'
+   The grep addon at the end prints out the number of lines, and thus words which the spell-checker flagged as incorrect. Incorrect words = 78
+2. Hawaiian spell-checker on assign2.html:
+   'cat hwnwdseng.htm | ./buildwords > hwnwords'
+   'tr -cs 'A-Za-z\`' '[\n*]' < assign2.html | tr "\`" "\'" | tr '[:upper:]' '[:lower:]' | sort -u | comm -23 - hwnwords | grep . -c'
+   Incorrect words = 407
+3. Hawaiian spell-checker on hwnwdseng.htm:
+   'tr -cs 'A-Za-z\`' '[\n*]' < hwnwdseng.htm | tr "\`" "\'" | tr '[:upper:]' '[:lower:]' | sort -u | comm -23 - hwnwords'
+4. Compare mispelled English and Hawaiian words on assign2.html:
+   'tr -cs 'A-Za-z\`' '[\n*]' < assign2.html | tr "\`" "\'" | tr '[:upper:]' '[:lower:]' | sort -u | comm -23 - words > eng_mispell'
+   'tr -cs 'A-Za-z\`' '[\n*]' < assign2.html | tr "\`" "\'" | tr '[:upper:]' '[:lower:]' | sort -u | comm -23 - hwnwords > hwn_mispell'
+   'comm eng_mispell hwn_mispell'
+   Many words are mispelled in hawaiian, but not in English, such as 'words', 'working', 'worry', etc
+   There are a few words mispelled in English, but not in Hawaiian, like 'halau'

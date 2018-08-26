@@ -1,0 +1,237 @@
+Name: Robathan Harries
+UID: 904836501
+Assignment 5: lab.txt
+
+Creating a 5000000 byte file:
+C Program (createRandom.c):
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+  srand(time(NULL));
+  int i = 0;
+  for (; i < 5000000; i++) {
+    int r = rand() % 95 + 32;//32 to 126 are normal, recognizable chars
+    putchar(r);
+  }
+}
+
+$ gcc createRandom.c -o createRandom
+$ ./createRandom > input.txt
+
+Tracing sys calls:
+---tr2b to file:
+$ strace -o tr2b_file_trace.txt ./tr2b a 0 <input.txt >output.txt
+	OUTPUT:
+execve("./tr2b", ["./tr2b", "a", "0"], [/* 63 vars */]) = 0
+brk(NULL)                               = 0x904000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=122850, ...}) = 0
+mmap(NULL, 122850, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f91d7878000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f91d7877000
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f91d72a7000
+mprotect(0x7f91d7467000, 2097152, PROT_NONE) = 0
+mmap(0x7f91d7667000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f91d7667000
+mmap(0x7f91d766d000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f91d766d000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f91d7876000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f91d7875000
+arch_prctl(ARCH_SET_FS, 0x7f91d7876700) = 0
+mprotect(0x7f91d7667000, 16384, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7f91d7896000, 4096, PROT_READ) = 0
+munmap(0x7f91d7878000, 122850)          = 0
+fstat(0, {st_mode=S_IFREG|0664, st_size=5000000, ...}) = 0
+brk(NULL)                               = 0x904000
+brk(0x926000)                           = 0x926000
+read(0, "_e\\8V}=fBg[vTmCc{Xm%MD&zA?&hHJKg"..., 4096) = 4096
+fstat(1, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+read(0, "`LbEd=,bjUW|&^Vs~1~?=V#p;I9HRA.2"..., 4096) = 4096
+write(1, "_e\\8V}=fBg[vTmCc{Xm%MD&zA?&hHJKg"..., 4096) = 4096
+...
+...
+...
+read(0, "G@Ro\177W&wT[KCr_E_&4r[6GAX9 _6<G'd"..., 4096) = 2880
+write(1, "Nb#PF#!Y#5YsN_B;DX%*I^Jgi!BIE\177ZS"..., 4096) = 4096
+read(0, "", 4096)                       = 0
+write(1, "G@Ro\177W&wT[KCr_E_&4r[6GAX9 _6<G'd"..., 2880) = 2880
+exit_group(0)                           = ?
++++ exited with 0 +++
+
+$ wc -l tr2b_file_trace.txt
+Line Count: 2474 ~ syscall count
+
+
+---tr2u to file:
+$ strace -o tr2u_file_trace.txt ./tr2u a 0 <input.txt >output.txt
+	OUTPUT:
+execve("./tr2u", ["./tr2u", "a", "0"], [/* 63 vars */]) = 0
+brk(NULL)                               = 0x1ec2000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=122850, ...}) = 0
+mmap(NULL, 122850, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbc134d5000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbc134d4000
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbc12f04000
+mprotect(0x7fbc130c4000, 2097152, PROT_NONE) = 0
+mmap(0x7fbc132c4000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fbc132c4000
+mmap(0x7fbc132ca000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbc132ca000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbc134d3000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbc134d2000
+arch_prctl(ARCH_SET_FS, 0x7fbc134d3700) = 0
+mprotect(0x7fbc132c4000, 16384, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7fbc134f3000, 4096, PROT_READ) = 0
+munmap(0x7fbc134d5000, 122850)          = 0
+read(0, "_", 1)                         = 1
+write(1, "_", 1)                        = 1
+...
+...
+...
+read(0, "M", 1)                         = 1
+write(1, "M", 1)                        = 1
+read(0, "", 1)                          = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+
+$ wc -l tr2u_file_trace.txt
+Line Count: 10000028 ~ syscall count
+
+
+---tr2b to terminal:
+$ strace -o tr2b_term_trace.txt ./tr2b a 0 <input.txt
+	OUTPUT:
+execve("./tr2b", ["./tr2b", "a", "0"], [/* 63 vars */]) = 0
+brk(NULL)                               = 0x159a000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=122850, ...}) = 0
+mmap(NULL, 122850, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f77d2ac4000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f77d2ac3000
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f77d24f3000
+mprotect(0x7f77d26b3000, 2097152, PROT_NONE) = 0
+mmap(0x7f77d28b3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) $
+mmap(0x7f77d28b9000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f$
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f77d2ac2000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f77d2ac1000
+arch_prctl(ARCH_SET_FS, 0x7f77d2ac2700) = 0
+mprotect(0x7f77d28b3000, 16384, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7f77d2ae2000, 4096, PROT_READ) = 0
+munmap(0x7f77d2ac4000, 122850)          = 0
+fstat(0, {st_mode=S_IFREG|0664, st_size=5000000, ...}) = 0
+brk(NULL)                               = 0x159a000
+brk(0x15bc000)                          = 0x15bc000
+read(0, "_e\\8V}=fBg[vTmCc{Xm%MD&zA?&hHJKg"..., 4096) = 4096
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 17), ...}) = 0
+write(1, "_e\\8V}=fBg[vTmCc{Xm%MD&zA?&hHJKg"..., 1024) = 1024
+write(1, "zwff.}6Ur1CT>q-3`|kz?0.yy<`FkEie"..., 1024) = 1024
+write(1, "lib2BTO+Gcu 13df(UbdM*IPh%[`-Qmy"..., 1024) = 1024
+read(0, "`LbEd=,bjUW|&^Vs~1~?=V#p;I9HRA.2"..., 4096) = 4096
+write(1, "oC*wdO0,rfZC6}4=)p\"<0;FR5e}CEpF5"..., 1024) = 1024
+write(1, "`LbEd=,bjUW|&^Vs~1~?=V#p;I9HRA.2"..., 1024) = 1024
+write(1, "|U'@,Y+t!^`xe{^k\"yUjRA!4 []/.Q?j"..., 1024) = 1024
+write(1, "Z\177q^]th-0YrWsMdYyLyTYD8h3!<Q14iK"..., 1024) = 1024
+...
+...
+...
+read(0, "G@Ro\177W&wT[KCr_E_&4r[6GAX9 _6<G'd"..., 4096) = 2880
+write(1, "fV'9(pF91UJJU'H9:_{'&9d,p<({b3i("..., 1024) = 1024
+write(1, "G@Ro\177W&wT[KCr_E_&4r[6GAX9 _6<G'd"..., 1024) = 1024
+write(1, "gr*5Id0!h{D}\\<u>kO~*A0=o.wXk@p5'"..., 1024) = 1024
+read(0, "", 4096)                       = 0
+write(1, "O.f+HHM8B;j^Y#K\"g 6JgH}<j =0Jsxy"..., 832) = 832
+exit_group(0)                           = ?
++++ exited with 0 +++
+
+$ wc -l tr2b_term_trace.txt
+Line Count: 6136 ~ syscall count
+
+
+---tr2u to terminal:
+$ strace -o tr2u_term_trace.txt ./tr2u a 0 <input.txt
+	OUTPUT:
+execve("./tr2u", ["./tr2u", "a", "0"], [/* 63 vars */]) = 0
+brk(NULL)                               = 0x1e8e000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=122850, ...}) = 0
+mmap(NULL, 122850, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f33f7dc0000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f33f7dbf000
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f33f77ef000
+mprotect(0x7f33f79af000, 2097152, PROT_NONE) = 0
+mmap(0x7f33f7baf000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f33f7baf000
+mmap(0x7f33f7bb5000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f33f7bb5000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f33f7dbe000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f33f7dbd000
+arch_prctl(ARCH_SET_FS, 0x7f33f7dbe700) = 0
+mprotect(0x7f33f7baf000, 16384, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7f33f7dde000, 4096, PROT_READ) = 0
+munmap(0x7f33f7dc0000, 122850)          = 0
+read(0, "_", 1)                         = 1
+write(1, "_", 1)                        = 1
+read(0, "e", 1)                         = 1
+write(1, "e", 1)                        = 1
+...
+...
+...
+read(0, "M", 1)                         = 1
+write(1, "M", 1)                        = 1
+read(0, "", 1)                          = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+
+$ wc -l tr2u_term_trace.txt
+Line Count: 10000028 ~ syscall count
+
+
+
+Measuring Time:
+---tr2b:
+$ time ./tr2b a 0 <input.txt >output.txt
+	OUTPUT:
+real	0m0.126s
+user	0m0.110s
+sys	0m0.016s
+
+---tr2u:
+$ time ./tr2u a 0 <input.txt >output.txt
+	OUTPUT:
+real	0m8.301s
+user	0m0.917s
+sys	0m7.380s
+
+
+
+The buffered program is always faster than the unbuffered program. The unbuffered program has to make 2 system calls for each of 5,000,000 bytes, whereas the buffered program (using getchar and putchar) reads 4096 bytes at a time with 1 system call, and prints them to a file 4096 bytes at a time with 1 system call (1024 bytes at a time when printing to the terminal, thus 5 system calls per 4096 bytes).

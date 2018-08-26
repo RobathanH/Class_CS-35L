@@ -1,0 +1,41 @@
+#!/bin/sh
+
+fNamesNoDot=$(find $1 -maxdepth 1 -type f | sort | grep '/[^.][^/]*$')
+fNamesDot=$(find $1 -maxdepth 1 -type f | sort | grep '/\.[^/]*$')
+
+fNames="$fNamesDot $fNamesNoDot" #So that filenames starting with . have precedence
+fNamesR=$(echo $fNames | awk '{ for (a=NF; a>1; a--) printf("%s ", $a); print $1; }')
+
+for i in $fNamesR #Start with reversed list so that lower precedence filenames get replaced before higher ones
+do
+    for j in $fNames #Search for a match to link to starting with highest precedence
+    do
+	if [ "$i" != "$j" ]
+	then
+
+	    if [ -r "$i" -a -r "$j" ] #if both files are readable
+	    then
+	         cmp $i $j -s
+      		 if [ $? -eq 0 ] #If files are the same, remove the lower precedence one and create a hardlink with the same name to the higher precedence one
+       		 then
+	             rm $i
+       		     ln $j $i
+	             break
+       		 fi
+	    else #Report errors if the file is unreadable
+		if [ ! -r $i ]
+		then
+		    echo "Error reading from file $i"
+		fi
+		if [ ! -r $j ]
+		then
+		    echo "Error reading from file $j"
+		fi
+		break #Don't report the same error more than once
+	    fi
+	    
+	else
+	    break #So that the for loop doesn't go over file comparisons it's already done
+	fi
+    done
+done

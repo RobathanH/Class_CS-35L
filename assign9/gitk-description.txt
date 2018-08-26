@@ -1,0 +1,7 @@
+Top Left: Shows hierarchical tree of commits and relationships between branches.
+Top Middle: Names and emails of authors of corresponding commit/merge in top left window.
+Top Right: Dates for corresponding commits in top left.
+
+Bottom Left: Shows changelog of commits.
+
+Bottom Right: Displays which files were affected by the selected commit

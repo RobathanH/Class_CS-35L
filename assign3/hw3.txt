@@ -1,0 +1,20 @@
+Q1: The line was no longer necessary, as a later part of his patch removes the 
+line ‘goto case_long_iso_time_style;’ which is the only thing that required 
+the first line to be there. It was not strictly necessary to remove the 
+‘case_long_iso_time_style’ flag, but it was neat to get rid of vestigial 
+code.
+
+Q2: For any locale which does not specify a specific time style, it will use 
+this traditional English time format, which uses English abbreviations of 
+month names. If a non-English locale doesn’t specify a specific time style, 
+they will get this English version, which may not make sense.
+
+Q3: ‘IndexError: list index out of range’ - because of the line 
+‘return seq[int(self.random() * len(seq))]’ in random.choice(), where seq 
+is the list passed to random.choice(). When the list is empty, len(seq) = 0, 
+and the line will try to read from seq[0], which doesn’t exist, creating the 
+IndexError.
+
+Q4: Syntax Error because of ‘except IOError as (errno, strerror)’. This 
+form is no longer valid syntactically in python 3.
+

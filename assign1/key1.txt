@@ -1,0 +1,107 @@
+1.1
+
+2. C-s H T M L Enter
+3. C-s s c a v e n g e r Enter M-b
+4. C-s s e l f - r e f e r e n t i a l Enter M-b M-b
+5. C-s a r r o w M-b
+6. C-e
+7. C-a
+10. C-x C-c
+
+1.2
+
+2. C-s < ! - - Enter C-a C-@ C-e Delete
+3. C-s < ! - - Enter C-a C-@ C-e Delete
+4. C-s < ! - - Enter C-a C-@ C-e C-n C-n Delete
+5. C-s < ! - - Enter M-b M-f C-@ C-f C-f C-f C-f C-f C-f C-f Delete
+   C-s < ! - - Enter C-a C-@ C-e C-n C-n C-n Delete
+   C-s < ! - - Enter C-a C-@ C-e Delete
+
+
+1.3
+
+2. M-% A s s i g n m e n t SP 1 Enter A s s i g n m e n t SP 5 1 Enter y y q
+3. M-% U T F - 8 Enter U S - A S C I I Enter y
+4. M-< C-s < / o l > Enter Enter
+5. C-x C-c y
+
+1.4
+
+3. M-> C-p C-p C-f C-@ C-e M-w M-g g 3 7 5 Enter C-y
+4. M-g g 4 1 8 Enter C-e C-@ C-a C-p C-p C-p M-w M-g g 3 6 0 Enter C-y C-a C-f
+Backspace C-p C-f Backspace C-p C-f Backspace C-p C-f Backspace
+
+M-g g 4 1 4 Enter C-e C-b C-b C-b C-b C-b C-@ M-b M-f M-w M-g g 3 5 9 Enter 
+C-e M-b M-b M-f C-y
+
+M-g g 4 0 5 Enter C-e C-@ C-a C-p C-p M-w M-g g 3 2 4 Enter C-y C-a C-f 
+Backspace C-p C-f Backspace C-p C-f Backspace
+
+M-g g 3 9 6 Enter C-f C-@ C-e M-w M-g g 1 1 4 Enter C-y
+
+M-g g 3 8 7 Enter C-f C-@ C-e M-w M-g g 1 8 Enter C-y
+
+5. M-> C-@ M-g g 3 8 1 Backspace
+6. C-x u
+7. M-g g 3 8 1 < ! - - Enter M-> - - >
+8. M-< M-% < o l > Enter < o L > Enter !
+
+1.5
+
+1. C-x d C-@ C-a Backspace ~ Enter
+   + j u n k Enter
+2. q C-x C-f e x e r 1 . h t m l M-g g 2 6 3 Enter M-f M-f C-f C-@ M-g g 2 7 3
+Enter C-e M-w 
+
+C-x C-f C-@ C-a Backspace ~ / j u n k / h e l l o . c C-y 
+
+M-< M-f M-f M-f M-b Backspace Backspace Backspace Backspace < 
+
+C-e Backpace Backspace Backspace Backspace > 
+
+C-n C-n C-n C-n C-e C-b C-b Backspace Backspace Backspace Backspace Backspace 
+Backspace " 
+
+C-n C-a M-f M-f M-f M-f M-f C-f Backspace Backspace Backspace Backspace < 
+
+M-f M-f M-f C-f Backspace Backspace Backspace Backspace > 
+
+C-x C-s
+
+3. M-x c o m p i l e Enter C-@ C-a Backspace g c c SP - o SP h e l l o SP h e
+l l o . c Enter
+4. C-x b h e l l o - o u t Enter M-1 M-! ~ / j u n k / h e l l o . c Enter
+
+hello-out:
+
+#include <stdio.h>
+int
+main (void)
+{
+  char n = '\n';
+  char b = '\\';
+  char q = '"';
+  char const *p = "#include <stdio.h>%cint%cmain (void)%c{%c  char n = '%cn';%c  char b = '%c%c';%c  char q = '%c';%c  char const *p = %c%s%c;%c  printf (p, n, n, n, n, b, n, b, b, n, q, n, q, p, q, n, n, n, n);%c  return 0;%c}%c";
+  printf (p, n, n, n, n, b, n, b, b, n, q, n, q, p, q, n, n, n, n);
+  return 0;
+}
+
+1.6
+
+5. The output, while the same, is shown in the mini-buffer where commands are 
+entered
+
+6. No, they're pseudo-random, generated from a function which uses a seed, 
+time, and pid to generate seemingly random numbers
+
+7. 25%. Given any x in the range -2^61 to 2^61-1, there is a 50% chance that y
+is the correct sign for the subtraction to cause an overflow. Assuming that x 
+and y are the correct signs to overflow, then when |x| = 1, there is only 1 
+possible value for |y| which would cause overflow, ~0% chance. When |x| = 
+2^61-1, there are 2^61-1 possible values for |y| which would cause overflow,
+ ~100% chance. This averages to a 50% chance for x-y to overflow if they're 
+both the correct signs.
+Overall, there is a 25% chance for (- (random) (random)) to overflow and 
+display an incorrect answer.
+
+

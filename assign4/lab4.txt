@@ -1,0 +1,181 @@
+Building coreutils-with-bug as-is:
+	Commands run:
+	$ wget https://web.cs.ucla.edu/classes/winter18/cs35L/assign
+						/coreutils-with-bug
+	---download tar file
+	$ cd ~/coreutils-with-bug
+	$ ./configure -prefix=/u/cs/ugrad/robathan/coreutils
+	$ make
+	---Configuring went fine, but attempting to make the package and 
+	---compile the programs ran into an error:
+	---" utimens.h:2: error: conflicting types for 'futimens' "
+Patching coreutils-with-bug:
+	Commands run:
+	$ wget https://web.cs.ucla.edu/classes/winter18/cs35L/assign
+						/coreutils.diff
+	---download patch file
+	$ cd ~/coreutils-with-bug
+	$ patch -p0 < ../coreutils.diff
+	---The p0 flag tells the program to read file paths in the patch file 
+	---as is.
+Rebuilding patched coreutils-with-bug
+	Commands run:
+	$ make
+	---No error
+	$ make install
+	---No error
+
+Why did the renaming patch fix things?
+---The error in compiling the original was due to two different functions 
+having the same name, as shown by the error which says that there are 
+conflicting types for the function 'futimens'. The renaming patch simply 
+renames one of these functions to coreutils_futimens.
+
+Recreating the error:
+	Commands run:
+	$ tmp=$(mktemp -d)
+	$ cd $tmp
+	$ touch -d '1918-11-11 11:00 GMT' wwi-armistice
+	$ touch now
+	$ sleep 1
+	$ touch now1
+	$ ~/coreutils/bin/ls -lt
+		OUPUT:
+		total 0
+		-rw-r--r-- 1 robathan csugrad 0 1918-11-11 03:00 wwi-armistice
+		-rw-r--r-- 1 robathan csugrad 0 2018-02-08 13:59 now1
+		-rw-r--r-- 1 robathan csugrad 0 2018-02-08 13:58 now
+
+Using the debugger:
+	Commands run:
+	$ cd $tmp
+	$ gdb ~/coreutils/bin/ls
+	(gdb) run -lt
+		OUTPUT:
+		total 0
+		-rw-r--r-- 1 robathan csugrad 0 1918-11-11 03:00 wwi-armistice
+		-rw-r--r-- 1 robathan csugrad 0 2018-02-08 13:58 now1
+		-rw-r--r-- 1 robathan csugrad 0 2018-02-08 13:58 now
+	(gdb) info functions 
+	---found function sort_files
+	(gdb) break sort_files	
+	(gdb) run -lt
+	---Found that the program sorts entries using a comparison function compare_mtime, which in turn immediately calls cmp_mtime
+	(gdb) c 1000
+	---To end the program
+	(gdb) delete
+	---Delete all breakpoints
+	(gdb) break cmp_mtime
+	---Set a break point for whenever cmp_mtime is called
+	(gdb) run /tmp/tmp.XAw7QsgFq6 -lt
+	---Found this snippet of code using 'list' command
+	---/* Return negative, zero, positive if A < B, A == B, A > B, respectively.
+	---Assume the nanosecond components are in range, or close to it.  */
+	---static inline int
+	---timespec_cmp (struct timespec a, struct timespec b)
+	---{
+	---  int diff = a.tv_sec - b.tv_sec;
+	---  return diff ? diff : a.tv_nsec - b.tv_nsec;
+	---}
+	(gdb) print diff
+	---$1 = <optimized out>
+	(gdb) disas
+OUTPUT:
+Dump of assembler code for function compare_mtime:
+   0x0000000000403430 <+0>:	mov    0x60(%rsi),%rax
+=> 0x0000000000403434 <+4>:	sub    0x60(%rdi),%eax
+   0x0000000000403437 <+7>:	mov    0x68(%rdi),%rdx
+   0x000000000040343b <+11>:	mov    0x68(%rsi),%rcx
+   0x000000000040343f <+15>:	jne    0x403458 <compare_mtime+40>
+   0x0000000000403441 <+17>:	mov    %ecx,%eax
+   0x0000000000403443 <+19>:	sub    %edx,%eax
+   0x0000000000403445 <+21>:	jne    0x403458 <compare_mtime+40>
+   0x0000000000403447 <+23>:	mov    (%rsi),%rsi
+   0x000000000040344a <+26>:	mov    (%rdi),%rdi
+   0x000000000040344d <+29>:	jmpq   0x4033b0 <xstrcoll>
+   0x0000000000403452 <+34>:	nopw   0x0(%rax,%rax,1)
+   0x0000000000403458 <+40>:	repz retq 
+	
+	---This program first does 1 subtraction, and returns if that doesn't
+	---equal 0.
+	---If it does equal 0, then it does another subtraction, returning if
+	---that doesn't equal 0.
+	---These correspond to the seconds difference in the source code, and
+	---then the nanoseconds difference if seconds are equal.
+
+	(gdb) si
+	(gdb) p 0x60($rsi + 0x60)
+		OUTPUT: -1613826000
+	(gdb) p 0x60($rdi + 0x60)
+		OUTPUT: 1518380951
+	(gdb) p $rax
+		OUTPUT: 1162760345
+	---This is integer overflow!
+	---The program subtracted the seconds value for 1 entry (1518380951) 
+	---from another (-1613826000), and used that in it's comparison. But 
+	---because of overflow, the comparison is returning the opposite of 
+	---what it would ideally.
+	---If the armistice entry has the negative second value, this would
+	---account for it being treated as though it were later than the now 
+	---and now1 entries.
+
+	---How to avoid integer overflow: Replace the subtractions with 
+	---simple comparisons.
+	---The nanoseconds can remain subtracted, as they won't ever get 
+	---large enough to overflow.
+
+	(gdb) quit
+	$rm -fr $tmp
+	---delete the temp directory
+
+Modifying the Source Code:
+	$ cd ~/coreutils-with-bug/lib
+	$ cp timespec.h ~/timespec.h
+	---Copy the buggy file to modify elsewhere
+	$ cd ~
+	$ emacs -nw timespec.h
+	---Replaced:
+		int diff = a.tv_sec - b.tv_sec;
+		return diff ? diff : a.tv_nsec - b.tv_nsec;
+	---with:
+		if (a.tv_sec > b.tv_sec)
+			return 1;
+		if (a.tv_sec < b.tv_sec)
+			return -1;
+		else
+			return a.tv_nsec - b.tv_nsec;
+
+Creating the Patch:
+	$ diff -u coreutils-with-bug/lib/timespec.h timespec.h > patch.diff
+	---Must still change file names in the diff file
+	$ emacs -nw patch.diff
+	---Replaced coreutils-with-bug/lib/timespec.h to lib/timespec.h
+	---Replaced timespec.h with lib/timespec.h
+	$ emacs -nw changelog
+		
+		018-02-09 Robathan Harries <robathan@lnxsrv07.seas.ucla.edu>
+
+		* lib/timespec.h (timespec_cmp):
+		Uses direct comparisons instead of subtraction, in order to avoid 
+		integer overflow in cases of unrealistically early file times.
+	
+	$ cat changelog patch.diff > lab4.diff
+
+Reproduce Problem on SEASNET:
+	$ cd ~
+	$ touch -d '1918-11-11 11:00 GMT' wwi-armistice
+	$ touch now
+	$ sleep 1
+	$ touch now1
+	$ ls -lt --full-time wwi-armistice now1 now
+OUTPUT:
+-rw-r--r-- 1 robathan csugrad 0 2054-12-17 09:28:16.000000000 -0800 wwi-armistice
+-rw-r--r-- 1 robathan csugrad 0 2018-02-11 13:32:53.632750000 -0800 now1
+-rw-r--r-- 1 robathan csugrad 0 2018-02-11 13:32:49.070322000 -0800 now
+	
+	---This looks like another case of integer overflow.
+	
+How well does SEASnet do?
+---With files as early as the wwi-armistice it experiences integer overflow, and can count very old files as being modified in the future.
+This is because while the local linux file system is 64 bit, the SEASnet uses a 32 bit NFS system, and truncates times to the first 32 bits, ignoring the sign bit.
+
