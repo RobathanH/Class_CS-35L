@@ -1,5 +1,5 @@
 # Class_CS-35L
-UCLA Introductory Operating Systems Lab.
+UCLA Introductory Software Construction Lab in Winter 2018.
 
 This is for personal reference purposes only. I strongly recommend against copying any code here.
 
